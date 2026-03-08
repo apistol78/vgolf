@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="128"
+   viewBox="0 0 512 128"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Crime Scene.svg"
+   inkscape:export-filename="/home/apistol/private/vgolf/data/Assets/Textures/Roadsigns/Crime Scene.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffff00"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     width="512px"
+     inkscape:showpageshadow="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:zoom="0.80989583"
+     inkscape:cx="219.16399"
+     inkscape:cy="72.231511"
+     inkscape:window-width="1595"
+     inkscape:window-height="966"
+     inkscape:window-x="53"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer4" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 4">
+    <rect
+       style="fill:#ffff00;stroke:none"
+       id="rect11890"
+       width="683.09674"
+       height="268.17776"
+       x="-88.833931"
+       y="-55.852242"
+       ry="14.4699" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect53"
+       width="28.939781"
+       height="210.80437"
+       x="-119.50249"
+       y="-118.86458"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect972"
+       width="28.939781"
+       height="210.80437"
+       x="-59.432278"
+       y="-58.794369"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect974"
+       width="28.939781"
+       height="210.80437"
+       x="0.63792831"
+       y="1.2758368"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect976"
+       width="28.939781"
+       height="210.80437"
+       x="60.70813"
+       y="61.346039"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect978"
+       width="28.939781"
+       height="210.80437"
+       x="120.77835"
+       y="121.41627"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect980"
+       width="28.939781"
+       height="210.80437"
+       x="180.84854"
+       y="181.48645"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect982"
+       width="28.939781"
+       height="210.80437"
+       x="240.91876"
+       y="241.55667"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect984"
+       width="28.939781"
+       height="210.80437"
+       x="300.98901"
+       y="301.62689"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#000000;stroke:none"
+       id="rect986"
+       width="28.939781"
+       height="210.80437"
+       x="361.05917"
+       y="361.69705"
+       transform="rotate(-45)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffff00;stroke:none"
+       id="rect1936"
+       width="708.66455"
+       height="83.821053"
+       x="-90.497917"
+       y="23.663372"
+       ry="14.4699" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:60px;line-height:1.25;font-family:sans-serif;letter-spacing:3.42px;word-spacing:9.38px;fill:#000000;fill-opacity:1;stroke:none"
+       x="36.79372"
+       y="84.998734"
+       id="text3825"><tspan
+         sodipodi:role="line"
+         id="tspan3823"
+         x="36.79372"
+         y="84.998734"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold'"
+         rotate="0 0 0 0 0 0 0 0 0 0 0 0"
+         dx="0">CRIME SCENE</tspan></text>
+  </g>
+</svg>

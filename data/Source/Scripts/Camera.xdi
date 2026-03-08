@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
+
+Camera = Camera or class("Camera")
+
+function Camera:new(cameraEntity, ballEntity, goalEntities)
+	self._cameraEntity = cameraEntity
+	self._ballEntity = ballEntity
+	self._goalEntities = goalEntities
+	self._aim = environment.settings:getProperty("CameraAim") or 1
+
+	self._origin = self._cameraEntity.transform
+
+	self:reset()
+end
+
+function Camera:reset()
+	local ballPosition = self._ballEntity.transform.translation
+
+	self._cameraEntity.transform = self._origin
+
+	self._position = ballPosition + Vector4(0, 3, 0)
+	self._head = 0
+	self._headAim = 0
+	self._headAimWarmUp = 0
+	self._lastBallVelocity = Vector4.zero
+end
+
+function Camera:rotate(deltaAngle)
+	self._head = angleWrap(self._head + deltaAngle)
+	self._headAim = self._head
+	self._headAimWarmUp = 2	-- Do not aim assist for N seconds after user manually rotated camera.
+end
+
+function Camera:update(time, deltaTime, hintDirection, impulseDirection, aimEnable, finished)
+	local rb = self._ballEntity:getComponent(physics.RigidBodyComponent)
+
+	-- Get ball velocity, use last frame's if ball has become stationary.
+	-- In case we are provided with an explicit direction then it will
+	-- override the ball's velocity.
+	local ballVelocity = nil
+	if hintDirection ~= nil then
+		ballVelocity = hintDirection
+	elseif impulseDirection ~= nil then
+		ballVelocity = impulseDirection
+	end
+	if ballVelocity == nil then
+		ballVelocity = Vector4.zero
+	end
+
+	ballVelocity = ballVelocity * 0.1 + self._lastBallVelocity * 0.9
+	if ballVelocity.length <= 0.01 then
+		ballVelocity = self._lastBallVelocity
+	end
+
+	self._lastBallVelocity = ballVelocity * 0.995
+
+	if self._aim ~= 0 and self._headAimWarmUp <= 0 and aimEnable then
+		-- Get direction to nearest goal, weight by distance.
+		local goalPosition = self._goalEntities:get(0).transform.translation
+		local ballPosition = self._ballEntity.transform.translation
+		local d = goalPosition - ballPosition
+		local ln = d.length
+		if ln < 6 and ln > 0 then
+			local x = ln / 6
+			local f = math.sin((x * 0.5 + 0.5) * math.pi)
+			d = d:normalized() * f
+		else
+			d = Vector4.zero
+		end
+
+		-- Calculate aim direction.
+		d = d + ballVelocity * 0.1
+		if d.length > 0.01 then
+			self._headAim = angleWrap(math.atan(d.x, d.z))
+		else
+			self._headAim = self._head
+		end
+
+		local angleLimit < const > = 1
+		local da = angleDifference(self._head, self._headAim)
+		if da < -angleLimit then da = -angleLimit end
+		if da > angleLimit then da = angleLimit end
+		self._head = angleWrap(self._head + da * deltaTime * 2)
+	end
+
+	if not finished then
+		local Tfollow = self:_calculateCameraBall(deltaTime)
+		self._cameraEntity.transform = Tfollow
+	else
+		local Tfinished = self:_calculateCameraEnd(time)
+		self._cameraEntity.transform = Tfinished
+	end
+
+	self._headAimWarmUp = self._headAimWarmUp - deltaTime
+end
+
+function Camera:_calculateCameraBall(deltaTime)
+	local ballPosition = self._ballEntity.transform.translation
+	
+	local k = 0.1 * deltaTime * 60
+	local Qr = Quaternion.fromEulerAngles(self._head, 0, 0)
+	local Tc = self._position
+	local Tt = ballPosition + Vector4(0, 3, 0)
+	local Tr = Tc * (1 - k) + Tt * k
+
+	self._position = Tr
+
+	return Transform(
+		Tr.xyz0 + Qr * Vector4(0, 0, -2.75, 0),
+		Qr * self._origin.rotation
+	)
+end
+
+function Camera:_calculateCameraEnd(time)
+	local ballPosition = self._ballEntity.transform.translation
+	local head = time * 0.3
+	return
+		Transform(ballPosition, Quaternion.identity) *
+		Transform(Vector4.zero, Quaternion.fromEulerAngles(head, 0, 0)) *
+		Transform(Vector4(0, 2, -3), Quaternion.fromEulerAngles(0, 0.2, 0))
+end
+
+	]]>
+	</text>
+</object>

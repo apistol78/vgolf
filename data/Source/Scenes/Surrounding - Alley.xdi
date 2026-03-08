@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{EE92866E-6E96-F342-AAC6-E5AE0BC5C2A1}</id>
+	<name>Environment Alley</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{9923C3AB-ABE3-5747-8D8D-303C7CE7E97C}</id>
+					<name>Cave-1-Entity</name>
+					<transform>
+						<translation>0, -0.01, 11.638059, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{DCB600A1-5370-D946-96E6-52D380A87C74}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{2EA7FC0B-2319-F74C-88C9-BB3A040A13B7}</id>
+					<name>Industrial Chimney-Entity</name>
+					<transform>
+						<translation>-7.763307, -0.474414, -44.701649, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{8736260E-6850-2041-9C02-A929E7120E15}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{39AD9607-7A8F-BD42-ABCB-215CE26BA8AD}</id>
+					<name>Industrial Chimney-Entity</name>
+					<transform>
+						<translation>1.18686, 5.819474, 69.382484, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{8736260E-6850-2041-9C02-A929E7120E15}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{2433CBA3-B922-E34F-BE60-6C91DC971FCB}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>-10.353991, 6.785676, -5.059544, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{A4E05404-71B9-8A4D-BAAE-2F50C87972CE}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>-10.237193, 6.674901, 7.202841, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{49285F0A-806E-B94D-A961-94A95E3BAEAB}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>-10.307425, 6.758758, 19.202841, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{84A2665B-EF7C-9041-853C-D753348458C1}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>-10.307425, 6.758758, 31.202841, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{D82BF7D6-30CF-CF47-9DF1-657BDCCA718E}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>10.58691, 6.877769, 25.393791, 0</translation>
+						<rotation>0, -1, 0, 0.000797</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{73FBCC31-2646-E345-BC74-A4571B241330}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>10.567785, 6.877769, 13.39381, 0</translation>
+						<rotation>0, -1, 0, 0.000797</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{953B08A9-C0E9-934D-A125-D4F418CFDCEB}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>10.548658, 6.877769, 1.393827, 0</translation>
+						<rotation>0, -1, 0, 0.000797</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{97FF5A9E-C43C-634B-9135-986C4D237EB9}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>10.529533, 6.877769, -10.606154, 0</translation>
+						<rotation>0, -1, 0, 0.000797</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{2C6F7F70-A511-E64D-81CE-DB3955137F8C}</id>
+					<name>Alley Chimney-Entity</name>
+					<transform>
+						<translation>-8.067641, 14.411725, 48.250916, 0</translation>
+						<rotation>0.006856, 0.685544, 0.00728, 0.727962</rotation>
+					</transform>
+					<components/>
+					<entityData>{097B9270-F34E-884B-A6B1-E48F535079D4}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{B84D3728-234A-3046-B852-DE021472FB86}</id>
+					<name>Alley House-Entity</name>
+					<transform>
+						<translation>-6.158047, 1.913945, 51.095684, 0</translation>
+						<rotation>0, -0.029666, 0, 0.99956</rotation>
+					</transform>
+					<components/>
+					<entityData>{7A799C12-09B7-0B40-893E-BD5706C2E424}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{4AC15279-D86E-2948-9962-F23779AE8346}</id>
+					<name>Alley House-Entity</name>
+					<transform>
+						<translation>10.383004, 0.321709, 53.954613, 0</translation>
+						<rotation>0, -0.572861, 0, 0.819652</rotation>
+					</transform>
+					<components/>
+					<entityData>{7A799C12-09B7-0B40-893E-BD5706C2E424}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{19C84D05-1F96-8946-A094-A4FAA69F559A}</id>
+					<name>Alley House Window-Entity</name>
+					<transform>
+						<translation>-2.946354, 8.813459, 45.290562, 0</translation>
+						<rotation>0, -0.029666, 0, 0.99956</rotation>
+					</transform>
+					<components/>
+					<entityData>{CD5002ED-A26D-9B41-818E-8C1B381441F1}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{0ECE22B1-E932-6E4D-B679-8262538D1B4D}</id>
+					<name>Alley House Window-Entity</name>
+					<transform>
+						<translation>-6.954407, 8.842, 45.06065, 0</translation>
+						<rotation>0, -0.029666, 0, 0.99956</rotation>
+					</transform>
+					<components/>
+					<entityData>{CD5002ED-A26D-9B41-818E-8C1B381441F1}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{61354BC9-D0DD-EA41-B108-7E1126BC7251}</id>
+					<name>Alley House Window-Entity</name>
+					<transform>
+						<translation>8.415663, 6.949994, 48.674431, 0</translation>
+						<rotation>0, 0.169507, 0, 0.985529</rotation>
+					</transform>
+					<components/>
+					<entityData>{CD5002ED-A26D-9B41-818E-8C1B381441F1}</entityData>
+				</item>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{3C370AE0-221E-4844-ABCF-58E334DF9C06}</id>
+					<name>OutOfBounds</name>
+					<transform>
+						<translation>1.144299, 0, 12.336966, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.world.VolumeComponentData">
+							<size>60, 20, 60</size>
+						</item>
+						<item type="traktor.world.ScriptComponentData" version="1">
+							<class>{A71F857C-BF45-7942-A746-74598CF4DD13}</class>
+							<editorSupport>false</editorSupport>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>

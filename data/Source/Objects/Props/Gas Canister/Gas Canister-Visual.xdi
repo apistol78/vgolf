@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="20">
+	<fileName>Props/Gas Canister.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>Canister_D</first>
+			<second>{4BE2119B-BCE8-4278-9C51-5D923EEE24B5}</second>
+		</item>
+		<item>
+			<first>Cansiter_R</first>
+			<second>{4BE38934-789E-4F7C-B8EC-19C268068486}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

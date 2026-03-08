@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{DBBE6822-D06A-2A42-93C2-126EEA167B59}</id>
+	<name>Industrial Chimney</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{14BED72C-831D-014B-ADA1-70C7A4EBD9F4}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+	</components>
+</object>

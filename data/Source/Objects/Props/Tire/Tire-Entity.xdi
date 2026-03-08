@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{A0F05E40-9305-F541-82BC-7C3D8220B8ED}</id>
+	<name>Tire</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{A96BC6B8-3AF5-3140-96E6-753FF9B690CB}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+	</components>
+</object>

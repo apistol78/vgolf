@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+AllButtonsOpenFence = AllButtonsOpenFence or class("AllButtonsOpenFence", traktor.world.ScriptComponent)
+
+function AllButtonsOpenFence:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+
+	self._buttonEntities = nil
+	self._fenceEntity = nil
+	self._pressed = false
+end
+
+function AllButtonsOpenFence:update(contextObject, totalTime, deltaTime)
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	-- Lazy get entities.
+	if self._buttonEntities == nil then
+		self._buttonEntities = contextObject.world:getEntities("Button")
+		self._fenceEntity = contextObject.world:getEntity("Fence")
+	end
+
+	-- Check if all buttons has been pressed.
+	local pressed = true
+	for _, buttonEntity in pairs(self._buttonEntities) do
+		local sc = buttonEntity:getComponent(traktor.world.ScriptComponent)
+		pressed = pressed and sc:isPressed()
+	end
+
+	-- Control fence if all buttons is pressed.
+	if pressed ~= self._pressed then
+		local pc = self._fenceEntity:getComponent(traktor.animation.PathComponent)
+		if pressed then
+			pc:continueTo(1)
+		else
+			pc:continueTo(0)
+		end
+		self._pressed = pressed
+	end
+end
+
+function AllButtonsOpenFence:reset()
+	for _, buttonEntity in pairs(self._buttonEntities) do
+		local sc = buttonEntity:getComponent(traktor.world.ScriptComponent)
+		sc:reset()
+	end
+end
+
+
+	]]>
+	</text>
+</object>

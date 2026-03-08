@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+StartupMessage = StartupMessage or class("StartupMessage", traktor.world.ScriptComponent)
+
+function StartupMessage:new()
+	self._header = self.properties:getProperty("Header")
+	self._text = self.properties:getProperty("Text")
+	self._show = true
+end
+
+function StartupMessage:update(contextObject, totalTime, deltaTime)
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	if self._show then
+		contextObject._hudView:showMessage(
+			self._header,
+			self._text
+		)
+		self._show = false
+	end
+end
+
+function StartupMessage:reset()
+	self._show = true
+end
+
+	]]>
+	</text>
+</object>

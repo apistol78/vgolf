@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Portal = Portal or class("Portal", traktor.world.ScriptComponent)
+
+function Portal:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+
+	self._ballEntity = nil
+	self._inside = false
+end
+
+function Portal:update(contextObject, totalTime, deltaTime)
+	-- Must have an update otherwise ScriptComponent will recurse oom.
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	-- Lazy get ball entity.
+	if self._ballEntity == nil then
+		self._ballEntity = contextObject.world:getEntity("Ball")
+		assert(self._ballEntity ~= nil)
+	end
+
+	-- Check if ball is inside portal volume.
+	local vc = self.owner:getComponent(traktor.world.VolumeComponent)
+	local pt = self._ballEntity.transform.translation
+	if not vc:inside(pt) then
+		if self._inside then
+			self._inside = false
+		end
+		return
+	end
+
+	-- If ball is already inside and we're waiting for
+	-- ball to exit.
+	if self._inside then
+		return
+	end
+
+	-- Teleport ball to any other portal, transform
+	-- velocity so ball moves as expected.
+	local portals = contextObject.world:getEntities("Portal")
+	portals:remove(self.owner)
+	if portals.empty then
+		print("No portals to exit, ball not teleported.")
+		return
+	end
+
+	local idx = math.random(0, portals.size - 1)
+	local exitPortal = portals:get(idx)
+	assert(exitPortal ~= nil)
+
+	local Trot < const > = Transform(Vector4.zero, Quaternion.fromEulerAngles(3.142, 0, 0))
+	local Tenter = self.owner.transform
+	local Tleave = exitPortal.transform
+	local Tdelta = Tleave * Tenter:inverse()
+
+	self._ballEntity.transform = Tdelta * self._ballEntity.transform
+
+	local rb = self._ballEntity:getComponent(traktor.physics.RigidBodyComponent).body
+	rb.linearVelocity = (Trot * Tdelta).rotation:transform(rb.linearVelocity)
+
+	-- Tag exit portal to wait for ball to exit before
+	-- triggering another teleportation.
+	exitPortal:getComponent(traktor.world.ScriptComponent)._inside = true
+end
+
+	]]>
+	</text>
+</object>

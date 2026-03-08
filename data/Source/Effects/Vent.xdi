@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.spray.EffectData">
+	<duration>1</duration>
+	<loopStart>0</loopStart>
+	<loopEnd>1</loopEnd>
+	<layers>
+		<item type="traktor.spray.EffectLayerData" version="4">
+			<name>Smoke</name>
+			<time>0</time>
+			<duration>1</duration>
+			<emitter type="traktor.spray.EmitterData" version="7">
+				<source type="traktor.spray.ConeSourceData" version="1">
+					<constantRate>30</constantRate>
+					<velocityRate>0</velocityRate>
+					<position>0, 0, 0, 1</position>
+					<normal>0, 1, 0, 0</normal>
+					<angle1>0.220797</angle1>
+					<angle2>0.270796</angle2>
+					<velocity>
+						<min>4</min>
+						<max>5</max>
+					</velocity>
+					<inheritVelocity>
+						<min>0</min>
+						<max>0</max>
+					</inheritVelocity>
+					<orientation>
+						<min>0</min>
+						<max>6.283185</max>
+					</orientation>
+					<angularVelocity>
+						<min>-2.5</min>
+						<max>2.3</max>
+					</angularVelocity>
+					<age>
+						<min>0.4</min>
+						<max>0.5</max>
+					</age>
+					<mass>
+						<min>1</min>
+						<max>1</max>
+					</mass>
+					<size>
+						<min>0.2</min>
+						<max>0.3</max>
+					</size>
+				</source>
+				<modifiers>
+					<item type="traktor.spray.IntegrateModifierData" version="1">
+						<timeScale>1</timeScale>
+						<linear>true</linear>
+						<angular>true</angular>
+					</item>
+					<item type="traktor.spray.SizeModifierData">
+						<adjustRate>1</adjustRate>
+					</item>
+					<item type="traktor.spray.DragModifierData">
+						<linearDrag>0.3</linearDrag>
+						<angularDrag>0</angularDrag>
+					</item>
+				</modifiers>
+				<shader>{40B11B0B-F5BC-7141-AD3F-DED315C714FA}</shader>
+				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
+				<effect/>
+				<middleAge>0.5</middleAge>
+				<cullNearDistance>1</cullNearDistance>
+				<cullMeshDistance>100</cullMeshDistance>
+				<fadeNearRange>0.1</fadeNearRange>
+				<viewOffset>0</viewOffset>
+				<warmUp>0.8</warmUp>
+				<sort>false</sort>
+				<worldSpace>false</worldSpace>
+				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+			</emitter>
+			<trail/>
+			<sequence/>
+			<triggerEnable/>
+			<triggerDisable/>
+		</item>
+	</layers>
+</object>

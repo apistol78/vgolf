@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{5FE1EEA6-5365-1E46-BFCD-A8358997FFC4}</id>
+	<name>Sand-4</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{24917A2B-E04E-B64B-B1C6-F58FBE9A83E3}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+	</components>
+</object>

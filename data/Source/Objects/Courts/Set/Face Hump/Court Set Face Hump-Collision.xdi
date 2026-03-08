@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.physics.MeshAsset" version="4">
+	<fileName>Court/Set/Court Set Face Hump.blend</fileName>
+	<importFilter/>
+	<calculateConvexHull>false</calculateConvexHull>
+	<margin>0</margin>
+	<materials>
+		<item>
+			<first>m_edge</first>
+			<second>{F615B7C2-01D5-B040-B76F-6E6F72D34557}</second>
+		</item>
+		<item>
+			<first>m_grass</first>
+			<second>{DBF21A9C-44FA-1545-BB75-4EA164172F64}</second>
+		</item>
+	</materials>
+</object>

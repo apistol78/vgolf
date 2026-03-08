@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+LevelView = LevelView or class("LevelView", Container)
+
+LevelView.__flipboardId = "LEVEL"
+
+function LevelView:new(parent, save)
+	Container.new(self, parent, TableLayout({ 100 }, { 0, 0 }, 16, 16, 0, 16))
+
+	self:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	local carousel = Carousel(self, 16)
+	for i = 0, 4 do
+		local ct0 = Container(carousel, TableLayout({ 100 }, { 0 }, 16, 4, 4, 4))
+
+		local ct1 = Panel(ct0, FloodLayout(0, 28))
+		Static(ct1, "TIER " .. (i + 1))
+			:setHorizontalAlign(Widget.ALIGN_CENTER)
+			:setVerticalAlign(Widget.ALIGN_CENTER)
+			:setTextSize(40)
+
+		for j = 0, 3 do
+			local lvl = i * 4 + j + 1
+
+			local ct1 = Panel(ct0, FloodLayout(24, 0))
+				:setOnClick(function() self._selectFn(lvl) end)
+
+			local containerText = Container(ct1, TableLayout({ 100 }, { 0 }, 16, 32, 0, 12))
+	
+			local lv = nil
+			if save ~= nil then lv = save:getProperty("LEVEL_" .. lvl) end
+			if lv ~= nil then
+				Static(containerText, "Level " .. lvl)
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+					:setTextSize(30)
+				Static(containerText, "Best score: " .. lv:getProperty("BEST_SCORE"))
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+				Static(containerText, "Best time: " .. formatTime(lv:getProperty("BEST_TIME")))
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+				-- Number of times level has been completed.
+				local goals = lv:getProperty("GOALS") or 0
+				if goals > 0 then
+					Static(ct1, goals)
+						:setHorizontalAlign(Widget.ALIGN_RIGHT)
+						:setVerticalAlign(Widget.ALIGN_CENTER)
+						:setTextSize(35)
+				end
+			else
+				Static(containerText, "Level " .. lvl)
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+					:setTextSize(30)
+				Static(containerText, "Best score: ?")
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+				Static(containerText, "Best time: ?")
+					:setHorizontalAlign(Widget.ALIGN_CENTER)
+			end
+		end
+	end
+
+	local ct2 = Container(self, TableLayout({ 0, 0, 0 }, { 0 }, 0, 0, 20, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonMenu = Button(ct2, "MC_Icon_Home")
+
+	Button(ct2, "MC_Icon_Double_Left")
+		:setOnClick(function() carousel:showPrevious() end)
+
+	Button(ct2, "MC_Icon_Double_Right")
+		:setOnClick(function() carousel:showNext() end)
+end
+
+function LevelView:setOnLevelSelect(selectFn)
+	self._selectFn = selectFn
+end
+
+	]]>
+	</text>
+</object>

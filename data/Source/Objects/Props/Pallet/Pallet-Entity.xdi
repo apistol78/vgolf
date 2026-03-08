@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{B563FFEB-2489-4049-B290-BE1CB59D69CF}</id>
+	<name>Pallet</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{94E31E65-11E0-BA47-A656-B513A22CB484}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+	</components>
+</object>

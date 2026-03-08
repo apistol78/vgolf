@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="20">
+	<fileName>Ground.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>brown_mud_02_diff_1k</first>
+			<second>{BE1DBADE-B42E-F042-9C93-C5B0221AA85C}</second>
+		</item>
+		<item>
+			<first>brown_mud_02_nor_1k</first>
+			<second>{5E0E8815-5780-A242-B75F-E84D7D3EF5DB}</second>
+		</item>
+		<item>
+			<first>brown_mud_02_rough_1k</first>
+			<second>{536BF8CB-7C53-B64F-855F-218A123F22FE}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

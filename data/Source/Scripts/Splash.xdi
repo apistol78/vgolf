@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
+
+#using \{31A27326-B5C7-C54A-8AAB-B9675B1DF479}
+
+Splash = Splash or class("Splash", Stage)
+
+function Splash:new(params, environment)
+	Stage.new(self)
+
+	environment.control.pause = true
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{4B72718F-9CD5-5D40-8A5E-21A185CC6DF8}", "\{8A4F82EA-80AF-0A41-8AE0-2E2140D47D6B}" }
+	)
+	setupStyles()
+
+	local k = 80
+	local root = self.ui.root
+	self._frame = Frame(
+		root,
+		9 * k, 16 * k,
+		FloodLayout()
+	)
+	LoadingView(self._frame)
+	self._frame:update()
+
+	self._loader = self:loadStageAsync("MAIN", nil)
+end
+
+function Splash:finalize()
+	self._frame:remove()
+	self._frame = nil
+end
+
+function Splash:update(info)
+	if self._loader == nil then
+		return
+	end
+	if self._loader.ready then
+		if self._loader.succeeded then
+			self:gotoStage(self._loader:get())
+			self._loader = nil
+		else
+			self:terminate()
+		end
+	end
+end
+
+	]]>
+	</text>
+</object>

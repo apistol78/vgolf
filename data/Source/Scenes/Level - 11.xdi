@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.scene.SceneAsset" version="9">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="37">
+		<viewNearZ>0.1</viewNearZ>
+		<viewFarZ>150</viewFarZ>
+		<exposureMode>EmFixed</exposureMode>
+		<exposure>-1</exposure>
+		<shadowSettings>
+			<disabled>
+				<projection>SpUniform</projection>
+				<farZ>20</farZ>
+				<resolution>4096</resolution>
+				<bias>0.45</bias>
+				<biasCoeff>1.2</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>0.2</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</disabled>
+			<low>
+				<projection>SpUniform</projection>
+				<farZ>10</farZ>
+				<resolution>512</resolution>
+				<bias>0.45</bias>
+				<biasCoeff>1.2</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>0.2</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</low>
+			<medium>
+				<projection>SpUniform</projection>
+				<farZ>10</farZ>
+				<resolution>512</resolution>
+				<bias>0.45</bias>
+				<biasCoeff>1.2</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>0.2</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</medium>
+			<high>
+				<projection>SpUniform</projection>
+				<farZ>10</farZ>
+				<resolution>512</resolution>
+				<bias>0.45</bias>
+				<biasCoeff>1.2</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>0.2</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</high>
+			<ultra>
+				<projection>SpUniform</projection>
+				<farZ>20</farZ>
+				<resolution>1024</resolution>
+				<bias>0.002</bias>
+				<biasCoeff>0.002</biasCoeff>
+				<cascadingSlices>4</cascadingSlices>
+				<cascadingLambda>1</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</ultra>
+		</shadowSettings>
+		<fogDistance>8.599999</fogDistance>
+		<fogDensity>0.01</fogDensity>
+		<fogColor>0.482353, 0.698039, 0.721569, 1</fogColor>
+		<irradianceGrid>{8F500C87-6146-A44F-B102-01BFDE65F9B9}</irradianceGrid>
+		<imageProcess>
+			<disabled>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</disabled>
+			<low>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</low>
+			<medium>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</medium>
+			<high>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</high>
+			<ultra>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</ultra>
+		</imageProcess>
+		<colorGrading>{B942A1E9-F1E1-4201-9443-050CDDC5088C}</colorGrading>
+	</worldRenderSettings>
+	<layers>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{7DE62F51-FF0C-DE4A-BD57-65E764861E61}</id>
+			<name>Environment</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{259EE617-68DD-8849-93E1-12E92E0860A3}</id>
+							<name>Environment-1</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{90B569A8-FC5E-6A42-B50A-0D78107A95AB}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{D6E07B4B-56FD-0247-B1A4-11CC5B77BDBD}</id>
+			<name>Level</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{3DD84B7E-BD6A-CD44-A312-663B1A60BC07}</id>
+							<name>Pillars-Entity</name>
+							<transform>
+								<translation>10.433138, -0.338637, 14.639512, 0</translation>
+								<rotation>0, -0.651833, 0, 0.758362</rotation>
+							</transform>
+							<components/>
+							<entityData>{76991D94-2A64-D443-8C5F-52DA7D07389E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{292356EF-1A58-0343-832B-FD21411CC4CE}</id>
+							<name>Goal</name>
+							<transform>
+								<translation>7.013306, 0.14, 9.006474, 0</translation>
+								<rotation>0, 0.651834, 0, 0.758362</rotation>
+							</transform>
+							<components/>
+							<entityData>{640C6E67-E139-F346-AECA-B179EA38877C}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F35D080C-FFE1-5940-A051-CEEFB58242D1}</id>
+							<name>Grass-Entity</name>
+							<transform>
+								<translation>2.143566, -0.100844, 5.133478, 0</translation>
+								<rotation>0, 0.80162, 0, 0.597834</rotation>
+							</transform>
+							<components/>
+							<entityData>{FAED89C4-2A55-124E-B4F8-9AF094B57AD8}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C3F0F683-2EF4-C64A-AFA5-75691FA68790}</id>
+							<name>Irradiance</name>
+							<transform>
+								<translation>8.23899, 2, 9.871701, 0</translation>
+								<rotation>0, 0.247404, 0, 0.968912</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.VolumeComponentData">
+									<size>18, 4, 40</size>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{E1DD4982-6D59-5442-8E0E-F1FD19E08593}</id>
+							<name>Court</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{1BF39535-BD24-2B45-8F7F-9223467ACAE1}</id>
+											<name>Court-1-Entity</name>
+											<transform>
+												<translation>7, 0, 6, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{54263867-1738-C049-91AA-D5F7E811A407}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{FD822232-35E0-FF41-8777-F58B8226A22C}</id>
+											<name>Court-6-Entity</name>
+											<transform>
+												<translation>1, 0, -2, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{2D5140DE-16C8-004D-989F-493DDE88E975}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{58DD3BCB-D05A-F042-BF05-AA1B7641519E}</id>
+											<name>Court-8-Entity</name>
+											<transform>
+												<translation>1, 0, -2, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{6F78E708-D972-E144-B6CF-B443AB3200B2}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{88D7AE12-3300-3A4C-BFAE-8E01D7A9DDE4}</id>
+											<name>Court-8-Entity</name>
+											<transform>
+												<translation>3, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{6F78E708-D972-E144-B6CF-B443AB3200B2}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{3AF514BB-D1DD-E941-B44B-AF685A986D01}</id>
+											<name>Court-8-Entity</name>
+											<transform>
+												<translation>5, 0, 2.002514, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{6F78E708-D972-E144-B6CF-B443AB3200B2}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{3CEA3852-E025-574F-BCE0-2B3990BFA4D0}</id>
+											<name>Court-12-Entity</name>
+											<transform>
+												<translation>3, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{3CE911A8-14E1-174D-9BC0-06D25104B795}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{03711F85-FE6C-134F-B6CA-9F8DFD204CB5}</id>
+											<name>Court-12-Entity</name>
+											<transform>
+												<translation>5, 0, 2.002514, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{3CE911A8-14E1-174D-9BC0-06D25104B795}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{4155012D-80E4-4B41-98D3-239A85D22426}</id>
+											<name>Court-12-Entity</name>
+											<transform>
+												<translation>7, 0, 4, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{3CE911A8-14E1-174D-9BC0-06D25104B795}</entityData>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E2AF21FE-205F-8041-9398-FD013266380D}</id>
+							<name>Bottle-Entity</name>
+							<transform>
+								<translation>1.031497, 0.033443, 4.047538, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{CA73E3A7-9198-334F-9BAF-D2EDF291B923}</id>
+							<name>Bottle-Entity</name>
+							<transform>
+								<translation>9.121565, 0.033443, 2.638484, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{8D25D07A-D70C-EE43-8725-F936D58BEBE8}</id>
+							<name>Bottle-Entity</name>
+							<transform>
+								<translation>12.201184, 0.069729, 10.204322, 0</translation>
+								<rotation>0.232454, 0.225763, 0.678649, 0.659114</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{9AC89BB6-C1AC-BA45-BC71-72029F3C7789}</id>
+							<name>Bottle-Entity</name>
+							<transform>
+								<translation>12.287345, 0.017005, 9.958916, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{644B6B82-D457-41FB-9AD2-CB374B929CB7}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>1, 0, 2, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E7B22709-7A99-423F-B5FF-008992D9F335}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>3, 0, 4, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{084A6773-769A-4550-B3FB-02C98AA3A17E}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>5, 0, 6, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{B836B992-7426-48B6-97FF-0562D1478703}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>7, 0, 2, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E22C0E41-5F3C-48C1-9A1B-3BCCB65BF2D6}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>5, 0, 0, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{02F19C10-CF08-4C15-BFE6-5B8FF76B9293}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>3, 0, -2, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{6AE94A56-647D-DF4D-9B21-BF69326257F7}</id>
+			<name>Dynamic</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{525BEA28-0D2E-9048-A1FB-846DE2AC052D}</id>
+							<name>Camera</name>
+							<transform>
+								<translation>1, 2.5, -4, 0</translation>
+								<rotation>0.258819, 0, 0, 0.965926</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.308997</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{62D0DF7F-510E-C647-A258-968E61E40298}</id>
+							<name>Logic</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ScriptComponentData" version="2">
+									<class>{2355EE3C-EA5E-9E46-B51A-D4F79F9E25A0}</class>
+									<properties type="traktor.PropertyGroup">
+										<value>
+											<item>
+												<first>Header</first>
+												<second type="traktor.PropertyString">
+													<value>LEVEL 11</value>
+												</second>
+											</item>
+											<item>
+												<first>Text</first>
+												<second type="traktor.PropertyString">
+													<value>ZigZag</value>
+												</second>
+											</item>
+										</value>
+									</properties>
+									<editorSupport>false</editorSupport>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{EC16D0AB-C5FB-3243-A0F2-A63476504E9F}</id>
+							<name>Coin</name>
+							<transform>
+								<translation>2.84109, 0.679484, 0.100833, 0</translation>
+								<rotation>0.019314, 0.482604, 0.035016, 0.874925</rotation>
+							</transform>
+							<components/>
+							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{1C592A14-A023-C44E-A41B-180998D49F14}</id>
+							<name>Light-1-Entity</name>
+							<transform>
+								<translation>-0.724984, 0.326965, 0.86541, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2A39BC78-9F38-4C4F-8BC9-7992EE74B901}</id>
+							<name>Light-1-Entity</name>
+							<transform>
+								<translation>6.885449, 0.363433, 2.366083, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F81FF167-58FB-0B4C-9F02-B4E032D0FD57}</id>
+							<name>Light-1-Entity</name>
+							<transform>
+								<translation>5.212799, 0.349268, 5.684464, 0</translation>
+								<rotation>0, 1, 0, 0.000421</rotation>
+							</transform>
+							<components/>
+							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{FC6B6091-941E-F549-800E-F1C8F2DB56CB}</id>
+							<name>Light-1-Entity</name>
+							<transform>
+								<translation>2.527082, 0.320342, -1.660474, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{900573A4-1E1F-9B4A-908A-7609C4E92063}</id>
+							<name>Coin</name>
+							<transform>
+								<translation>3.067771, 0.679484, 1.674569, 0</translation>
+								<rotation>0, 0.986133, 0, 0.165958</rotation>
+							</transform>
+							<components/>
+							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2F9131E9-0A6A-2F46-B814-9D75B9931160}</id>
+							<name>Coin</name>
+							<transform>
+								<translation>4.757711, 0.679484, 2.145755, 0</translation>
+								<rotation>0, 0.753958, 0, 0.656922</rotation>
+							</transform>
+							<components/>
+							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{603323F6-D278-C74A-9BC8-9573DBF45AFB}</id>
+							<name>Coin</name>
+							<transform>
+								<translation>4.989757, 0.679484, 3.748882, 0</translation>
+								<rotation>0, 0.608419, 0, 0.793616</rotation>
+							</transform>
+							<components/>
+							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{43EF70CB-0C87-D84D-9E93-844083F5B8D7}</id>
+							<name>Coin</name>
+							<transform>
+								<translation>6.731777, 0.679484, 4.200487, 0</translation>
+								<rotation>0, -0.310703, 0, 0.950507</rotation>
+							</transform>
+							<components/>
+							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{28DB2261-9942-DA43-A608-CB41637D07B4}</id>
+							<name>Spawn</name>
+							<transform>
+								<translation>0.749096, 0.391654, -1.967252, 0</translation>
+								<rotation>0, 0.342898, 0, 0.939373</rotation>
+							</transform>
+							<components/>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{01C7A2FA-D5D1-E240-8E19-3A532B88D294}</id>
+			<name>Surrounding</name>
+			<transform>
+				<translation>-0.570497, -0.026882, -3.67024, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{DBE9486B-4F62-5B48-A93A-9B5191F5C10E}</id>
+							<name>Surrounding - 1</name>
+							<transform>
+								<translation>-0.82788, 0, -1.943392, 0</translation>
+								<rotation>0, 0.227978, 0, 0.973666</rotation>
+							</transform>
+							<components/>
+							<entityData>{BE877BB6-19AD-DE49-82D6-7654BF778E93}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+	</layers>
+	<controllerData/>
+	<operationData/>
+</object>

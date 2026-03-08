@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{6FD21F2F-35B3-AE4B-AAB1-B01B8DCFD6E6}
+#using \{B586EC62-0C63-E64F-A60E-557742D64FA9}
+#using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
+#using \{869E9D1D-5C06-3E40-B354-436457E08ACB}
+#using \{E1DB03BB-0A19-D043-B436-C8257AB90C66}
+#using \{590BFC89-3CED-304C-A2D8-8D77F840324F}
+#using \{9C79AD2E-7F1C-B949-BF7B-31BFD4585A70}
+
+import(traktor)
+
+Game = Game or class("Game", Stage)
+
+Game.BALL_RADIUS = 0.095
+
+function Game:new(params, environment)
+	Stage.new(self, params, environment)
+
+	self._params = params
+	environment.control.pause = false
+
+	-- Get save game.
+	self._save = environment.online.sessionManager.saveData:getNow("SAVE")
+	assert(self._save ~= nil)
+
+	self._bestTime = 0
+	local lv = self._save:getProperty("LEVEL_" .. self._params.level)
+	if lv ~= nil then
+		self._bestTime = lv:getProperty("BEST_TIME")
+	end
+
+	-- Save input mapping in member for quick access.
+	self._inputMapping = environment.input.inputMapping
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{4B72718F-9CD5-5D40-8A5E-21A185CC6DF8}", "\{8A4F82EA-80AF-0A41-8AE0-2E2140D47D6B}" }
+	)
+	setupStyles()
+
+	-- Create UI frame with virtual aspect ratio of 9:16 since
+	-- it's the most common mobile aspect ratio.
+	local k < const > = 60
+	local root = self.ui.root
+	self._frame = Frame(
+		root,
+		9 * k, 16 * k,
+		FloodLayout()
+	)
+	self._flipBoard = Flipboard(self._frame)
+
+	-- HUD
+	self._hudView = HudView(self._flipBoard)
+	self._hudView:showBestTime(self._bestTime)
+	self._hudView._buttonOptions:setOnClick(function()
+		self._flipBoard:showPage("MENU")
+	end)
+
+	-- MENU
+	self._menuView = MenuView(self._flipBoard)
+	self._menuView._buttonMenu:setOnClick(function()
+		if self._loader == nil then
+			self._loader = self:loadStageAsync("MAIN", nil)
+		end
+	end)
+	self._menuView._buttonNext:setOnClick(function()
+		self._flipBoard:showPage("HUD")
+	end)
+	self._menuView._buttonAgain:setOnClick(function()
+		self:_restart()
+	end)
+
+	-- FINISHED
+	self._finishedView = FinishedView(self._flipBoard)
+	self._finishedView._buttonMenu:setOnClick(function()
+		if self._loader == nil then
+			self._loader = self:loadStageAsync("MAIN", nil)
+		end
+	end)
+	self._finishedView._buttonAgain:setOnClick(function()
+		self:_restart()
+	end)
+	self._finishedView._buttonPlay:setOnClick(function()
+		if self._loader == nil then
+			self._loader = self:loadStageAsync("NEXT", { level = params.level + 1 } )
+		end
+	end)
+
+	-- AIM
+	self._aim = Aim(self._frame)
+
+	-- Ensure layout is updated.
+	self._flipBoard:showPage("HUD")
+	self._frame:update()
+
+	-- Setup tweens.
+	self._tweenTimeScale = Tween(
+		environment.control.timeScale,
+		environment.control.timeScale,
+		0.5,
+		function (v, e)
+			environment.control.timeScale = v
+		end
+	)
+
+	-- Spawn ball entity.
+	local spawnEntity = self.world:getEntity("Spawn")
+	assert(spawnEntity ~= nil)
+
+	-- Place ball onto court surface.
+	local filter = physics.QueryFilter(-1)
+	local r = environment.physics.physicsManager:queryRay(
+		spawnEntity.transform.translation + Vector4(0, 4, 0),
+		Vector4(0, -1, 0),
+		8,
+		filter,
+		false
+	)
+
+	local balls < const > =
+	{
+		Guid("\{2363D18D-C1E6-1C4E-93F0-2FA2B393F19F}"),
+		Guid("\{682DEBE2-4A5C-A640-9FBA-28490EC66EAB}"),
+		Guid("\{2B323FA4-F45F-5647-9927-AF45441E4FF7}")
+	}
+
+	local ballEntityData = environment.resource.resourceManager:bind(world.EntityData, balls[math.random(1, #balls)])
+	assert(ballEntityData ~= nil)
+
+	local ballEntity = environment.world.entityBuilder:create(ballEntityData:get())
+	assert(ballEntity ~= nil)
+
+	if r ~= nil then
+		ballEntity.transform = r.position + Vector4(0, Game.BALL_RADIUS, 0)
+	else
+		ballEntity.transform = spawnEntity.transform
+	end
+	self.world:addEntity(ballEntity)
+
+	-- Ball is initially inactive so it doesn't drift from start.
+	ballEntity:getComponent(physics.RigidBodyComponent).body.active = false
+
+	-- Capture initial state of Ball.
+	self._ballEntity = ballEntity
+	self._ballOrigin = self._ballEntity.transform
+	self._ballLastImpulse = nil
+	self._ballLastActive = false
+
+	self._strikeCount = 0
+	self._coinCount = 0
+	self._coinInRow = 0
+	self._time = 0
+	self._finished = false
+
+	self._coinEntities = self.world:getEntities("Coin")
+	self._goalEntities = self.world:getEntities("Goal")
+	self._pileEntities = self.world:getEntities("CubePile")
+	self._logicEntities = self.world:getEntities("Logic")
+
+	self._camera = Camera(
+		self.world:getEntity("Camera"),
+		self._ballEntity,
+		self._goalEntities
+	)
+	self._cameraHintDirection = nil
+end
+
+function Game:finalize()
+	self._frame:remove()
+	self._frame = nil
+end
+
+function Game:update(info)
+	local rb = self._ballEntity:getComponent(physics.RigidBodyComponent)
+	local ballVelocity = rb.body.linearVelocity
+	local ballPosition = self._ballEntity.transform.translation.xyz1
+	local ballPositionScreen = self.world:worldToScreen(ballPosition)
+
+	-- Check if stage loader is finished.
+	if self._loader ~= nil then
+		if self._loader.ready and self._loader.succeeded then
+			self:gotoStage(self._loader:get())
+		end
+	end
+
+	local cameraAimEnable = true
+
+	if self._loader == nil and not self._finished then
+
+		-- Rotate camera around ball.
+		if self._cameraMoveOrigin ~= nil and ballPositionScreen ~= nil then
+			local nx = self._inputMapping:getStateValue("STATE_X")
+			local ny = self._inputMapping:getStateValue("STATE_Y")
+	
+			local n0 = Vector2(nx * 2 - 1, 1 - ny * 2)
+			local d0 = (n0 - ballPositionScreen):normalized()
+	
+			local n1 = self._cameraMoveOrigin
+			local d1 = (n1 - ballPositionScreen):normalized()
+	
+			local a0 = math.atan(d0.y, d0.x)
+			local a1 = math.atan(d1.y, d1.x)
+			local da = angleDifference(a1, a0)
+
+			self._camera:rotate(da)
+			self._cameraMoveOrigin = n0
+
+			-- Do not enable camera aim assistant during camera pivot.
+			cameraAimEnable = false
+		end
+	
+		-- Track aiming.
+		self._aimTarget = nil
+		self._aimDirection = nil
+		if self._aimOrigin ~= nil then
+			local nx = self._inputMapping:getStateValue("STATE_X")
+			local ny = self._inputMapping:getStateValue("STATE_Y")
+			local n = Vector2(nx * 2 - 1, 1 - ny * 2)
+			local r = self.world:screenToWorld(n)
+		
+			local pl = Plane(Vector4(0, 1, 0), ballPosition)
+			local isect = pl:intersectRay(r.origin, r.direction)
+			if isect ~= nil then
+				self._aimTarget = isect
+				local threshold = 0.35
+				local direction = self._aimTarget - ballPosition
+				local ln = direction.length
+				if ln > threshold then
+					ln = ln - threshold
+					if ln > 0.5 then ln = 0.5 end
+					direction = direction:normalized() * ln
+					self._aimDirection = direction
+				end
+			end
+
+			-- Do not enable camera aim assistant while aiming.
+			cameraAimEnable = false
+		end
+		
+		-- Update aim guide.
+		if ballPositionScreen ~= nil then
+			if self._aimDirection == nil then
+				self._aim:showTracking(ballPositionScreen.x, ballPositionScreen.y)
+		
+				self._prediction = nil
+				self._predictionTime = 1
+		
+			else
+				local nx = self._inputMapping:getStateValue("STATE_X")
+				local ny = self._inputMapping:getStateValue("STATE_Y")
+				local vt = Vector2(nx * 2 - 1, 1 - ny * 2)
+		
+				-- Record a prediction.
+				if self._predictionTime <= 0 then
+					self._prediction = self._ballEntity:getComponent(world.ScriptComponent):tracePrediction(self._aimDirection:neg() * 20, 1)
+					self._predictionTime = 1
+				end
+		
+				local ballPrediction = nil
+				local ballPredictionScreen = nil
+		
+				if self._prediction ~= nil then
+					local idx = math.floor((1 - self._predictionTime) * (#self._prediction - 1))
+					ballPrediction = self._prediction[idx]
+					ballPredictionScreen = self.world:worldToScreen(ballPrediction)
+				end
+		
+				if ballPredictionScreen == nil then
+					ballPredictionScreen = ballPositionScreen
+				end
+		
+				self._aim:showAiming(
+					ballPositionScreen.x, ballPositionScreen.y,
+					vt.x, vt.y,
+					ballPredictionScreen.x, ballPredictionScreen.y, self._predictionTime,
+					self._aimDirection.length / 0.5
+				)
+		
+				local dT < const > = (info.simulationDeltaTime / environment.control.timeScale) * 2
+				self._predictionTime = self._predictionTime - dT
+			end
+		end
+
+		-- Process input.
+		if self._inputMapping:isStatePressed("STATE_SELECT") then
+			local nx = self._inputMapping:getStateValue("STATE_X")
+			local ny = self._inputMapping:getStateValue("STATE_Y")
+			local n = Vector2(nx * 2 - 1, 1 - ny * 2)
+			local r = self.world:screenToWorld(n)
+		
+			if not environment.control.pause then
+				local sp = Sphere(ballPosition, 0.25)
+				if sp:intersectRay(r.origin, r.direction) >= 0 then
+					local pl = Plane(Vector4(0, 1, 0), ballPosition)
+					local isect = pl:intersectRay(r.origin, r.direction)
+					if isect ~= nil then
+						self._aimOrigin = isect
+					end
+				else
+					self._cameraMoveOrigin = n
+				end
+			else
+				self._cameraMoveOrigin = n
+			end
+	
+			-- Enter slow motion if ball is moving and player tries to aim.
+			if ballVelocity.length > 0.25 and self._aimOrigin ~= nil then
+				self._tweenTimeScale:continueTo(0.1, 0.5)
+				self.song:tweenParameter("Tempo", 0, 1)
+			end
+	
+		elseif self._inputMapping:isStateReleased("STATE_SELECT") then
+			self._cameraMoveOrigin = nil
+			if self._aimOrigin ~= nil and self._aimDirection ~= nil then
+			
+				local impulseVelocity < const > = self._aimDirection:neg() * 20
+	
+				-- Apply impulse on ball.
+				rb.body.active = true
+				rb.body.linearVelocity = impulseVelocity
+				rb.body.angularVelocity = Vector4.zero
+	
+				self._ballLastImpulse = impulseVelocity
+				ballVelocity = impulseVelocity
+			
+				-- Issue strike event.
+				local ec = self._ballEntity:getComponent(world.EventSetComponent)
+				ec:raise("strike")
+		
+				-- Increment strike count, do not increment while in slowmotion so
+				-- player can chain up "hole in one".
+				if not self:_inSlowMotion() then
+					self._strikeCount = self._strikeCount + 1
+				end
+
+				self._aimOrigin = nil
+				self._aimTarget = nil
+				self._aimDirection = nil
+			end
+	
+			self._tweenTimeScale:continueTo(1, 0.2)
+			self.song:tweenParameter("Tempo", 1, 1)
+		end
+	end
+
+	-- Check if player has become stationary.
+	if self._ballLastActive and not rb.body.active then
+		if self._coinInRow > 1 then
+			self._hudView:showMessage(
+				"NICE!",
+				self._coinInRow .. " COINS IN A ROW"
+			)
+		end
+		self._coinInRow = 0
+		self._ballLastImpulse = nil
+	end
+	self._ballLastActive = rb.body.active
+
+	-- Calculate camera transformations.
+	self._camera:update(
+		info.simulationTime,
+		info.simulationDeltaTime,
+		self._cameraHintDirection,
+		self._ballLastImpulse,
+		cameraAimEnable,
+		self._finished
+	)
+	self._cameraHintDirection = nil
+
+	-- Update HUD elements.
+	self._hudView:showStats(
+		self._strikeCount,
+		self._time,
+		ballVelocity.length,
+		self._coinCount,
+		self._coinEntities.size
+	)
+
+	-- Increment time only after first strike.
+	if not environment.control.pause and self._strikeCount > 0 and not self._finished then
+		self._time = self._time + info.simulationDeltaTime
+	end
+
+	-- Need to compensate for time scale to get "true" delta.
+	local dT < const > = info.simulationDeltaTime / environment.control.timeScale
+	Tween.update(dT)
+	Interval.update(dT)
+end
+
+function Game:setup(info)
+	local igcx < const > = self.world.worldRenderer.imageGraphContext
+	if not self._finished then
+		-- Calculate exact transform of ball mesh in order
+		-- to place HUD element correctly from interpolated frames.
+		local mb = self._ballEntity:getComponent(mesh.MeshComponent)
+	
+		local T0 = mb.transform:get(0)
+		local T1 = mb.transform:get(1)
+		local T = mb.transform:get(info.interval)
+	
+		local ballPosition = T.translation.xyz1
+		local ballPositionScreen = self.world:worldToScreen(ballPosition) or Vector2(0, 0)
+		self._aim:showBall(ballPositionScreen.x, ballPositionScreen.y)
+
+		-- Update post processing effect.
+	else
+		self._aim:hide()
+	end
+end
+
+function Game:reconfigured()
+	self._cameraEntity = self.world:getEntity("Camera")
+	self._coinEntities = self.world:getEntities("Coin")
+	self._goalEntities = self.world:getEntities("Goal")
+	self._pileEntities = self.world:getEntities("CubePile")
+	self._logicEntities = self.world:getEntities("Logic")
+end
+
+function Game:suspend()
+	-- About to become suspended; pause game by showing menu.
+	self._flipBoard:showPage("MENU")
+end
+
+function Game:resume()
+end
+
+function Game:pickedCoin()
+	self._coinCount = self._coinCount + 1
+	self._coinInRow = self._coinInRow + 1
+end
+
+function Game:instantDeath()
+	self:_restart()
+end
+
+function Game:victory()
+	if not self._finished then
+
+		-- Issue hole event of ball.
+		local ec = self._ballEntity:getComponent(world.EventSetComponent)
+		ec:raise("hole")
+
+		self._flipBoard:showPage("FINISHED")
+		self._finished = true
+
+		-- Ensure no slowmotion.
+		self._tweenTimeScale:continueTo(1, 0.2)
+		self.song:setParameter("Tempo", 1)
+
+		local bestScore = false
+		local bestTime = false
+
+		local lv = self._save:getProperty("LEVEL_" .. self._params.level)
+		if lv ~= nil then
+			bestScore = self._strikeCount < lv:getProperty("BEST_SCORE")
+			bestTime = self._time < lv:getProperty("BEST_TIME")
+		else
+			lv = PropertyGroup()
+			lv:setProperty("BEST_SCORE", self._strikeCount)
+			lv:setProperty("BEST_TIME", self._time)
+		end
+
+		local a = 0
+		if bestTime then a = a | FinishedView.ACH_BEST_TIME end
+		if self._strikeCount <= 1 then a = a | FinishedView.ACH_HOLE_IN_ONE end
+		self._finishedView:showAchievements(a)
+
+		if bestScore then
+			lv:setProperty("BEST_SCORE", self._strikeCount)
+		end
+		if bestTime then
+			lv:setProperty("BEST_TIME", self._time)
+		end
+
+		local goals = lv:getProperty("GOALS") or 0
+		lv:setProperty("GOALS", goals + 1)
+
+		self._save:setProperty("LEVEL_" .. self._params.level, lv)
+
+		-- Add picked up coins to life-time total.
+		local totalCoins = self._save:getProperty("COINS") or 0
+		totalCoins = totalCoins + self._coinCount
+		self._save:setProperty("COINS", totalCoins)
+
+		-- Award achievement if enought coins collected.
+		if totalCoins >= 100 then
+			local ach = environment.online.sessionManager.achievements
+			if ach ~= nil then
+				ach:set("ACH_WEALTHY", true)
+			end
+		end
+
+		-- Save updated save data.
+		environment.online.sessionManager.saveData:set("SAVE", "", "", self._save, true)
+	end
+end
+
+function Game:setCameraHint(cameraHintDirection)
+	self._cameraHintDirection = cameraHintDirection
+	self._ballLastImpulse = cameraHintDirection
+end
+
+-- private
+
+function Game:_restart()
+	-- Reset ball.
+	self._ballEntity.transform = self._ballOrigin
+	self._ballEntity:getComponent(world.ScriptComponent):reset()
+
+	self._ballLastImpulse = nil
+	self._ballLastActive = false
+
+	self._strikeCount = 0
+	self._coinCount = 0
+	self._time = 0
+	self._finished = false
+
+	self._camera:reset()
+
+	-- Reset coints.
+	for _, coinEntity in pairs(self._coinEntities) do
+		coinEntity:getComponent(world.ScriptComponent):reset()
+	end
+
+	-- Reset piles.
+	for _, pileEntity in pairs(self._pileEntities) do
+		pileEntity:getComponent(world.ScriptComponent):reset()
+	end
+
+	-- Reset goals.
+	for _, goalEntity in pairs(self._goalEntities) do
+		goalEntity:getComponent(world.ScriptComponent):reset()
+	end
+
+	-- Reset logic.
+	for _, logicEntity in pairs(self._logicEntities) do
+		logicEntity:getComponent(world.ScriptComponent):reset()
+	end
+
+	self._flipBoard:showPage("HUD")
+end
+
+function Game:_inSlowMotion()
+	return environment.control.timeScale < 1
+end
+
+	]]>
+	</text>
+</object>

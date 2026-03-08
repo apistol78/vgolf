@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+MenuView = MenuView or class("MenuView", Container)
+
+MenuView.__flipboardId = "MENU"
+
+function MenuView:new(parent)
+	Container.new(self, parent, FloodLayout(0, 0))
+
+	local ct1 = Container(self, TableLayout({ 100 }, { 0 }, 0, 64, 0, 32))
+		:setVerticalAlign(Widget.ALIGN_BOTTOM)
+
+	Static(ct1, "Menu")
+		:setTextSize(60)
+		:setTextDropShadowColor(Color4f(0, 0, 0, 0.4))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	local ct2 = Container(ct1, TableLayout({ 0, 0, 0}, { 0 }, 0, 0, 40, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonMenu = Button(ct2, "MC_Icon_Home")
+	self._buttonNext = Button(ct2, "MC_Icon_Next")
+	self._buttonAgain = Button(ct2, "MC_Icon_Again")
+end
+
+
+	]]>
+	</text>
+</object>

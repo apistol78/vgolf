@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{2F7766F9-85C7-4E23-9BFA-77BE3C34DDFA}</id>
+	<name>Court-7</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{43CA164D-F082-5348-B4C9-33E0FB9F6AE5}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{183898EB-9F14-314B-9992-AD81C7DF614C}</mesh>
+				</shape>
+				<friction>0</friction>
+				<restitution>1</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+	</components>
+</object>

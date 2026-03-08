@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{A26B3D73-F7D7-0143-9A5A-C8C8328A01BF}</id>
+	<name>CubePile</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{56E8895E-98D0-7942-B8BF-EE3C7760A0BB}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.206288, 0.433903, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{B73E354B-5BB8-294F-BC8A-67F2A9F431D8}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.206288, 0.127554, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{C17E9EC9-DA75-A241-BAB3-BBD89DEDBE23}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.206288, -0.189093, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{147D5B5A-7D17-7F4E-8040-5B72A1404E04}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.206288, -0.495096, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{262F77A8-9278-2242-AF96-70B8407FB6AE}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.516092, 0.28603, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{A09FD55D-564A-CC4B-9AA1-27242DB5C6EA}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.516092, -0.020319, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{542FD0D2-3824-CB4C-B52E-7AAC3D018528}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.516092, -0.336966, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{1752D5F0-561E-6E49-BE98-936C8E9EFFC1}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.821989, 0.127554, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{DE5F31F5-A54B-2C48-901E-4AECEF94B7E0}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 0.821989, -0.189093, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{FEA8B968-7FDA-1846-8667-59FAFEF8D7BB}</id>
+					<name>Small Cube-Entity</name>
+					<transform>
+						<translation>0, 1.128056, -0.020319, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{CDDEE487-6999-C74C-A8FD-A84B284E79ED}</entityData>
+				</item>
+			</entityData>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="1">
+			<class>{8714EE9E-5FE7-F74E-92CC-39C01ED0446B}</class>
+			<editorSupport>false</editorSupport>
+		</item>
+	</components>
+</object>

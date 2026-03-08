@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="21">
+	<fileName>Props/Grinder.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>Grinder_D</first>
+			<second>{BE80B2DB-EF97-4F44-8714-B12627FCC4B9}</second>
+		</item>
+		<item>
+			<first>Grinder_R</first>
+			<second>{1B0F2E0A-6151-3F41-A49A-7C739849064A}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<grounded>false</grounded>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>2.136283</previewAngle>
+</object>

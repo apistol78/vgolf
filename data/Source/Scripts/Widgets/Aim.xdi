@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+Aim = Aim or class("Aim", Widget)
+
+function Aim:new(parent)
+	local mc = Widget._createEmptyResource(parent)
+	self:_initialize(parent, mc)
+end
+
+function Aim:getPreferredSize()
+	return { width = 1, height = 1 }
+end
+
+function Aim:hide()
+	local mc = self._tracking_mc
+	mc.visible = false
+	local mc = self._aim_mc
+	mc.visible = false
+	local mc = self._direction_mc
+	mc.visible = false
+end
+
+function Aim:showBall(x, y)
+	local p = self:getParent():getPlacement()
+	local hpw < const > = p.width / 2
+	local hph < const > = p.height / 2
+
+	local mc = self._tracking_mc
+	mc.X = x * hpw + hpw
+	mc.Y = -y * hph + hph
+	mc.visible = true
+end
+
+function Aim:showTracking(x, y)
+	local mc = self._prediction_mc
+	mc.visible = false
+	local mc = self._aim_mc
+	mc.visible = false
+	local mc = self._direction_mc
+	mc.visible = false
+end
+
+function Aim:showAiming(x, y, xm, ym, xp, yp, predictionAlpha, scale)
+	local p = self:getParent():getPlacement()
+	local hpw < const > = p.width / 2
+	local hph < const > = p.height / 2
+
+	local mc = self._prediction_mc
+	mc.X = xp * p.width / 2 + p.width / 2
+	mc.Y = -yp * p.height / 2 + p.height / 2
+	mc.alpha = predictionAlpha
+	mc.visible = true
+
+	local mc = self._aim_mc
+	mc.X = xm * hpw + hpw
+	mc.Y = -ym * hph + hph
+	mc.visible = true
+
+	local dx = (xm - x) * hpw
+	local dy = (ym - y) * hph
+	local d = Vector2(dx, dy):normalized()
+	local angle = math.atan(-d.y, d.x)
+
+	local offset = 30
+	local mc = self._direction_mc
+	mc.X = x * hpw + hpw - math.cos(angle) * offset
+	mc.Y = -y * hph + hph - math.sin(angle) * offset
+	mc.rotation = (angle / 3.14) * 180 - 90
+	mc.visible = true
+	mc.xScale = scale * 200
+	mc.yScale = scale * 200
+end
+
+-- private
+
+function Aim:_initialize(parent, mc)
+	Widget._initialize(self, parent, mc)
+
+	self._tracking_mc = Widget._createResource(self, "MC_Aim")
+	assert(self._tracking_mc ~= nil)
+
+	self._prediction_mc = Widget._createResource(self, "MC_Prediction")
+	assert(self._prediction_mc ~= nil)
+
+	self._aim_mc = Widget._createResource(self, "MC_Aim")
+	assert(self._aim_mc ~= nil)
+
+	self._direction_mc = Widget._createResource(self, "MC_Direction")
+	assert(self._direction_mc ~= nil)
+
+	self.__layout = ILayout.FLOAT
+end
+	]]>
+	</text>
+</object>

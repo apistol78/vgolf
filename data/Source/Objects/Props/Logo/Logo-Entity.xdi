@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{92F4C0AA-9BC5-BA44-8359-18B459EDC1EC}</id>
+	<name>Logo</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{B51BB9CA-501D-DF44-8311-4B4D614DA800}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.animation.PendulumComponentData">
+			<axis>X</axis>
+			<pivot>0, 2.5, 0, 1</pivot>
+			<amplitude>0.1</amplitude>
+			<rate>2</rate>
+		</item>
+	</components>
+</object>

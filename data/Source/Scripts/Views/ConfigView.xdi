@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+ConfigView = ConfigView or class("ConfigView", Container)
+
+ConfigView.__flipboardId = "CONFIG"
+
+function ConfigView:new(parent, model)
+	Container.new(self, parent, TableLayout({ 100 }, { 0, 0 }, 16, 16, 0, 30))
+	self:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	local ct = Panel(self, TableLayout({ 0, 100 }, { 0 }, 25, 40, 16, 32))
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	Static(ct, "Music Volume")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	Slider(ct)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setRange(0, 100)
+		:setPosition(model.musicVolume, true)
+		:setOnScroll(function(slider, position) model.musicVolume = position end)
+
+	Static(ct, "SFX Volume")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	Slider(ct)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setRange(0, 100)
+		:setPosition(model.effectVolume, true)
+		:setOnScroll(function(slider, position) model.effectVolume = position end)
+
+	Static(ct, "Pitch FX")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	CheckBox(ct)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setChecked(model.pitchFx)
+		:setOnClick(function(cb) model.pitchFx = cb:isChecked() end)
+
+	Static(ct, "Camera Assistant")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+	CheckBox(ct)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setChecked(model.cameraAim ~= 0)
+		:setOnClick(function(cb) model.cameraAim = cb:isChecked() end)
+
+	local ct = Container(self, TableLayout({ 0, 0 }, { 0 }, 0, 0, 20, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	Button(ct, "MC_Icon_Home")
+		:setOnClick(function() self._applyFn() end)
+	Button(ct, "MC_Icon_Leave")
+		:setOnClick(function() self._cancelFn() end)
+
+	self._cancelFn = function() end
+	self._applyFn = function() end
+end
+
+function ConfigView:setOnCancel(cancelFn)
+	self._cancelFn = cancelFn
+	return self
+end
+
+function ConfigView:setOnApply(applyFn)
+	self._applyFn = applyFn
+	return self
+end
+
+	]]>
+	</text>
+</object>

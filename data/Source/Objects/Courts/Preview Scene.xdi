@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.scene.SceneAsset" version="8">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="35">
+		<viewNearZ>0.1</viewNearZ>
+		<viewFarZ>10000</viewFarZ>
+		<exposureMode>EmFixed</exposureMode>
+		<exposure>0</exposure>
+		<shadowSettings>
+			<disabled>
+				<projection>SpUniform</projection>
+				<farZ>0</farZ>
+				<resolution>128</resolution>
+				<bias>0</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</disabled>
+			<low>
+				<projection>SpUniform</projection>
+				<farZ>70</farZ>
+				<resolution>512</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>2</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</low>
+			<medium>
+				<projection>SpUniform</projection>
+				<farZ>80</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>2</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</medium>
+			<high>
+				<projection>SpUniform</projection>
+				<farZ>120</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>2</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</high>
+			<ultra>
+				<projection>SpUniform</projection>
+				<farZ>140</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>3</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</ultra>
+		</shadowSettings>
+		<fog>false</fog>
+		<fogDistance>90</fogDistance>
+		<fogDensity>0</fogDensity>
+		<fogColor>1, 1, 1, 1</fogColor>
+		<irradianceGrid>{6CBAE4B1-7E14-FC44-8F46-4F39D9A6DE84}</irradianceGrid>
+		<imageProcess>
+			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<medium>{00000000-0000-0000-0000-000000000000}</medium>
+			<high>{00000000-0000-0000-0000-000000000000}</high>
+			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
+		</imageProcess>
+	</worldRenderSettings>
+	<imageProcessParams/>
+	<layers>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{804B1EEA-DB34-2D4A-A981-FD5B0066A7AC}</id>
+			<name>Environment</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9F21840B-1822-9C40-A8B1-8F9DB105457E}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="2">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{6B82B195-D88E-7845-BDC3-AF813E924CE1}</texture>
+									<offset>0</offset>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{76A7B306-20B9-B640-A5E6-51A65CEAAFA8}</id>
+							<name>Light</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>-0.391854, -0.323839, -0.149635, 0.84805</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="10">
+									<lightType>LtDirectional</lightType>
+									<color>1, 0.976471, 0.952941, 0</color>
+									<intensity>1</intensity>
+									<castShadow>true</castShadow>
+									<range>20</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{4E166A3B-CE85-0145-A7C4-3040B3AB0BC7}</id>
+							<name>Reflections</name>
+							<transform>
+								<translation>0, 10, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ProbeComponentData">
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+									<local>false</local>
+									<volume>
+										<mn>0, 0, 0, 1</mn>
+										<mx>0, 0, 0, 1</mx>
+									</volume>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>true</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{C7DDFFFA-FF6C-8242-AC5C-AB13A2411DA9}</id>
+			<name>Entity</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{7B7B1324-FE86-5D43-AE6B-5187816084D4}</id>
+							<name>Court-1-Entity</name>
+							<transform>
+								<translation>-64, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{C5C67188-41FE-3747-8225-20CF05B615A1}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{9EB8096F-52BD-8347-9BFE-5698F4F60830}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{E9A82C3B-50F0-B549-A8AC-E73275AF9DEC}</id>
+							<name>Court-10-Entity</name>
+							<transform>
+								<translation>-32, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{7D9D2134-14ED-184B-A7FF-E54574FA5E97}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{3A65FCA3-A442-E84F-9286-DF01BF31EF8C}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{220D6F50-B8A7-B047-B96F-6973D0D08A88}</id>
+							<name>Court-11-Entity</name>
+							<transform>
+								<translation>0, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{B0FC978B-FB17-6049-B718-37C2C6EF9270}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{206D6000-7C85-6A47-B24D-DEAC7AF4FDC1}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{30D3E89C-3117-4747-BDFD-75674AE122FA}</id>
+							<name>Court-12-Entity</name>
+							<transform>
+								<translation>32, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{40214E37-261C-334E-B0E7-97078DFE5321}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{0DC3AEA9-EF34-FE44-8941-C84222435464}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9585254A-23AB-BE40-9C38-3C6FFEF7532C}</id>
+							<name>Court-13-Entity</name>
+							<transform>
+								<translation>-64, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{4541E8FB-27D7-8840-9BA1-E7B1820F5AC7}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{FB4263FF-01A5-2044-9E15-F82FAA4B82A8}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{1C4B2EA6-8EBC-7E47-8B05-B90865AEE017}</id>
+							<name>Court-14-Entity</name>
+							<transform>
+								<translation>-32, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{4B598B5D-17D1-334E-9CD3-8FA8486275AE}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{70059FE1-289B-AC41-91B7-98847DC57062}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{CE018918-F263-474E-9EE9-AC47AC9801FB}</id>
+							<name>Court-15-Entity</name>
+							<transform>
+								<translation>0, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{F76ABEBA-9B4E-7D41-8BA3-9C3CBFB39B96}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{FC147DCC-E51E-AD44-A235-FE13D5D2E21A}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B0B67F72-0C59-9044-B599-A53D22EC76D3}</id>
+							<name>Court-16-Entity</name>
+							<transform>
+								<translation>32, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{0CD91FF9-FCEA-BB4A-8C5A-FF076E33214D}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{0A1ADE56-D0E8-3E42-80C0-67A78C618A8C}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9C44C3FF-BCEA-234C-BEF1-D22A0CCDDD60}</id>
+							<name>Court-17-Entity</name>
+							<transform>
+								<translation>-64, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{7079F0A2-9D2B-B74F-A673-739FA22EA100}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{7B211423-459A-BD40-8FF9-B03A1743EB5B}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0F0D3CE9-B190-4B82-B200-E44A17374ACD}</id>
+							<name>Court-18-Entity</name>
+							<transform>
+								<translation>-32, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{B15D7F0B-0CB2-4DF6-B3C7-C83A38964452}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{A315BCA9-81C4-4A8E-9633-ECFDDBC2E1ED}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{ABAA432F-E4AF-0D40-BBB3-7FFA9D127DE1}</id>
+							<name>Court-19-Entity</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{30FEB186-0994-E549-A2EA-4CD24E4C116E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{C95F7B25-B68E-C049-BD21-D249E5B109A0}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{36496BD6-DF5A-B64C-A638-4623C35B40F4}</id>
+											<name>Grinder-Entity</name>
+											<transform>
+												<translation>-0.35094, 0.057211, 1.032142, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>false</locked>
+													<include>true</include>
+													<dynamic>true</dynamic>
+												</item>
+												<item type="traktor.animation.RotatorComponentData">
+													<axis>Z</axis>
+													<rate>-2</rate>
+												</item>
+											</components>
+											<entityData>{1B061358-E1F2-FF45-B0AC-5285D0180700}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{5BF567DB-4C4A-D24A-AB85-FB87AA595FA4}</id>
+											<name>Grinder-Entity</name>
+											<transform>
+												<translation>0.324449, 0.057211, 1.032142, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>false</locked>
+													<include>true</include>
+													<dynamic>true</dynamic>
+												</item>
+												<item type="traktor.animation.RotatorComponentData">
+													<axis>Z</axis>
+													<rate>2</rate>
+												</item>
+											</components>
+											<entityData>{1B061358-E1F2-FF45-B0AC-5285D0180700}</entityData>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{D25A81D6-E370-AA46-B5AD-2A48F4F3A6A1}</id>
+											<name>Death</name>
+											<transform>
+												<translation>0, 0, 1, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.VolumeComponentData">
+													<volumes>
+														<item>
+															<mn>-0.6, -1, -1.5, 1</mn>
+															<mx>0.6, 0, 1.5, 1</mx>
+														</item>
+													</volumes>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{D4C92EA8-A976-024D-9A62-3B0ED9D645AA}</id>
+							<name>Court-2-Entity</name>
+							<transform>
+								<translation>32, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{7BCC6238-3109-E646-ABD2-5EE204C78D87}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{8196D6D8-BAC2-CC48-95B9-77785C328F2E}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{AFCB7600-1C7D-9941-8689-A27C29A6E9AF}</id>
+							<name>Court-20-Entity</name>
+							<transform>
+								<translation>-64, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{539BCEE6-68AC-0442-AB47-29BC72986ABC}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{9A8E3A0F-C85E-9243-A084-3CFAD20D4FD2}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{7F64C7FC-E2BC-D444-8B3E-D55516B29F53}</id>
+							<name>Court-21-Entity</name>
+							<transform>
+								<translation>-32, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{1F09E898-EF17-9F41-9B6E-2D2EA2179599}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{C40BCC84-51BC-1F47-940B-981F10968C79}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F34BB60D-F0E5-0049-AD6C-696751E40699}</id>
+							<name>Court-22-Entity</name>
+							<transform>
+								<translation>0, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{2224B29A-3006-F149-AB6D-6F2D6746C590}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{FABF94CC-20DA-1147-9BE6-4E372D2C8FB8}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>0</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C9F2758D-83BD-F940-B1C1-8FDBCD4642F0}</id>
+							<name>Court-3-Entity</name>
+							<transform>
+								<translation>32, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{E4985CD2-9A56-4B4C-8B6B-EE1F60C5AD23}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{B5CC1978-0D0E-2D46-9B5F-3FEC6A635E98}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{5FA7D10E-BD2A-254C-B92A-5AC86D2C099D}</id>
+							<name>Court-4-Entity</name>
+							<transform>
+								<translation>-64, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{DEA9A317-44F4-D944-BE90-91B4C8BFDFBB}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{82DA4501-CAD6-A446-BC23-E3726EC6FE11}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{D64E78DC-C33D-A043-97FF-4B7778895D91}</id>
+							<name>Court-5-Entity</name>
+							<transform>
+								<translation>-32, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{D33E18A7-89D2-024A-81BC-EBFBB9701664}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{86D64EBB-7F94-9F4B-B8C3-60D4F5DD255D}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{2785B08D-4345-6541-8459-DAFD109FB091}</id>
+							<name>Court-6-Entity</name>
+							<transform>
+								<translation>0, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{461DF99B-323B-FB45-896B-48B9DD9C9FB6}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{3DB6323F-0D92-9946-A1A4-B8A84E7F10CD}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F43B71F3-6DFA-5248-9D32-301FE4A8E65A}</id>
+							<name>Court-7-Entity</name>
+							<transform>
+								<translation>32, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{43CA164D-F082-5348-B4C9-33E0FB9F6AE5}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{183898EB-9F14-314B-9992-AD81C7DF614C}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F541BC22-6AA8-3049-B0E6-E343692BD57E}</id>
+							<name>Court-8-Entity</name>
+							<transform>
+								<translation>-64, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{EA09EC3C-7BB1-884A-8AEA-CFB44BABDE4A}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{3F4C7096-5329-6340-B072-935E14AC648B}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8B9AE6AF-2DF6-A64F-80EB-AE6BD6D14F70}</id>
+							<name>Court-9-Entity</name>
+							<transform>
+								<translation>-32, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{8EF48764-FC75-BA43-AE4A-623BE31615E3}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{40D869D0-B5DF-C74C-B48C-3C89E1E05963}</mesh>
+										</shape>
+										<friction>0</friction>
+										<restitution>1</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{3783CB38-F9D7-4E40-BE1E-D0427B053CE3}</id>
+							<name>Scaffolding-1-Entity</name>
+							<transform>
+								<translation>0, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{3353FBAA-E398-E540-BC9B-5D7938139B63}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>true</dynamic>
+				</item>
+			</components>
+		</item>
+	</layers>
+	<controllerData/>
+	<operationData/>
+</object>

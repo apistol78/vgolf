@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="20">
+	<fileName>Environment/Sand-4.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates>
+		<item>
+			<first>m_sand</first>
+			<second>{FE27552F-2239-9D40-AF60-B87058D6E413}</second>
+		</item>
+	</materialTemplates>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>Cliff Edge</first>
+			<second>{11505A38-CD10-EA44-821C-62E832708A09}</second>
+		</item>
+		<item>
+			<first>Sand</first>
+			<second>{08EA3243-C700-8D4C-ACB9-0E37B8735756}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, -0.01, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

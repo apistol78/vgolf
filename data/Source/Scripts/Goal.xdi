@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+Goal = Goal or class("Goal", traktor.world.ScriptComponent)
+
+function Goal:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+
+	self._ballEntity = nil
+	self._victory = false
+
+end
+
+function Goal:reset()
+	local fc = self.owner:getComponent(world.FacadeComponent)
+	if fc ~= nil then
+		fc:hideAll()
+	end
+
+	self._victory = false
+end
+
+function Goal:update(contextObject, totalTime, deltaTime)
+	-- Must have an update otherwise ScriptComponent will recurse oom.
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	-- Only check first time.
+	if self._victory then
+		return
+	end
+
+	-- Lazy get ball entity.
+	if self._ballEntity == nil then
+		self._ballEntity = contextObject.world:getEntity("Ball")
+		if self._ballEntity == nil then
+			return
+		end
+	end
+
+	-- Check if ball is inside OOB volume.
+	local vc = self.owner:getComponent(traktor.world.VolumeComponent)
+	local pt = self._ballEntity.transform.translation
+	if vc:inside(pt) then
+
+		-- Show victory state.
+		local fc = self.owner:getComponent(world.FacadeComponent)
+		if fc ~= nil then
+			fc:show("Victory")
+		end
+
+		contextObject:victory()
+
+		self._victory = true
+	end
+end
+
+
+	]]>
+	</text>
+</object>

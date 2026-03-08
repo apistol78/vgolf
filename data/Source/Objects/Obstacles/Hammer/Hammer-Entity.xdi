@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{79D95DE2-2F90-414D-BF74-2850B017F9F4}</id>
+	<name>Hammer</name>
+	<transform>
+		<translation>0, 1.847127, -0.297259, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{42C9D45C-413A-EA42-80A5-0B0D37D84818}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{DC8BBC72-DB87-CE4E-BF27-E13097D4B285}</mesh>
+				</shape>
+				<friction>0.75</friction>
+				<restitution>0</restitution>
+				<kinematic>true</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="1">
+			<class>{64D3F4BC-A691-5A4E-9BDD-2EB061D90593}</class>
+			<editorSupport>true</editorSupport>
+		</item>
+	</components>
+</object>

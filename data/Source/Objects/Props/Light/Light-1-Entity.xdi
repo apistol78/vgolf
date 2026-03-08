@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{0BED7C72-DDAF-E34E-80C7-7AA78161487F}</id>
+	<name>PingPong</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{5A5716D8-9268-4F42-B52C-62BCFFEF2349}</id>
+					<name>Mesh</name>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData">
+							<mesh>{3204A66C-9D69-6E43-92C3-0CDA192BFA22}</mesh>
+							<screenSpaceCulling>false</screenSpaceCulling>
+						</item>
+						<item type="traktor.animation.PathComponentData">
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0.5, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>2</T>
+										<tcb>0, 0, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>-0.5, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+							<timeMode>TmPingPong</timeMode>
+							<timeOffset>0</timeOffset>
+						</item>
+						<item type="traktor.world.GroupComponentData">
+							<entityData>
+								<item type="traktor.world.EntityData" version="1">
+									<id>{933248B7-2180-3640-AE4C-FC2854A7960C}</id>
+									<name>Light</name>
+									<transform>
+										<translation>0, 0.524136, 0.262307, 0</translation>
+										<rotation>-0.620876, -0.012418, -0.015674, 0.783654</rotation>
+									</transform>
+									<components>
+										<item type="traktor.world.LightComponentData" version="10">
+											<lightType>LtSpot</lightType>
+											<color>1, 1, 1, 0</color>
+											<intensity>50</intensity>
+											<castShadow>true</castShadow>
+											<range>2</range>
+											<radius>1.120796</radius>
+											<flickerAmount>0.05</flickerAmount>
+											<flickerFilter>0.7</flickerFilter>
+											<bakeMode>LbmDisabled</bakeMode>
+										</item>
+									</components>
+								</item>
+							</entityData>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{C6AB19BE-7CCA-BA47-821B-8481359456FC}</id>
+					<name>Base</name>
+					<transform>
+						<translation>0, -0.319442, 0.078501, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData">
+							<mesh>{433FADB4-7905-E34A-92A4-03FFEBA8CEF6}</mesh>
+							<screenSpaceCulling>false</screenSpaceCulling>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>

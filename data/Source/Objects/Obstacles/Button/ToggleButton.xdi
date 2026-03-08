@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+ToggleButton = ToggleButton or class("ToggleButton", traktor.world.ScriptComponent)
+
+function ToggleButton:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+
+	self._ballEntity = nil
+	self._inside = false
+	self._state = false
+end
+
+function ToggleButton:update(contextObject, totalTime, deltaTime)
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	-- Lazy get entities.
+	if self._ballEntity == nil then
+		self._ballEntity = contextObject.world:getEntity("Ball")
+		assert(self._ballEntity ~= nil)
+	end
+
+	-- Check if ball is inside volume.
+	local vc = self.owner:getComponent(traktor.world.VolumeComponent)
+	local pt = self._ballEntity.transform.translation
+	local inside = vc:inside(pt)
+
+	if inside and not self._inside then
+		self._state = not self._state
+	end
+
+	-- Show button state.
+	local fc = self.owner:getComponent(traktor.world.FacadeComponent)
+	if self._state then
+		fc:showOnly("Down")
+	else
+		fc:showOnly("Up")
+	end
+
+	self._inside = inside
+end
+
+function ToggleButton:isPressed()
+	return self._state
+end
+
+function ToggleButton:reset()
+	self._state = false
+end
+
+
+	]]>
+	</text>
+</object>

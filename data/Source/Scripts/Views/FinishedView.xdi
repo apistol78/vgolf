@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+FinishedView = FinishedView or class("FinishedView", Container)
+
+FinishedView.__flipboardId = "FINISHED"
+
+FinishedView.ACH_BEST_TIME = 0x01
+FinishedView.ACH_HOLE_IN_ONE = 0x02
+FinishedView.ACH_ALL_RINGS = 0x04
+FinishedView.ACH_SHARP_SHOOTER = 0x08
+
+function FinishedView:new(parent)
+	Container.new(self, parent, TableLayout({ 100 }, { 100, 100 }, 10, 0, 0, 0))
+
+	local ct1 = Panel(self, TableLayout({ 100 }, { 0 }, 10, 30, 0, 20))
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	Static(ct1, "Level Complete!")
+		:setTextSize(60)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	local ct2 = Container(ct1, TableLayout( { 0, 0, 0, 0 }, { 0 }, 0, 0, 8, 8))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	local achievements = { 
+		{ image = "MC_Icon_Ach_Thropy", text = "Best Time", mask = FinishedView.ACH_BEST_TIME },
+		{ image = "MC_Icon_Ach_HoleInOne", text = "Hole In One", mask = FinishedView.ACH_HOLE_IN_ONE },
+		{ image = "MC_Icon_Ach_AllCoins", text = "All Coins", mask = FinishedView.ACH_ALL_RINGS },
+		{ image = "MC_Icon_Ach_Thropy", text = "Sharpshooter", mask = FinishedView.ACH_SHARP_SHOOTER },
+	}
+	self._achievements = {}
+	for _, ach in ipairs(achievements) do
+		local ct = Container(ct2, TableLayout({ 0 }, { 0, 0 }, 0, 0, 0, 8))
+		Image(ct, ach.image)
+		Static(ct, ach.text)
+			:setHorizontalAlign(Widget.ALIGN_CENTER)
+			:setTextSize(15)
+		ct._mask = ach.mask
+		table.insert(self._achievements, ct)
+	end
+
+	local ct1 = Container(self, TableLayout({ 100 }, { 0 }, 0, 30, 0, 80))
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	local ct2 = Container(ct1, TableLayout({ 0, 0 }, { 0 }, 0, 0, 80, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonMenu = Button(ct2, "MC_Icon_Home")
+	self._buttonAgain = Button(ct2, "MC_Icon_Again")
+
+	local ct2 = Container(ct1, TableLayout({ 0 }, { 0 }, 0, 0, 0, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonPlay = Button(ct2, "MC_Icon_Play")
+end
+
+function FinishedView:showAchievements(ach)
+	for _, ct in ipairs(self._achievements) do
+		if (ach & ct._mask) ~= 0 then
+			ct:setAlpha(1)
+		else
+			ct:setAlpha(0.25)
+		end
+	end
+	return self
+end
+
+	]]>
+	</text>
+</object>

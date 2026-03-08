@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Bumper = Bumper or class("Bumper", traktor.world.ScriptComponent)
+
+function Bumper:new()
+	local rbc = self.owner:getComponent(physics.RigidBodyComponent)
+	rbc.body:addCollisionListener(physics.CollisionListener(function(body1, body2, contacts)
+		self:_collide(body1, body2, contacts)
+	end))
+	self._downTime = 0
+end
+
+function Bumper:update(contextObject, totalTime, deltaTime)
+	if self._downTime > 0 then
+		self._downTime = self._downTime - deltaTime
+		if self._downTime <= 0 then
+--			local fc = self:getComponent(world.FacadeComponent)
+--			fc:showOnly("Up")
+			print("UP")
+		end
+	end
+end
+
+-- private
+
+function Bumper:_collide(body1, body2, contacts)
+	local rbc = self.owner:getComponent(physics.RigidBodyComponent)
+
+	local center = rbc.body.transform.translation
+	local other = body1.transform.translation
+	local direction = ((other - center) * Vector4(1, 0, 1)):normalized()
+
+	-- Calculate collision impact magnitude.
+	local velocity = body1.linearVelocity
+	local impact = direction:dot(velocity)
+	print("IMPACT " .. impact)
+
+	if impact > 0.1 then
+		-- Apply recoil impulse.
+		local magnitude = 2 + math.random() * 0.5
+		body1:addLinearImpulse(direction * magnitude, true)
+
+		-- Spawn effect.
+--		local esc = self:getComponent(world.EventSetComponent)
+--		local evnt = esc:getEvent("Bump")
+--		environment.world.entityEventManager:raise(evnt, self, Transform.identity)
+
+		-- Show down state.
+--		local fc = self:getComponent(world.FacadeComponent)
+--		fc:showOnly("Down")
+		self._downTime = 0.1
+	end
+end
+
+	]]>
+	</text>
+</object>

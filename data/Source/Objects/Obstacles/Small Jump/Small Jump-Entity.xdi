@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{C376D257-6A2B-484B-AC89-EFCDAF31F03A}</id>
+	<name>Small Jump</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{6F363930-4D2D-4BD0-A96B-B04F15633B30}</mesh>
+				</shape>
+				<friction>0.75</friction>
+				<restitution>0</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{2819E953-CC9D-2342-A006-944B337A9A0A}</id>
+					<name>Left</name>
+					<transform>
+						<translation>-0.6, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData">
+							<mesh>{70D66ED4-FD78-4BF8-A2F6-9E4A931E07ED}</mesh>
+							<screenSpaceCulling>false</screenSpaceCulling>
+						</item>
+						<item type="traktor.physics.RigidBodyComponentData">
+							<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+								<shape type="traktor.physics.MeshShapeDesc" version="6">
+									<localTransform>
+										<translation>0, 0, 0, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</localTransform>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+									<material>0</material>
+									<mesh>{6F363930-4D2D-4BD0-A96B-B04F15633B30}</mesh>
+								</shape>
+								<friction>0.75</friction>
+								<restitution>0</restitution>
+								<kinematic>false</kinematic>
+							</bodyDesc>
+							<eventCollide/>
+						</item>
+						<item type="traktor.animation.PathComponentData" version="1">
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>1</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>2</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>3</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+							<timeMode>PingPong</timeMode>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{740F70F4-9A33-1F48-BDAA-3B928D5B5FF7}</id>
+					<name>Center</name>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData">
+							<mesh>{70D66ED4-FD78-4BF8-A2F6-9E4A931E07ED}</mesh>
+							<screenSpaceCulling>false</screenSpaceCulling>
+						</item>
+						<item type="traktor.physics.RigidBodyComponentData">
+							<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+								<shape type="traktor.physics.MeshShapeDesc" version="6">
+									<localTransform>
+										<translation>0, 0, 0, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</localTransform>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+									<material>0</material>
+									<mesh>{6F363930-4D2D-4BD0-A96B-B04F15633B30}</mesh>
+								</shape>
+								<friction>0.75</friction>
+								<restitution>0</restitution>
+								<kinematic>false</kinematic>
+							</bodyDesc>
+							<eventCollide/>
+						</item>
+						<item type="traktor.animation.PathComponentData" version="1">
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>1</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>2</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>3</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+							<timeMode>PingPong</timeMode>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{CB3EDA6B-023C-C041-A0F8-D0883D4ED38C}</id>
+					<name>Right</name>
+					<transform>
+						<translation>0.6, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData">
+							<mesh>{70D66ED4-FD78-4BF8-A2F6-9E4A931E07ED}</mesh>
+							<screenSpaceCulling>false</screenSpaceCulling>
+						</item>
+						<item type="traktor.physics.RigidBodyComponentData">
+							<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+								<shape type="traktor.physics.MeshShapeDesc" version="6">
+									<localTransform>
+										<translation>0, 0, 0, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</localTransform>
+									<collisionGroup>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionGroup>
+									<collisionMask>
+										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+									</collisionMask>
+									<material>0</material>
+									<mesh>{6F363930-4D2D-4BD0-A96B-B04F15633B30}</mesh>
+								</shape>
+								<friction>0.75</friction>
+								<restitution>0</restitution>
+								<kinematic>false</kinematic>
+							</bodyDesc>
+							<eventCollide/>
+						</item>
+						<item type="traktor.animation.PathComponentData" version="1">
+							<path>
+								<keys>
+									<item>
+										<T>0</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>1</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>2</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+									<item>
+										<T>3</T>
+										<tcb>0, -1, 0, 0</tcb>
+										<position>0, 0, 0, 1</position>
+										<orientation>0, 0.38, 0, 0</orientation>
+										<values>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+											<item>0</item>
+										</values>
+									</item>
+								</keys>
+							</path>
+							<timeMode>PingPong</timeMode>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{2785B08D-4345-6541-8459-DAFD109FB091}</id>
+	<name>Court-6</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{461DF99B-323B-FB45-896B-48B9DD9C9FB6}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{3DB6323F-0D92-9946-A1A4-B8A84E7F10CD}</mesh>
+				</shape>
+				<friction>0</friction>
+				<restitution>1</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{84F3207A-8C9D-40ED-883E-2BD59C46DED3}</id>
+					<name>Camera hint</name>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.world.VolumeComponentData">
+							<volumes>
+								<item>
+									<mn>-1, -1, -1, 1</mn>
+									<mx>1, 1, 1, 1</mx>
+								</item>
+							</volumes>
+						</item>
+						<item type="traktor.world.ScriptComponentData" version="2">
+							<class>{359FF1A7-A414-444D-AFB6-3C1BFA6970D5}</class>
+							<properties/>
+							<editorSupport>false</editorSupport>
+						</item>
+						<item type="traktor.world.EditorAttributesComponentData">
+							<visible>true</visible>
+							<locked>false</locked>
+							<include>true</include>
+							<dynamic>true</dynamic>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>

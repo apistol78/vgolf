@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+CubePile = CubePile or class("CubePile", traktor.world.ScriptComponent)
+
+function CubePile:new()
+	self._origins = {}
+	local gc = self.owner:getComponent(traktor.world.GroupComponent)
+	for i, child in pairs(gc.entities) do
+		self._origins[i] = child.transform
+	end
+end
+
+function CubePile:update(contextObject, totalTime, deltaTime)
+	-- Must have an update otherwise ScriptComponent will recurse oom.
+end
+
+function CubePile:reset()
+	local gc = self.owner:getComponent(traktor.world.GroupComponent)
+	for i, child in pairs(gc.entities) do
+		child.transform = self._origins[i]
+
+		-- Ensure no forces nor velocities act on body.
+		local rbc = child:getComponent(traktor.physics.RigidBodyComponent)
+		rbc.body:reset()
+	end
+end
+
+	]]>
+	</text>
+</object>

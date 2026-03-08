@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+MainView = MainView or class("MainView", Container)
+
+MainView.__flipboardId = "MAIN"
+
+function MainView:new(parent)
+	Container.new(self, parent, FloodLayout(8, 40))
+
+	local ct2 = Panel(self, TableLayout({ 0, 0 }, { 0 }, 32, 32, 8, 0))
+		:setVerticalAlign(Widget.ALIGN_TOP)
+		:setHorizontalAlign(Widget.ALIGN_LEFT)
+
+	self._staticCoins = Static(ct2 , "0")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setTextSize(70)
+
+	Image(ct2, "MC_Icon_Coin")
+
+	local ct = Container(self, TableLayout({ 0 }, { 0 }, 16, 32, 32, 90))
+		:setVerticalAlign(Widget.ALIGN_BOTTOM)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	-- Large play button.
+	self._buttonPlay = Button(ct, "MC_Icon_Play")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	-- Online and options.
+	local ct2 = Container(ct, TableLayout({ 0, 0 }, { 0 }, 0, 0, 64, 0))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonGameCenter = Button(ct2, "MC_Icon_GameCenter")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	self._buttonConfig = Button(ct2, "MC_Icon_Options")
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	-- Copyright notice.
+	local ct2 = Container(ct, TableLayout({ 0 }, { 0 }, 0, 0, 0, 4))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+	Static(ct2, "Copyright 2022 (C) Doctor Entertainment AB. All rights reserved.")
+		:setTextSize(15)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+	Static(ct2, "www.doctorentertainment.com")
+		:setTextSize(15)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+end
+
+function MainView:setCoins(fromCoins, toCoins)
+	if fromCoins ~= toCoins then
+		-- Increment coins visually to show to player about coins being collected.
+		Tween(fromCoins, toCoins, 1, function(value, last)
+			local c = math.floor(value)
+			if c ~= fromCoins then
+				self._staticCoins:setText(c)
+				self:layout()
+				fromCoins = c
+			end
+		end)
+	else
+		self._staticCoins:setText(toCoins)
+		self:layout()
+	end
+	return self
+end
+
+	]]>
+	</text>
+</object>

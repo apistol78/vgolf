@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.online.GcGameConfiguration" version="3">
+	<achievementIds>
+		<item>ACH_WEALTHY</item>
+	</achievementIds>
+	<leaderboardIds>
+		<item>LB_COINS</item>
+	</leaderboardIds>
+	<statsIds/>
+</object>

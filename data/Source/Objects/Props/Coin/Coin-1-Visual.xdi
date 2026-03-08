@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="21">
+	<fileName>Props/Coin-1.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>Coin_Nm</first>
+			<second>{636956FE-C3A3-480C-A04E-CB0A076FD45F}</second>
+		</item>
+		<item>
+			<first>Coin_R</first>
+			<second>{5CB0DA21-2F8B-C242-A335-04609F9D1A16}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<grounded>false</grounded>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

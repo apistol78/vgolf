@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.scene.SceneAsset" version="9">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="35">
+		<viewNearZ>0.1</viewNearZ>
+		<viewFarZ>10000</viewFarZ>
+		<exposureMode>EmFixed</exposureMode>
+		<exposure>0</exposure>
+		<shadowSettings>
+			<disabled>
+				<projection>SpUniform</projection>
+				<farZ>0</farZ>
+				<resolution>128</resolution>
+				<bias>0</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
+			</disabled>
+			<low>
+				<projection>SpUniform</projection>
+				<farZ>70</farZ>
+				<resolution>512</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>false</quantizeProjection>
+				<maskDenominator>2</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</low>
+			<medium>
+				<projection>SpUniform</projection>
+				<farZ>80</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>1</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>2</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</medium>
+			<high>
+				<projection>SpUniform</projection>
+				<farZ>120</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>2</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</high>
+			<ultra>
+				<projection>SpUniform</projection>
+				<farZ>140</farZ>
+				<resolution>1024</resolution>
+				<bias>0.15</bias>
+				<biasCoeff>0</biasCoeff>
+				<cascadingSlices>3</cascadingSlices>
+				<cascadingLambda>1.5</cascadingLambda>
+				<quantizeProjection>true</quantizeProjection>
+				<maskDenominator>1</maskDenominator>
+				<maskProject>{D8A7B76E-AB55-8E43-AB60-A35F3135DB3D}</maskProject>
+			</ultra>
+		</shadowSettings>
+		<fog>false</fog>
+		<fogDistance>90</fogDistance>
+		<fogDensity>0</fogDensity>
+		<fogColor>1, 1, 1, 1</fogColor>
+		<irradianceGrid>{6CBAE4B1-7E14-FC44-8F46-4F39D9A6DE84}</irradianceGrid>
+		<imageProcess>
+			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<medium>{00000000-0000-0000-0000-000000000000}</medium>
+			<high>{00000000-0000-0000-0000-000000000000}</high>
+			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
+		</imageProcess>
+	</worldRenderSettings>
+	<layers>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{804B1EEA-DB34-2D4A-A981-FD5B0066A7AC}</id>
+			<name>Environment</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9F21840B-1822-9C40-A8B1-8F9DB105457E}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="3">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{6B82B195-D88E-7845-BDC3-AF813E924CE1}</texture>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{76A7B306-20B9-B640-A5E6-51A65CEAAFA8}</id>
+							<name>Light</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>-0.391854, -0.323839, -0.149635, 0.84805</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="10">
+									<lightType>LtDirectional</lightType>
+									<color>1, 0.976471, 0.952941, 0</color>
+									<intensity>1</intensity>
+									<castShadow>true</castShadow>
+									<range>20</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{4E166A3B-CE85-0145-A7C4-3040B3AB0BC7}</id>
+							<name>Reflections</name>
+							<transform>
+								<translation>0, 10, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ProbeComponentData">
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+									<local>false</local>
+									<volume>
+										<mn>0, 0, 0, 1</mn>
+										<mx>0, 0, 0, 1</mx>
+									</volume>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>true</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{C7DDFFFA-FF6C-8242-AC5C-AB13A2411DA9}</id>
+			<name>Entity</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Bambu-Entity</name>
+							<transform>
+								<translation>-96, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{14D7FADD-038D-C548-AA7E-034102C50F59}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{75296D09-5D4A-B64C-AF67-887E7FC677E6}</id>
+							<name>Bambu-Tripod-Entity</name>
+							<transform>
+								<translation>-64, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{5749CB9F-5E1F-F044-AA51-264B6D190C9D}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Banana-Entity</name>
+							<transform>
+								<translation>-32, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{3FB6A7A8-6349-42CE-9273-4E3D826F2554}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{FBF32B28-188E-3344-9CF6-29D9F6EC3D2D}</id>
+							<name>Barrel-1-Entity</name>
+							<transform>
+								<translation>0, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{75A1F9E9-9D14-D341-A9F6-AAE981498B48}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Beach Ball-Entity</name>
+							<transform>
+								<translation>32, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{F24F8D5B-DD6C-5544-8056-C5515EC78A3B}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Beach Chair-Entity</name>
+							<transform>
+								<translation>64, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{877645AC-BC80-4015-8391-0C435F839CB1}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8F787B00-519E-9840-AF36-8E2C99FF5CC8}</id>
+							<name>Beach Hut-Entity</name>
+							<transform>
+								<translation>96, 0, -96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{0317E7B5-FCCF-0F40-8BF6-282075BAFAAF}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B6D3F971-E4E6-D24E-86BE-8879F2F03E4A}</id>
+							<name>Betongsugga-Entity</name>
+							<transform>
+								<translation>-96, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{C634F003-C778-2042-A0B8-683E827BF20E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0D3DDF76-93B4-42C9-9EE1-F896CA70EDBD}</id>
+							<name>Bottle-Entity</name>
+							<transform>
+								<translation>-64, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{4881B498-D3B8-4746-AB06-29B27DB55B42}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B1F5357D-C886-2348-8972-EFB92DE9EC7E}</id>
+							<name>Box-Entity</name>
+							<transform>
+								<translation>-32, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{1258FC4B-FDA7-A14B-9F3A-C067F043CC12}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Coconut-Entity</name>
+							<transform>
+								<translation>0, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{AA216DA0-7E29-3E45-82C4-8B1A02BD604E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{1E6D6789-2667-4748-8352-186257AD3EED}</id>
+							<name>Coconut Drink-Entity</name>
+							<transform>
+								<translation>32, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{BC731966-C240-4E4D-B3DA-EF0FFD0699DF}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Cog-Entity</name>
+							<transform>
+								<translation>64, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{57482838-D2C1-3F42-93CE-4F0B4F91E599}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.animation.RotatorComponentData">
+									<axis>Z</axis>
+									<rate>0.5</rate>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{81C3E522-0FAD-4A2C-BD45-8F1FE8A5DA32}</id>
+							<name>Coin-1-Entity</name>
+							<transform>
+								<translation>96, 0, -64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.animation.RotatorComponentData">
+									<axis>Y</axis>
+									<rate>2</rate>
+								</item>
+								<item type="traktor.world.FacadeComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{BB8449D0-E7A4-4288-B0DA-C909235D7C9C}</id>
+											<name>Default</name>
+											<transform>
+												<translation>96, 0, -64, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.mesh.MeshComponentData">
+													<mesh>{614C057A-5A6E-49D7-BB62-05210B648A7F}</mesh>
+													<screenSpaceCulling>false</screenSpaceCulling>
+												</item>
+											</components>
+										</item>
+									</entityData>
+									<show>Default</show>
+								</item>
+								<item type="traktor.world.EventSetComponentData">
+									<eventData>
+										<item>
+											<first>picked</first>
+											<second type="traktor.spray.SpawnEffectEventData" version="3">
+												<effect>{6CA70BA9-4994-4012-A6F3-71B0DA143675}</effect>
+												<transform>
+													<translation>0, 0, 0, 0</translation>
+													<rotation>0, 0, 0, 1</rotation>
+												</transform>
+												<follow>false</follow>
+												<useRotation>false</useRotation>
+											</second>
+										</item>
+									</eventData>
+								</item>
+								<item type="traktor.world.ScriptComponentData" version="1">
+									<class>{2153A16F-9CBC-C547-9D44-25EE64162FA2}</class>
+									<editorSupport>false</editorSupport>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Concrete Edge-Entity</name>
+							<transform>
+								<translation>-96, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{941740D7-01B2-8C4F-B713-D8051F3D7305}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Concrete Tiles-Entity</name>
+							<transform>
+								<translation>-64, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{1CF07EC3-8173-204F-999B-53EFC891A21B}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{A9C8B861-7C50-4C91-84FE-AAF66A7607B3}</id>
+							<name>Concrete Tiles Broken-Entity</name>
+							<transform>
+								<translation>-32, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{F7EB71A8-3B24-462D-AAB7-F0F6313AB908}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Fence-Entity</name>
+							<transform>
+								<translation>0, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{AC5B2227-C4BD-3447-B032-47D90C5A790A}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{6F676502-287C-489B-8850-C2FEAB53A872}</id>
+							<name>Gas Canister-Entity</name>
+							<transform>
+								<translation>32, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{308F8F7B-AFBD-4F8F-AB2E-4D8B288FC229}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{FD46ABDA-4610-484C-9E62-78FCB25193B8}</id>
+							<name>Goal Flag-Entity</name>
+							<transform>
+								<translation>64, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.animation.AnimatedMeshComponentData" version="1">
+									<mesh>{1149E1E3-E4E8-D846-94D8-AAC1FC52E5ED}</mesh>
+									<skeleton>{C186FBFA-BAD9-1D47-B2CF-31F55C47805B}</skeleton>
+									<poseController type="traktor.animation.SimpleAnimationControllerData">
+										<animation>{5741E0BA-9B54-004A-B71B-CB72B92C4E18}</animation>
+										<linearInterpolation>true</linearInterpolation>
+									</poseController>
+									<screenSpaceCulling>true</screenSpaceCulling>
+									<bindings/>
+								</item>
+								<item type="traktor.world.FacadeComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{60427249-893B-534D-961D-B1916AA46902}</id>
+											<name>Victory</name>
+											<transform>
+												<translation>64, 0, -32, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.spray.EffectComponentData">
+													<effect>{504813B3-298D-3D4C-8DCD-7E4A62502E8A}</effect>
+												</item>
+											</components>
+										</item>
+									</entityData>
+									<show/>
+								</item>
+								<item type="traktor.world.VolumeComponentData">
+									<volumes>
+										<item>
+											<mn>-0.2, -0.2, -0.2, 1</mn>
+											<mx>0.2, 0.1, 0.2, 1</mx>
+										</item>
+									</volumes>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{A04ACC73-7F3D-BF41-9F1F-5457FF53C051}</id>
+							<name>Grass Small-Entity</name>
+							<transform>
+								<translation>96, 0, -32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{091AD6E4-D529-3340-BC7E-8A93B31681B4}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{197AAE2D-3456-324F-8EE5-89F73DB54E1C}</id>
+							<name>Grass Tall-Entity</name>
+							<transform>
+								<translation>-96, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{25335515-B42A-D442-A5EB-4B85668287AC}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0624F437-6DE3-CC40-B426-9853D43401BA}</id>
+							<name>Grass-Entity</name>
+							<transform>
+								<translation>-64, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{D5FEC24E-C240-CA4C-8057-901136308E6B}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0D0A4A14-19C0-E649-9DAF-1E23661F8EDF}</id>
+							<name>Grinder-Entity</name>
+							<transform>
+								<translation>-32, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{80E0064E-97C4-0048-8C2B-1E02F45A6C05}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{427B88CF-A7EA-4E60-90B7-3B3A80D6FB0A}</id>
+							<name>Hex-Entity</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{37656399-0857-42DC-AD5D-8D62DEBF4318}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{DBBE6822-D06A-2A42-93C2-126EEA167B59}</id>
+							<name>Industrial Chimney-Entity</name>
+							<transform>
+								<translation>32, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{14BED72C-831D-014B-ADA1-70C7A4EBD9F4}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{EFF22916-F732-4945-96B7-5898AFB41498}</id>
+							<name>Industrial Fan-Entity</name>
+							<transform>
+								<translation>64, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{ED4D01CF-48DF-9C48-8BB1-83DAC88E3662}</id>
+											<name>Mesh</name>
+											<transform>
+												<translation>64, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.mesh.MeshComponentData">
+													<mesh>{D371752E-423D-0B46-B560-392D609E1784}</mesh>
+													<screenSpaceCulling>false</screenSpaceCulling>
+												</item>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>false</locked>
+													<include>true</include>
+													<dynamic>false</dynamic>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{72968CA2-4508-F849-93B3-DFD4A61A5F32}</id>
+											<name>Logic</name>
+											<transform>
+												<translation>64, 0, -2.215006, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.VolumeComponentData">
+													<volumes>
+														<item>
+															<mn>-1, -1, -2, 1</mn>
+															<mx>1, 1, 2, 1</mx>
+														</item>
+													</volumes>
+												</item>
+												<item type="traktor.world.ScriptComponentData" version="1">
+													<class>{26CACE0F-33E3-8B4A-B81D-4F74B2ABCD09}</class>
+													<editorSupport>false</editorSupport>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{477F9A27-A0AD-4440-A5CD-436743A84405}</id>
+											<name>Blades</name>
+											<transform>
+												<translation>64, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.mesh.MeshComponentData">
+													<mesh>{01A33CAF-2B97-4D89-89B3-C04AB5A707A5}</mesh>
+													<screenSpaceCulling>false</screenSpaceCulling>
+												</item>
+												<item type="traktor.animation.RotatorComponentData">
+													<axis>Z</axis>
+													<rate>-8</rate>
+												</item>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>false</locked>
+													<include>true</include>
+													<dynamic>true</dynamic>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9642D010-A3A6-8A46-8BCB-78FED0C28363}</id>
+							<name>Lamp-Entity</name>
+							<transform>
+								<translation>96, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{975261FB-BB22-0B46-BC56-E8031EA3D6B9}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{24FDE238-718C-45A9-944D-3457A209C7C8}</id>
+							<name>Life Buoy-Entity</name>
+							<transform>
+								<translation>-96, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{2B186426-2134-8144-B3FE-747386F3C17F}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0BED7C72-DDAF-E34E-80C7-7AA78161487F}</id>
+							<name>Light-1-Entity</name>
+							<transform>
+								<translation>-64, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{5A5716D8-9268-4F42-B52C-62BCFFEF2349}</id>
+											<name>Mesh</name>
+											<transform>
+												<translation>-64, 0, 32, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.mesh.MeshComponentData">
+													<mesh>{3204A66C-9D69-6E43-92C3-0CDA192BFA22}</mesh>
+													<screenSpaceCulling>false</screenSpaceCulling>
+												</item>
+												<item type="traktor.animation.PathComponentData">
+													<path>
+														<keys>
+															<item>
+																<T>0</T>
+																<tcb>0, 0, 0, 0</tcb>
+																<position>0, 0, 0, 1</position>
+																<orientation>0.5, 0, 0, 0</orientation>
+																<values>
+																	<item>0</item>
+																	<item>0</item>
+																	<item>0</item>
+																	<item>0</item>
+																</values>
+															</item>
+															<item>
+																<T>2</T>
+																<tcb>0, 0, 0, 0</tcb>
+																<position>0, 0, 0, 1</position>
+																<orientation>-0.5, 0, 0, 0</orientation>
+																<values>
+																	<item>0</item>
+																	<item>0</item>
+																	<item>0</item>
+																	<item>0</item>
+																</values>
+															</item>
+														</keys>
+													</path>
+													<timeMode>TmPingPong</timeMode>
+													<timeOffset>0</timeOffset>
+												</item>
+												<item type="traktor.world.GroupComponentData">
+													<entityData>
+														<item type="traktor.world.EntityData" version="1">
+															<id>{933248B7-2180-3640-AE4C-FC2854A7960C}</id>
+															<name>Light</name>
+															<transform>
+																<translation>-64, 0.524136, 32.262306, 0</translation>
+																<rotation>-0.620876, -0.012418, -0.015674, 0.783654</rotation>
+															</transform>
+															<components>
+																<item type="traktor.world.LightComponentData" version="10">
+																	<lightType>LtSpot</lightType>
+																	<color>1, 1, 1, 0</color>
+																	<intensity>50</intensity>
+																	<castShadow>true</castShadow>
+																	<range>2</range>
+																	<radius>1.120796</radius>
+																	<flickerAmount>0.05</flickerAmount>
+																	<flickerFilter>0.7</flickerFilter>
+																	<bakeMode>LbmDisabled</bakeMode>
+																</item>
+															</components>
+														</item>
+													</entityData>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{C6AB19BE-7CCA-BA47-821B-8481359456FC}</id>
+											<name>Base</name>
+											<transform>
+												<translation>-64, -0.319442, 32.078503, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components>
+												<item type="traktor.mesh.MeshComponentData">
+													<mesh>{433FADB4-7905-E34A-92A4-03FFEBA8CEF6}</mesh>
+													<screenSpaceCulling>false</screenSpaceCulling>
+												</item>
+											</components>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F25D03A3-FBC7-FF43-A0AE-FA44D7105083}</id>
+							<name>Light-Base-Entity</name>
+							<transform>
+								<translation>-32, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{433FADB4-7905-E34A-92A4-03FFEBA8CEF6}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C7AF8794-3B0F-0F47-9C69-84BE173A6334}</id>
+							<name>Loading Background-Entity</name>
+							<transform>
+								<translation>0, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{E9FECEEF-A9E9-0A40-8A9D-D63AA6758B8E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{69900D70-26BA-D846-A841-CFD2DDCC9AE0}</id>
+							<name>Loading-Entity</name>
+							<transform>
+								<translation>32, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{979670BD-BD68-C94B-B2C5-55F1064704E7}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{92F4C0AA-9BC5-BA44-8359-18B459EDC1EC}</id>
+							<name>Logo-Entity</name>
+							<transform>
+								<translation>64, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{B51BB9CA-501D-DF44-8311-4B4D614DA800}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{BDF43561-E997-3548-8BD1-C119F44CC37A}</id>
+							<name>Metal Pole-Entity</name>
+							<transform>
+								<translation>96, 0, 32, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{8C6B4677-FAB3-CD46-9B91-4F710955FB56}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.MeshShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<mesh>{B2A418A5-619C-504F-93F7-10C6F53736F9}</mesh>
+										</shape>
+										<friction>0.75</friction>
+										<restitution>0</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{2E335F04-1131-AD45-A082-3A6F291AE439}</id>
+							<name>Old Bike-Entity</name>
+							<transform>
+								<translation>-96, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{A5780AE1-0DB7-7943-8821-84DB112CFA45}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B563FFEB-2489-4049-B290-BE1CB59D69CF}</id>
+							<name>Pallet-Entity</name>
+							<transform>
+								<translation>-64, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{94E31E65-11E0-BA47-A656-B513A22CB484}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F14353CD-23FF-8447-BEBC-63FC1907623C}</id>
+							<name>Palm 2-Entity</name>
+							<transform>
+								<translation>-32, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{3C9AA4CF-1723-7E4D-AD70-AE4E4CB37A27}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{3EFA4E5C-4327-4A47-921C-9FA85D01B777}</id>
+							<name>Palm-Entity</name>
+							<transform>
+								<translation>0, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{29A9D982-7555-B848-A9E2-E9CADF17782F}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{DFBC43E7-DF77-D148-840A-0AE63E86C5E4}</id>
+							<name>Palm Sand-Entity</name>
+							<transform>
+								<translation>32, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{5920DC6E-E14D-CD42-8F1D-A42A6ABC2A87}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{66CBB320-2402-EF42-9580-1708417F1FEB}</id>
+							<name>Patio-Entity</name>
+							<transform>
+								<translation>64, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{E5EC3F5A-840C-9B4D-BFCA-0E7DB061828B}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{DF9D964A-6FF5-B046-8FEE-00A9305700AA}</id>
+							<name>Pedistal-Entity</name>
+							<transform>
+								<translation>96, 0, 64, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{70AC9393-2DCE-A640-A5CA-10CC0754651C}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{1C4E143E-E40E-C240-8777-976AF7FB768D}</id>
+							<name>Pillars-Entity</name>
+							<transform>
+								<translation>-96, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{3429E97D-C6E0-6449-A182-A5E27034C63F}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{E0526192-0397-DE41-A7D8-5AA2D89F49EB}</id>
+							<name>Pipe-Entity</name>
+							<transform>
+								<translation>-64, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{AB7CE6DA-030B-EA41-A4A0-B5F0AA7EE23E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Plant-Entity</name>
+							<transform>
+								<translation>-32, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{78D73CB7-7C5D-3A46-9A64-9CD00A3C9C4E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{15A46BAD-E777-434C-8DFB-37024B81E7FF}</id>
+							<name>Rocks Small 2-Entity</name>
+							<transform>
+								<translation>0, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{D217EED8-BF1A-114C-8C93-787039A379B2}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{990737C4-BEEC-E34C-A018-7DD499EB9C40}</id>
+							<name>Rocks Small-Entity</name>
+							<transform>
+								<translation>32, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{652EF26D-E1D0-9C47-80FE-60DC6B573AA5}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Rocks-Entity</name>
+							<transform>
+								<translation>64, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{FF63199D-58D2-BD49-A749-01C4CBB530A7}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{BCBF72AE-F34E-4144-8A59-8B3C36F8FDA4}</id>
+							<name>Sand Castle-Entity</name>
+							<transform>
+								<translation>96, 0, 96, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{0EFFAA68-30F3-C04E-A704-F6D3CF1D6609}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{32760745-9B8B-564B-8B89-8B2DA4740892}</id>
+							<name>Shovel-Entity</name>
+							<transform>
+								<translation>-96, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{A13EFD5A-1035-4645-A884-940CB5EFD536}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{5FD569EE-B854-9440-838B-BBBE6D2E5D06}</id>
+							<name>Small Cube-Entity</name>
+							<transform>
+								<translation>-64, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{26352E4A-7626-2446-BE70-C8B79D14E8AD}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.DynamicBodyDesc" version="6">
+										<shape type="traktor.physics.BoxShapeDesc" version="6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<extent>0.14, 0.14, 0.14, 0</extent>
+											<margin>0</margin>
+										</shape>
+										<mass>0.1</mass>
+										<autoDeactivate>true</autoDeactivate>
+										<active>false</active>
+										<linearDamping>0.1</linearDamping>
+										<angularDamping>0.1</angularDamping>
+										<friction>0.8</friction>
+										<restitution>0.1</restitution>
+										<linearThreshold>0.8</linearThreshold>
+										<angularThreshold>1</angularThreshold>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{DFCBC92E-2052-7B49-9A50-EF67DC9B912B}</id>
+							<name>Small Flags-Entity</name>
+							<transform>
+								<translation>-32, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{7B7C3BB1-8933-8F46-B4D9-B600E7E6DDCC}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{A0F05E40-9305-F541-82BC-7C3D8220B8ED}</id>
+							<name>Tire-Entity</name>
+							<transform>
+								<translation>0, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{A96BC6B8-3AF5-3140-96E6-753FF9B690CB}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{972F1499-2457-0F4E-891D-5B993DAEDA43}</id>
+							<name>Trashcan-Entity</name>
+							<transform>
+								<translation>32, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{EEEFAB50-D52B-2B4E-9F82-564843D1DFE1}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{D10C4560-6EBF-D444-A61E-C4DAE2B40164}</id>
+							<name>Trophy-Entity</name>
+							<transform>
+								<translation>64, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{883A008E-1BED-5D4E-A283-79310E5D6277}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{49610711-E288-7E44-B413-7B0476BCDA27}</id>
+							<name>Umbrella-1-Entity</name>
+							<transform>
+								<translation>96, 0, 128, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{2D5D6CD5-7632-4145-BC16-31134311B0CD}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{441D224A-0BFD-0B46-B39B-5366C154538F}</id>
+							<name>Vent Crate-Entity</name>
+							<transform>
+								<translation>-96, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{C3D7FCBB-F113-B042-A353-7FE45490550E}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B3181971-C5FF-8648-AE4C-CF83A5BF88BD}</id>
+							<name>Wall-1-Entity</name>
+							<transform>
+								<translation>-64, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{53FD1AA0-E227-144B-8705-9B776C49C784}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{B8CE0E62-E977-A240-85A1-9D03F1F0E4D4}</id>
+							<name>Warhead-Entity</name>
+							<transform>
+								<translation>-32, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{DDAE7E4B-B066-6043-BBDC-775B34E25B7D}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9D0FA6D3-7767-FA45-9FEA-B57D505244B9}</id>
+							<name>Wood Box-Entity</name>
+							<transform>
+								<translation>0, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{81189EAC-F663-4449-97D7-1E5F6BC4AEE9}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{00000000-0000-0000-0000-000000000000}</id>
+							<name>Wood Plank-Entity</name>
+							<transform>
+								<translation>32, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{E1DA39DF-6416-0B40-8715-73950AB3777C}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8811A217-F0D3-DB4D-97B5-550C05C8A7EC}</id>
+							<name>Wood Scaffolding-Entity</name>
+							<transform>
+								<translation>64, 0, 160, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.mesh.MeshComponentData">
+									<mesh>{A24A4D92-813E-2645-8B21-30614FB5ECE1}</mesh>
+									<screenSpaceCulling>false</screenSpaceCulling>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>true</dynamic>
+				</item>
+			</components>
+		</item>
+	</layers>
+	<controllerData/>
+	<operationData/>
+</object>

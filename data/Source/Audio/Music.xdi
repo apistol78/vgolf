@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.SoundAsset" version="8">
+	<fileName>Audio/Homemade.mp3</fileName>
+	<category>{6D8873C0-2554-354C-A542-FC0772960E4D}</category>
+	<stream>true</stream>
+	<preload>false</preload>
+	<compressed>false</compressed>
+	<gain>-10</gain>
+</object>

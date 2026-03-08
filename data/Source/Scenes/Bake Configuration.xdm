@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="1">
+	<guid>{DD0A2DE2-BE8C-0F40-80D2-8780D27796F3}</guid>
+	<primaryType>traktor.shape.BakeConfiguration</primaryType>
+	<blobs/>
+</object>

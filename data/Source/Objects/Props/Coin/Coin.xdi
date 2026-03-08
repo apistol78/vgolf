@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Coin = Coin or class("Coin", traktor.world.ScriptComponent)
+
+function Coin:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+
+	self._ballEntity = nil
+	self._picked = false
+end
+
+function Coin:update(contextObject, totalTime, deltaTime)
+	-- Must have an update otherwise ScriptComponent will recurse oom.
+
+	-- Only valid in runtime.
+	if contextObject == nil then
+		return
+	end
+
+	-- Lazy get ball entity.
+	if self._ballEntity == nil then
+		self._ballEntity = contextObject.world:getEntity("Ball")
+		if self._ballEntity == nil then return end
+	end
+
+	-- Check if ball is close enough to pick coin.
+	local pt = self._ballEntity.transform.translation
+	local ln = (self.owner.transform.translation - pt).xyz0.length
+	if ln < 0.75 then
+		local fc = self.owner:getComponent(world.FacadeComponent)
+		if fc:isVisible("Default") then
+			fc:hideAll()
+	
+			-- Issue picked event.
+			local ec = self.owner:getComponent(world.EventSetComponent)
+			ec:raise("picked")
+
+			contextObject:pickedCoin()
+		end
+	end
+end
+
+function Coin:reset()
+	local fc = self.owner:getComponent(world.FacadeComponent)
+	fc:showOnly("Default")
+	self._picked = false
+end
+
+	]]>
+	</text>
+</object>

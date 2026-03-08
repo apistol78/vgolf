@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.TextureScript">
+	<script>{00000000-0000-0000-0000-000000000000}</script>
+	<generateNormalMap>false</generateNormalMap>
+	<scaleDepth>0</scaleDepth>
+	<generateMips>true</generateMips>
+	<keepZeroAlpha>true</keepZeroAlpha>
+	<isCubeMap>false</isCubeMap>
+	<hasAlpha>false</hasAlpha>
+	<ignoreAlpha>false</ignoreAlpha>
+	<scaleImage>false</scaleImage>
+	<scaleWidth>0</scaleWidth>
+	<scaleHeight>0</scaleHeight>
+	<enableCompression>true</enableCompression>
+	<linearGamma>false</linearGamma>
+</object>

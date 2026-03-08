@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Loading</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers>
+		<item type="traktor.runtime.AudioLayerData">
+			<name>song</name>
+			<permitTransition>true</permitTransition>
+			<sound>{DA529184-601F-5D4A-8D0D-C92702608249}</sound>
+			<autoPlay>true</autoPlay>
+			<repeat>true</repeat>
+		</item>
+		<item type="traktor.runtime.ScreenLayerData">
+			<name>background</name>
+			<permitTransition>true</permitTransition>
+			<shader>{D2302F71-EDC8-474A-B68F-F5A968D8F1F8}</shader>
+		</item>
+		<item type="traktor.spark.SparkLayerData" version="1">
+			<name>ui</name>
+			<permitTransition>true</permitTransition>
+			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
+			<externalMovies/>
+			<clearBackground>false</clearBackground>
+			<enableSound>false</enableSound>
+		</item>
+	</layers>
+	<class>{2A3E8AB8-DAA2-44C3-AFC7-3BB8ECFE56B6}</class>
+	<shaderFade>{F3A1A715-3A9A-AB44-8E32-5F77068B65B3}</shaderFade>
+	<fadeOutUpdate>true</fadeOutUpdate>
+	<fadeRate>2</fadeRate>
+	<transitions>
+		<item>
+			<first>LEVEL 1</first>
+			<second>{DAE7D050-7298-9F42-BDA6-68203BC2DC9A}</second>
+		</item>
+		<item>
+			<first>LEVEL 10</first>
+			<second>{E436E530-1637-044D-8491-2965B8E6852F}</second>
+		</item>
+		<item>
+			<first>LEVEL 11</first>
+			<second>{FD042E0E-B1E1-0846-A214-17DB4E70FC30}</second>
+		</item>
+		<item>
+			<first>LEVEL 12</first>
+			<second>{D7B64642-386E-2F41-B131-B629678CAEC5}</second>
+		</item>
+		<item>
+			<first>LEVEL 13</first>
+			<second>{64813595-2422-7C4D-A67F-4855781BA222}</second>
+		</item>
+		<item>
+			<first>LEVEL 14</first>
+			<second>{45E9895F-3096-5545-B753-88267A56BF84}</second>
+		</item>
+		<item>
+			<first>LEVEL 15</first>
+			<second>{8C1DF9E2-5D2B-3044-9D64-DA01C0B865F6}</second>
+		</item>
+		<item>
+			<first>LEVEL 16</first>
+			<second>{F89E22C3-D388-E24A-A72A-B54E5A5C177C}</second>
+		</item>
+		<item>
+			<first>LEVEL 17</first>
+			<second>{9CDB000D-E294-47E9-882F-20D0B46863F0}</second>
+		</item>
+		<item>
+			<first>LEVEL 18</first>
+			<second>{7AA55C07-1F79-D44A-812C-84D2FF2DBC93}</second>
+		</item>
+		<item>
+			<first>LEVEL 2</first>
+			<second>{49CC2620-DAEC-024C-98AC-EA1F6665E330}</second>
+		</item>
+		<item>
+			<first>LEVEL 3</first>
+			<second>{2073A7F3-9D5D-E345-8998-B21FE27F0942}</second>
+		</item>
+		<item>
+			<first>LEVEL 4</first>
+			<second>{E2C9A2BE-E94A-6246-8777-0CD14119040D}</second>
+		</item>
+		<item>
+			<first>LEVEL 5</first>
+			<second>{F31E03BA-5674-C847-8C96-97A813A3B338}</second>
+		</item>
+		<item>
+			<first>LEVEL 6</first>
+			<second>{7CAD0E03-C4C6-A644-A175-923DBB4D68A7}</second>
+		</item>
+		<item>
+			<first>LEVEL 7</first>
+			<second>{F5C27FCD-5027-9E48-BFAF-7785C51E3E15}</second>
+		</item>
+		<item>
+			<first>LEVEL 8</first>
+			<second>{ECAABE7F-5A58-F94F-84F7-87E7B5313150}</second>
+		</item>
+		<item>
+			<first>LEVEL 9</first>
+			<second>{E2D52EE2-029A-C84B-8BDE-908B570F7E88}</second>
+		</item>
+		<item>
+			<first>MAIN</first>
+			<second>{4C21D382-3338-5E43-9EB6-7520F1E7CDA4}</second>
+		</item>
+	</transitions>
+	<resourceBundle>{87DA7155-8AA1-ED49-BB2C-B277330DA028}</resourceBundle>
+	<properties/>
+</object>

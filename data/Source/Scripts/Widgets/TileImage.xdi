@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+TileImage = TileImage or class("TileImage", Widget)
+
+local tileWidth = 128
+local tileHeight = 128
+
+function TileImage:new(parent, image)
+	local mc = Widget._createEmptyResource(parent)
+	self:_initialize(parent, mc, image)
+end
+
+function TileImage:getPreferredSize()
+	return self._preferredSize
+end
+
+function TileImage:place(x, y, width, height)
+	Widget.place(self, x, y, width, height)
+
+	local p < const > = self:getPlacement()
+
+	self._columns = math.ceil(p.width / tileWidth) + 1
+	self._rows = math.ceil(p.height / tileHeight) + 1
+
+	local count < const > = self._columns * self._rows
+	if count ~= #self._images then
+		for _, image_mc in ipairs(self._images) do
+			image_mc:removeMovieClip()
+		end
+
+		self._images = {}
+		for i = 1, count do
+			local image_mc = Widget._createResource(self, self._image)
+			image_mc.width = tileWidth
+			image_mc.height = tileHeight
+--			image_mc.mask = self._clipper_mc
+			table.insert(self._images, image_mc)
+		end
+
+		self:_placeImages()
+	end
+
+	self._preferredSize.width = tileWidth
+	self._preferredSize.height = tileHeight
+
+--	self._clipper_mc.width = p.width
+--	self._clipper_mc.height = p.height
+end
+
+function TileImage:setOffset(x, y)
+	self._offsetX = x % tileWidth
+	self._offsetY = y % tileHeight
+	self:_placeImages()
+end
+
+function TileImage:_placeImages()
+	for y = 0, self._rows - 1 do
+		for x = 0, self._columns - 1 do
+			local image_mc = self._images[x + y * self._columns + 1]
+			if image_mc ~= nil then
+				image_mc.X = x * tileWidth - self._offsetX
+				image_mc.Y = y * tileHeight - self._offsetY
+			end
+		end
+	end
+end
+
+function TileImage:_initialize(parent, mc, image)
+	Widget._initialize(self, parent, mc)
+
+	self._preferredSize = { width = 0, height = 0 }
+	self._tile_mc = Widget._createEmptyResource(self)
+
+	self._columns = 0
+	self._rows = 0
+	self._offsetX = 0
+	self._offsetY = 0
+
+	self._image = image
+	self._images = {}
+
+--	self._clipper_mc = Widget._createResource(self, "MC_Clipper")
+end
+	]]>
+	</text>
+</object>

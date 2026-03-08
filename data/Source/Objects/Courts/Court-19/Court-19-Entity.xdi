@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{ABAA432F-E4AF-0D40-BBB3-7FFA9D127DE1}</id>
+	<name>Court-19</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{30FEB186-0994-E549-A2EA-4CD24E4C116E}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+					</collisionMask>
+					<material>0</material>
+					<mesh>{C95F7B25-B68E-C049-BD21-D249E5B109A0}</mesh>
+				</shape>
+				<friction>0</friction>
+				<restitution>1</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{D25A81D6-E370-AA46-B5AD-2A48F4F3A6A1}</id>
+					<name>Death</name>
+					<transform>
+						<translation>0, 0, 1, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.world.VolumeComponentData">
+							<volumes>
+								<item>
+									<mn>-0.6, -1, -1.5, 1</mn>
+									<mx>0.6, 0, 1.5, 1</mx>
+								</item>
+							</volumes>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{5082BF48-357D-4947-838A-47DBCB30A370}</id>
+					<name>Grinders</name>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.world.EditorAttributesComponentData">
+							<visible>true</visible>
+							<locked>false</locked>
+							<include>true</include>
+							<dynamic>true</dynamic>
+						</item>
+						<item type="traktor.world.GroupComponentData">
+							<entityData>
+								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+									<id>{9943E26E-D823-4943-A789-EB06602DD429}</id>
+									<name>Grinder-Entity</name>
+									<transform>
+										<translation>-0.35094, 0.057211, 1.032142, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</transform>
+									<components>
+										<item type="traktor.world.EditorAttributesComponentData">
+											<visible>true</visible>
+											<locked>false</locked>
+											<include>true</include>
+											<dynamic>true</dynamic>
+										</item>
+										<item type="traktor.animation.RotatorComponentData">
+											<axis>Z</axis>
+											<rate>-2</rate>
+										</item>
+									</components>
+									<entityData>{1B061358-E1F2-FF45-B0AC-5285D0180700}</entityData>
+								</item>
+								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+									<id>{74122EE1-8119-4F41-91FA-8996559B7131}</id>
+									<name>Grinder-Entity</name>
+									<transform>
+										<translation>0.324449, 0.057211, 1.032142, 0</translation>
+										<rotation>0, 0, 0, 1</rotation>
+									</transform>
+									<components>
+										<item type="traktor.world.EditorAttributesComponentData">
+											<visible>true</visible>
+											<locked>false</locked>
+											<include>true</include>
+											<dynamic>true</dynamic>
+										</item>
+										<item type="traktor.animation.RotatorComponentData">
+											<axis>Z</axis>
+											<rate>2</rate>
+										</item>
+									</components>
+									<entityData>{1B061358-E1F2-FF45-B0AC-5285D0180700}</entityData>
+								</item>
+							</entityData>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+	</components>
+</object>

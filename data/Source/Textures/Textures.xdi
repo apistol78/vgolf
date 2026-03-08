@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.TextureSet">
+	<textures>
+		<item>
+			<first>Fabric_N</first>
+			<second>{9406A9D6-5C88-D14A-9ED2-DBBEC43E8378}</second>
+		</item>
+		<item>
+			<first>Green Tiles</first>
+			<second>{092F2908-3C8C-2141-AFA0-97AED06A8968}</second>
+		</item>
+		<item>
+			<first>book_pattern_col1_1k</first>
+			<second>{67B44737-E7FC-C641-A562-BB7E3676B337}</second>
+		</item>
+		<item>
+			<first>book_pattern_nor_1k</first>
+			<second>{A56DA92B-E2DB-6C46-89A6-2C74FB6AAB73}</second>
+		</item>
+		<item>
+			<first>book_pattern_rough_1k</first>
+			<second>{BA72726E-EAA0-3747-8495-37F2FBC6EEAE}</second>
+		</item>
+		<item>
+			<first>plywood_diff_1k</first>
+			<second>{8325DCF6-E06D-8643-A3CA-4B77A2B5915F}</second>
+		</item>
+		<item>
+			<first>plywood_nor_1k</first>
+			<second>{7D9A1A97-225A-6748-B010-878B317ACA9F}</second>
+		</item>
+		<item>
+			<first>plywood_rough_1k</first>
+			<second>{3ED7DB67-B62F-CE47-9190-47B9A35EB558}</second>
+		</item>
+	</textures>
+</object>

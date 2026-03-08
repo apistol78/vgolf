@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{7947759C-88DB-794E-8D09-7F30A40B6669}
+
+TutorialView = TutorialView or class("TutorialView", Container)
+
+TutorialView.__flipboardId = "TUTORIAL"
+
+function TutorialView:new(parent)
+	Container.new(self, parent, TableLayout({ 100 }, { 100 }, 0, 0, 0, 0))
+
+	Static(self, "TUTORIAL")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setTextSize(60)
+end
+
+
+	]]>
+	</text>
+</object>

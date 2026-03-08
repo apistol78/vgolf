@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Hammer = Hammer or class("Hammer", traktor.world.ScriptComponent)
+
+function Hammer:new()
+	self._transform = Transform.identity
+	self._offset = math.random()
+end
+
+function Hammer:setTransform(t)
+	self._transform = t
+end
+
+function Hammer:update(totalTime, deltaTime)
+	-- Must have an update otherwise ScriptComponent will recurse oom.
+
+	local t = totalTime + self._offset
+	t = t - math.floor(t)
+
+	local rate = 0.1
+
+	t = t * (1 + rate)
+	local angle = 0
+	if t <= 1 then
+		angle = (1 - t) * 3.142 / 2
+	else
+		t = (t - 1) / rate
+		angle = t * 3.142 / 2
+	end
+
+	self.owner.transform = self._transform * Transform(
+		Vector4(0, 0, 0, 1),
+		Quaternion.fromEulerAngles(0, angle, 0)
+	)
+end
+
+	]]>
+	</text>
+</object>

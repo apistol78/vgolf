@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Main</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers>
+		<item type="traktor.runtime.WorldLayerData">
+			<name>world</name>
+			<permitTransition>false</permitTransition>
+			<scene>{240537BC-ED74-724C-8A16-8A3877404742}</scene>
+		</item>
+		<item type="traktor.spark.SparkLayerData" version="1">
+			<name>ui</name>
+			<permitTransition>true</permitTransition>
+			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
+			<externalMovies/>
+			<clearBackground>false</clearBackground>
+			<enableSound>true</enableSound>
+		</item>
+		<item type="traktor.runtime.AudioLayerData">
+			<name>song</name>
+			<permitTransition>true</permitTransition>
+			<sound>{DA529184-601F-5D4A-8D0D-C92702608249}</sound>
+			<autoPlay>true</autoPlay>
+			<repeat>true</repeat>
+		</item>
+	</layers>
+	<class>{8227E4BB-9B52-E647-BEF1-6E3F32ED4810}</class>
+	<shaderFade>{F3A1A715-3A9A-AB44-8E32-5F77068B65B3}</shaderFade>
+	<fadeOutUpdate>false</fadeOutUpdate>
+	<fadeRate>2</fadeRate>
+	<transitions>
+		<item>
+			<first>GAME</first>
+			<second>{509847A1-0899-44A8-BDF5-08470546202C}</second>
+		</item>
+	</transitions>
+	<resourceBundle>{87DA7155-8AA1-ED49-BB2C-B277330DA028}</resourceBundle>
+	<properties/>
+</object>

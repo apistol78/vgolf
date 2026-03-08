@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>Splash</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers>
+		<item type="traktor.runtime.ScreenLayerData">
+			<name>background</name>
+			<permitTransition>true</permitTransition>
+			<shader>{D2302F71-EDC8-474A-B68F-F5A968D8F1F8}</shader>
+		</item>
+		<item type="traktor.spark.SparkLayerData" version="1">
+			<name>ui</name>
+			<permitTransition>true</permitTransition>
+			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
+			<externalMovies/>
+			<clearBackground>false</clearBackground>
+			<enableSound>false</enableSound>
+		</item>
+	</layers>
+	<class>{A23FA9C4-B364-5849-8754-41FFBFDF5624}</class>
+	<shaderFade>{F3A1A715-3A9A-AB44-8E32-5F77068B65B3}</shaderFade>
+	<fadeOutUpdate>true</fadeOutUpdate>
+	<fadeRate>2</fadeRate>
+	<transitions>
+		<item>
+			<first>MAIN</first>
+			<second>{4C21D382-3338-5E43-9EB6-7520F1E7CDA4}</second>
+		</item>
+	</transitions>
+	<resourceBundle>{87DA7155-8AA1-ED49-BB2C-B277330DA028}</resourceBundle>
+	<properties/>
+</object>

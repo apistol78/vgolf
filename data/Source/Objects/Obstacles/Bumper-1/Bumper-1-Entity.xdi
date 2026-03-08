@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{ABF4096A-242E-CF4A-BB34-212D394BEE1C}</id>
+	<name>Bumper-1</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{32C77885-B9D7-9A4D-8584-D314C359567C}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.CylinderShapeDesc" version="6">
+					<localTransform>
+						<translation>0, 0.15, 0, 0</translation>
+						<rotation>0.707107, 0, 0, 0.707107</rotation>
+					</localTransform>
+					<collisionGroup>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+					</collisionGroup>
+					<collisionMask>
+						<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+					</collisionMask>
+					<material>0</material>
+					<radius>0.3</radius>
+					<length>0.5</length>
+				</shape>
+				<friction>0.75</friction>
+				<restitution>0.9</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="1">
+			<class>{E0A39BDF-4AA9-8A44-B0D6-988ABEADC005}</class>
+			<editorSupport>false</editorSupport>
+		</item>
+	</components>
+</object>

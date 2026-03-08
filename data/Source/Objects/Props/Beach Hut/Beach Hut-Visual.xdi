@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="20">
+	<fileName>Props/Beach Hut.blend</fileName>
+	<importFilter>!Crime</importFilter>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures>
+		<item>
+			<first>Hut</first>
+			<second>{3421CBF9-3078-CE4A-91A5-1F1D5C32274C}</second>
+		</item>
+		<item>
+			<first>Wood_Plank_D</first>
+			<second>{EAD838A2-7809-A349-8C41-A2D0F1767B66}</second>
+		</item>
+	</materialTextures>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0.628319</previewAngle>
+</object>

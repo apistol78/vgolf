@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="1">
+	<guid>{7E967175-F506-EE4F-A193-F1D5E0F59883}</guid>
+	<primaryType>traktor.online.GcGameConfiguration</primaryType>
+	<blobs/>
+</object>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
+#using \{869E9D1D-5C06-3E40-B354-436457E08ACB}
+
+#using \{BDE2D187-E75F-194D-994D-7FDE7C3B726D}
+#using \{C4FCFB21-9C68-A34C-A617-1F00D7E12372}
+#using \{8FC9A6EE-2913-A04C-A1CA-22D70ADA9A05}
+
+import(traktor)
+
+-- Main
+
+Main = Main or class("Main", Stage)
+
+function Main:new(params, environment)
+	Stage.new(self, params, environment)
+
+	environment.control.pause = false
+
+	-- Get save game.
+	self._save = environment.online.sessionManager.saveData:getNow("SAVE")
+	if self._save == nil then
+		-- No save data found, assume it's the first launch
+		-- and create a new save data.
+		self._save = PropertyGroup()
+	end
+
+	local fromCoins = self._save:getProperty("LAST_COINS") or 0
+	local toCoins = self._save:getProperty("COINS") or 0
+	self._save:setProperty("LAST_COINS", toCoins)
+	environment.online.sessionManager.saveData:setNow("SAVE", "", "", self._save, true)
+
+	-- Synchronize data with online leaderboard.
+	local lbs = environment.online.sessionManager.leaderboards
+	if lbs ~= nil then
+		lbs:setScore("LB_COINS", toCoins)
+	end
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{4B72718F-9CD5-5D40-8A5E-21A185CC6DF8}", "\{8A4F82EA-80AF-0A41-8AE0-2E2140D47D6B}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+	setupStyles()
+
+	-- Create UI frame with virtual aspect ratio of 9:16 since
+	-- it's the most common mobile aspect ratio.
+	local k = 60
+	local root = self.ui.root
+	self._frame = Frame(
+		root,
+		9 * k, 16 * k,
+		FloodLayout(0, 0)
+	)
+
+	local fp = Flipboard(self._frame)
+
+	-- Main view.
+	local mv = MainView(fp)
+	mv:setCoins(fromCoins, toCoins)
+	mv._buttonPlay:setOnClick(function()
+		fp:showPage("LEVEL")
+		self.world.scene.controller:play("LEVEL")
+	end)
+	mv._buttonGameCenter:setOnClick(function()
+		environment.online.sessionManager:navigateUrl("gamecenter://default/")
+	end)
+	mv._buttonConfig:setOnClick(function()
+		fp:showPage("CONFIG")
+		self.world.scene.controller:play("CONFIG")
+	end)
+
+	-- Configuration view.
+	local settings = environment.settings
+	local config = {}
+	config.musicVolume = (settings:getProperty("Audio.Volumes/Music") or 1) * 100
+	config.effectVolume = (settings:getProperty("Audio.Volumes/Effect") or 1) * 100
+	config.pitchFx = (settings:getProperty("PitchFx") or true)
+	config.cameraAim = (settings:getProperty("CameraAim") or 1)
+	ConfigView(fp, config)
+		:setOnApply(function()
+			settings:setProperty("Audio.Volumes/Music", config.musicVolume / 100)
+			settings:setProperty("Audio.Volumes/Effect", config.effectVolume / 100)
+			settings:setProperty("PitchFx", config.pitchFx)
+			settings:setProperty("CameraAim", config.cameraAim)
+			environment:reconfigure()
+			fp:showPage("MAIN")
+			self.world.scene.controller:play("START")
+		end)
+		:setOnCancel(function()
+			fp:showPage("MAIN")
+			self.world.scene.controller:play("START")
+		end)
+
+	-- Level selector view.
+	local lv = LevelView(fp, self._save)
+	lv:setOnLevelSelect(function(lvl)
+		self._loader = self:loadStageAsync("GAME", { level = lvl } )
+	end)
+	lv._buttonMenu:setOnClick(function()
+		fp:showPage("MAIN")
+		self.world.scene.controller:play("START")
+	end)
+
+	fp:showPage("MAIN")
+
+	-- Start initial camera animation.
+	self.world.scene.controller:play("START")
+
+	-- Ensure layout is updated.
+	self._frame:update()
+end
+
+function Main:finalize()
+	self._frame:remove()
+	self._frame = nil
+end
+
+function Main:update(info)
+	-- Check if stage loader is ready, if so navigate to loaded stage.
+	if self._loader ~= nil then
+		if self._loader.ready and self._loader.succeeded then
+			self:gotoStage(self._loader:get())
+			self._loader = nil
+		end
+	end
+
+	-- Update UI interval.
+	Tween.update(info.simulationDeltaTime)
+	Interval.update(info.simulationDeltaTime)
+end
+
+function Main:setup(info)
+--	local igcx < const > = self.world.worldRenderer.imageGraphContext
+--	igcx:setFloatParameter(Handle.Bluriness, self._bluriness)
+end
+
+-- private
+
+	]]>
+	</text>
+</object>

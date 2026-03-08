@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{0624F437-6DE3-CC40-B426-9853D43401BA}</id>
+	<name>Grass</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData">
+			<mesh>{D5FEC24E-C240-CA4C-8057-901136308E6B}</mesh>
+			<screenSpaceCulling>false</screenSpaceCulling>
+		</item>
+		<item type="traktor.world.EditorAttributesComponentData">
+			<visible>true</visible>
+			<locked>false</locked>
+			<include>true</include>
+			<dynamic>true</dynamic>
+		</item>
+	</components>
+</object>

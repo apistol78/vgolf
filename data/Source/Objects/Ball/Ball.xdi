@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Ball = Ball or class("Ball", traktor.world.ScriptComponent)
+
+Ball.RADIUS = 0.095
+
+function Ball:new()
+	-- Must have new for ScriptComponent will fail otherwise.
+	self._lastVelocity = Vector4.zero
+end
+
+function Ball:update(contextObject, totalTime, deltaTime)
+	local rb = self.owner:getComponent(physics.RigidBodyComponent)
+	local r < const > = Ball.RADIUS
+
+	-- Damp spin on Y axis; Y spin makes it difficult to control ball.
+	if false then
+		local m = 1 / rb.body.inverseMass
+		local it = (2/5) * m * r * r
+		local spinY = rb.body.angularVelocity.y
+		rb.body:addAngularImpulse(Vector4(0, -spinY * it, 0), false)
+	end
+
+	-- Concatenate orientation strikly from linear velocity
+	-- thus prevent visual spinning on Y axis.
+	local lv = rb.body.linearVelocity
+	if lv.length > 0.001 then
+		local axis = lv:cross(Vector4(0, 1, 0)):normalized()
+		local qdr = Quaternion.fromAxisAngle(axis * (-lv.length / r) * deltaTime)
+		local Tbdy = rb.body.transform
+		rb.body.transform = Transform(
+			Tbdy.translation,
+			qdr * Tbdy.rotation
+		)
+	end
+
+	-- Emit effects.
+	self:_emitEffects(lv)
+
+	self._lastVelocity = lv
+end
+
+function Ball:tracePrediction(linearVelocity, duration)
+	local pm = environment.physics.physicsManager
+	local rb = self.owner:getComponent(physics.RigidBodyComponent)
+	local state = rb.body:getState()
+	local active = rb.body.active
+	local prediction = {}
+
+	-- Disable all other dynamic bodies.
+	for i, body in pairs(pm.bodies) do
+		if not body.static and body ~= rb.body then
+			body.enable = false
+		end
+	end
+
+	-- Predict using explicit velocity change on ball.
+	rb.body.linearVelocity = linearVelocity
+	rb.body.active = true
+
+	-- Simulate game physics N seconds.
+	local dT < const > = 1.0 / 60.0
+	local iterations < const > = math.floor(duration / dT)
+	for i = 0, iterations - 1 do
+		pm:update(dT, false)
+		prediction[i] = rb.body.transform.translation.xyz1
+	end
+
+	-- Enable all dynamic bodies.
+	for i, body in pairs(pm.bodies) do
+		if not body.static and body ~= rb.body then
+			body.enable = true
+		end
+	end
+
+	rb.body:setState(state)
+	rb.body.active = active
+
+	return prediction
+end
+
+function Ball:reset()
+	self.owner:getComponent(physics.RigidBodyComponent).body:reset()
+	self.owner:getComponent(physics.RigidBodyComponent).body.active = false
+	self.owner:getComponent(spray.EffectComponent):reset()
+end
+
+-- private
+
+function Ball:_emitEffects(velocity)
+	-- Check if ball velocity has suddenly changed; emit events.
+	local ln0 = self._lastVelocity.length
+	local ln1 = velocity.length
+	if ln0 > 0.5 and ln1 > 0.5 then
+		local phi = velocity:normalized():dot(self._lastVelocity:normalized())
+		if phi < 0.8 then
+			local ec = self.owner:getComponent(world.EventSetComponent)
+			ec:raise("collision")
+		end
+	end
+	self._lastVelocity = velocity
+end
+
+	]]>
+	</text>
+</object>

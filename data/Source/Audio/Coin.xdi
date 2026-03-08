@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.sound.SoundAsset" version="8">
+	<fileName>Audio/Coin.wav</fileName>
+	<category>{69749908-8391-7D41-A893-A1159C6AB5FF}</category>
+	<stream>false</stream>
+	<preload>true</preload>
+	<compressed>true</compressed>
+	<gain>0</gain>
+</object>

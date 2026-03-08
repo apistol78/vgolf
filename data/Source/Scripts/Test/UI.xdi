@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{218D113A-66DC-9049-8424-701FF60F2BC4}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+#using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
+
+#using \{BDE2D187-E75F-194D-994D-7FDE7C3B726D}
+#using \{E1DB03BB-0A19-D043-B436-C8257AB90C66}
+#using \{590BFC89-3CED-304C-A2D8-8D77F840324F}
+#using \{C4FCFB21-9C68-A34C-A617-1F00D7E12372}
+#using \{31A27326-B5C7-C54A-8AAB-B9675B1DF479}
+#using \{8FC9A6EE-2913-A04C-A1CA-22D70ADA9A05}
+#using \{9C79AD2E-7F1C-B949-BF7B-31BFD4585A70}
+#using \{D7E17F6C-CB46-BF40-8D2A-E6A87C2E3346}
+
+CURRENT = "MAIN"
+
+UI = UI or class("UI", Scaffolding)
+
+function UI:setup(frame)
+
+	-- Setup our own style.
+	setupStyles()
+
+	local ct = Container(frame, TableLayout({ 0, 100 }, { 100 }, 0, 0, 0, 0))
+
+	local lb = ListBox(ct, 8, 8, 16)
+	lb:add("LOADING")
+	lb:add("HUD")
+	lb:add("MAIN")
+	lb:add("CONFIG")
+	lb:add("LEVEL")
+	lb:add("MENU")
+	lb:add("FINISHED")
+	lb:add("TUTORIAL")
+	lb:setOnClick(function(index, item)
+		CURRENT = item
+		self._flipBoard:showPage(item)
+	end)
+
+	local ct = Container(ct, FloodLayout())
+	Image(ct, "MC_Background", Image.MODE_STRETCH)
+	self._flipBoard = Flipboard(ct)
+
+	-- LOADING
+	LoadingView(self._flipBoard)
+
+	-- HUD
+	HudView(self._flipBoard)
+
+	-- MAIN
+	MainView(self._flipBoard)
+		:setCoins(0, 10000)
+
+	-- CONFIG
+	local config = {}
+	config.musicVolume = 25
+	config.effectVolume = 50
+	config.pitchFx = true
+	config.cameraAim = 1
+	ConfigView(self._flipBoard, config)
+
+	-- LEVEL
+	LevelView(self._flipBoard, nil)
+
+	-- MENU
+	MenuView(self._flipBoard)
+
+	-- FINISHED
+	FinishedView(self._flipBoard)
+		:showAchievements(
+			FinishedView.ACH_BEST_TIME |
+			FinishedView.ACH_HOLE_IN_ONE
+		 )
+
+	-- TUTORIAL
+	TutorialView(self._flipBoard)
+
+	self._flipBoard:showPage(CURRENT)
+end
+
+function UI:getResourceKits()
+	return { "\{4B72718F-9CD5-5D40-8A5E-21A185CC6DF8}", "\{8A4F82EA-80AF-0A41-8AE0-2E2140D47D6B}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+end
+
+	]]>
+	</text>
+</object>
