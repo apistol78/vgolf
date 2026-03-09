@@ -6,8 +6,8 @@
 			<second>0</second>
 		</item>
 		<item>
-			<first>0.560261</first>
-			<second>0.6875</second>
+			<first>0.5</first>
+			<second>0.5</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -20,8 +20,8 @@
 			<second>0</second>
 		</item>
 		<item>
-			<first>0.599349</first>
-			<second>0.640625</second>
+			<first>0.5</first>
+			<second>0.5</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -40,5 +40,5 @@
 	</blueCurve>
 	<brightness>0</brightness>
 	<contrast>1</contrast>
-	<saturation>1.59</saturation>
+	<saturation>1</saturation>
 </object>

@@ -213,7 +213,6 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData>
 		<item type="traktor.scene.ExternalOperationData">
 			<externalDataId>{DD0A2DE2-BE8C-0F40-80D2-8780D27796F3}</externalDataId>

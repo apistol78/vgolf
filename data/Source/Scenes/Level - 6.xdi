@@ -72,13 +72,14 @@
 		<fogColor>0.482353, 0.698039, 0.721569, 1</fogColor>
 		<irradianceGrid>{8F500C87-6146-A44F-B102-01BFDE65F9B9}</irradianceGrid>
 		<imageProcess>
-			<disabled>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</disabled>
-			<low>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</low>
-			<medium>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</medium>
-			<high>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</high>
-			<ultra>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</ultra>
+			<disabled/>
+			<low/>
+			<medium/>
+			<high/>
+			<ultra/>
 		</imageProcess>
-		<colorGrading>{B942A1E9-F1E1-4201-9443-050CDDC5088C}</colorGrading>
+
+		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.EntityData" version="1">
@@ -657,6 +658,5 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData/>
 </object>

@@ -11,11 +11,5 @@
 			<mesh>{D5FEC24E-C240-CA4C-8057-901136308E6B}</mesh>
 			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
-		<item type="traktor.world.EditorAttributesComponentData">
-			<visible>true</visible>
-			<locked>false</locked>
-			<include>true</include>
-			<dynamic>true</dynamic>
-		</item>
 	</components>
 </object>

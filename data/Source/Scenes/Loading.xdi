@@ -72,12 +72,13 @@
 		<fogColor>1, 1, 1, 1</fogColor>
 		<irradianceGrid>{00000000-0000-0000-0000-000000000000}</irradianceGrid>
 		<imageProcess>
-			<disabled>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</disabled>
-			<low>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</low>
-			<medium>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</medium>
-			<high>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</high>
-			<ultra>{B0C45814-CDE1-B446-884F-21068D3CB8B8}</ultra>
+			<disabled/>
+			<low/>
+			<medium/>
+			<high/>
+			<ultra/>
 		</imageProcess>
+
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.EntityData" version="1">
@@ -187,87 +188,5 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData type="traktor.theater.TheaterControllerData" version="1">
-		<acts>
-			<item type="traktor.theater.ActData">
-				<name>ENTER</name>
-				<duration>5</duration>
-				<tracks>
-					<item type="traktor.theater.TrackData" version="7">
-						<entityId>{E7E410A8-57B8-D54F-9DA0-73E3C945B04B}</entityId>
-						<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
-						<path>
-							<keys>
-								<item>
-									<T>0</T>
-									<tcb>0, 0, 0, 0</tcb>
-									<position>0, 0, -2.26965, 1</position>
-									<orientation>0, -0.86, 0, 0</orientation>
-									<values>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-									</values>
-								</item>
-								<item>
-									<T>0.992</T>
-									<tcb>0, 0, 0, 0</tcb>
-									<position>0, 0, -2.26965, 1</position>
-									<orientation>0, 0, 0, 0</orientation>
-									<values>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-									</values>
-								</item>
-							</keys>
-						</path>
-					</item>
-				</tracks>
-			</item>
-			<item type="traktor.theater.ActData">
-				<name>LEAVE</name>
-				<duration>5</duration>
-				<tracks>
-					<item type="traktor.theater.TrackData" version="7">
-						<entityId>{E7E410A8-57B8-D54F-9DA0-73E3C945B04B}</entityId>
-						<lookAtEntityId>{00000000-0000-0000-0000-000000000000}</lookAtEntityId>
-						<path>
-							<keys>
-								<item>
-									<T>0</T>
-									<tcb>0, 0, 0, 0</tcb>
-									<position>0, 0, -2.26965, 1</position>
-									<orientation>0, 0, 0, 0</orientation>
-									<values>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-									</values>
-								</item>
-								<item>
-									<T>1.024</T>
-									<tcb>0, 0, 0, 0</tcb>
-									<position>0, 0, -2.26965, 1</position>
-									<orientation>0, 0.88, 0, 0</orientation>
-									<values>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-										<item>0</item>
-									</values>
-								</item>
-							</keys>
-						</path>
-					</item>
-				</tracks>
-			</item>
-		</acts>
-		<repeatActs>false</repeatActs>
-		<randomizeActs>false</randomizeActs>
-	</controllerData>
 	<operationData/>
 </object>

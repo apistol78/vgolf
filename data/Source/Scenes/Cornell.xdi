@@ -78,7 +78,7 @@
 			<high>{00000000-0000-0000-0000-000000000000}</high>
 			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
 		</imageProcess>
-		<colorGrading>{B942A1E9-F1E1-4201-9443-050CDDC5088C}</colorGrading>
+		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.EntityData" version="1">
@@ -127,7 +127,6 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData>
 		<item type="traktor.scene.ExternalOperationData">
 			<externalDataId>{DD0A2DE2-BE8C-0F40-80D2-8780D27796F3}</externalDataId>

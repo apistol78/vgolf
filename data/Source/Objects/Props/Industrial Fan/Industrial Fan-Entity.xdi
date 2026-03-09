@@ -21,12 +21,6 @@
 							<mesh>{D371752E-423D-0B46-B560-392D609E1784}</mesh>
 							<screenSpaceCulling>false</screenSpaceCulling>
 						</item>
-						<item type="traktor.world.EditorAttributesComponentData">
-							<visible>true</visible>
-							<locked>false</locked>
-							<include>true</include>
-							<dynamic>false</dynamic>
-						</item>
 					</components>
 				</item>
 				<item type="traktor.world.EntityData" version="1">
@@ -67,12 +61,6 @@
 						<item type="traktor.animation.RotatorComponentData">
 							<axis>Z</axis>
 							<rate>-8</rate>
-						</item>
-						<item type="traktor.world.EditorAttributesComponentData">
-							<visible>true</visible>
-							<locked>false</locked>
-							<include>true</include>
-							<dynamic>true</dynamic>
 						</item>
 					</components>
 				</item>

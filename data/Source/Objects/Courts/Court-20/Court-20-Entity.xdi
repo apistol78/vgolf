@@ -58,12 +58,6 @@
 								</item>
 							</entityData>
 						</item>
-						<item type="traktor.world.EditorAttributesComponentData">
-							<visible>true</visible>
-							<locked>false</locked>
-							<include>true</include>
-							<dynamic>true</dynamic>
-						</item>
 						<item type="traktor.animation.PathComponentData">
 							<path>
 								<keys>

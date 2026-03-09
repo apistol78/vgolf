@@ -62,12 +62,6 @@
 						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
-						<item type="traktor.world.EditorAttributesComponentData">
-							<visible>true</visible>
-							<locked>false</locked>
-							<include>true</include>
-							<dynamic>true</dynamic>
-						</item>
 						<item type="traktor.world.GroupComponentData">
 							<entityData>
 								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
@@ -78,12 +72,6 @@
 										<rotation>0, 0, 0, 1</rotation>
 									</transform>
 									<components>
-										<item type="traktor.world.EditorAttributesComponentData">
-											<visible>true</visible>
-											<locked>false</locked>
-											<include>true</include>
-											<dynamic>true</dynamic>
-										</item>
 										<item type="traktor.animation.RotatorComponentData">
 											<axis>Z</axis>
 											<rate>-2</rate>
@@ -99,12 +87,6 @@
 										<rotation>0, 0, 0, 1</rotation>
 									</transform>
 									<components>
-										<item type="traktor.world.EditorAttributesComponentData">
-											<visible>true</visible>
-											<locked>false</locked>
-											<include>true</include>
-											<dynamic>true</dynamic>
-										</item>
 										<item type="traktor.animation.RotatorComponentData">
 											<axis>Z</axis>
 											<rate>2</rate>
