@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{32760745-9B8B-564B-8B89-8B2DA4740892}</id>
 	<name>Shovel</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{A13EFD5A-1035-4645-A884-940CB5EFD536}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
 	</components>
 </object>

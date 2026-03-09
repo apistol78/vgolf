@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{718C440B-96F1-4818-987B-550E62D5356F}</id>
 	<name>Court-14</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{4B598B5D-17D1-334E-9CD3-8FA8486275AE}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
-		<item type="traktor.physics.RigidBodyComponentData">
+		<item type="traktor.physics.RigidBodyComponentData" version="1">
 			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
-				<shape type="traktor.physics.MeshShapeDesc" version="6">
+				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
 					<localTransform>
 						<translation>0, 0, 0, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
@@ -33,6 +37,7 @@
 				<kinematic>false</kinematic>
 			</bodyDesc>
 			<eventCollide/>
+			<transformFilter>0</transformFilter>
 		</item>
 	</components>
 </object>

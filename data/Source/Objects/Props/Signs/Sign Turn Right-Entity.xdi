@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{A15105E3-9684-3C40-A46A-8E2BD21A6679}</id>
 	<name>Sign Turn Right</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{DA44B0A2-2E8C-884C-A7E1-2ED885012C6E}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
 	</components>
 </object>

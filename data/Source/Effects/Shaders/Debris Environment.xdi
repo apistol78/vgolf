@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.ShaderGraph">
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{961317F4-E1E1-224D-A2AF-965995278C45}</id>
 			<comment/>
 			<position>
@@ -61,24 +61,6 @@
 					<name>ViewPosition</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>DepthFade</first>
-					<second>0.1</second>
-				</item>
-				<item>
-					<first>Size Add</first>
-					<second>0</second>
-				</item>
-				<item>
-					<first>Size Multiply</first>
-					<second>1</second>
-				</item>
-				<item>
-					<first>View Offset</first>
-					<second>0</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{C4120758-FB18-5B4A-8701-32CA8ADBB53D}</id>
@@ -90,25 +72,25 @@
 			<external>{CD10652D-DEA1-EA49-819A-7CAC06E141DE}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{16DFA207-4FC3-904A-8A85-3295BC3076DB}</id>
 			<comment/>
 			<position>
 				<first>194</first>
 				<second>273</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{4830BDA2-D3BE-A249-A34F-4731F74D66BB}</id>
 			<comment/>
 			<position>
@@ -129,7 +111,6 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
 		<item type="traktor.render.PixelState" version="9,traktor.render.Node:1">
 			<id>{BC9B316E-7027-7C4E-8AD3-C8606658D055}</id>
@@ -305,4 +286,5 @@
 			</destination>
 		</item>
 	</edges>
+	<groups/>
 </object>

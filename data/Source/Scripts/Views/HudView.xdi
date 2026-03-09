@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{7947759C-88DB-794E-8D09-7F30A40B6669}
 
 HudView = HudView or class("HudView", Container)
@@ -81,6 +81,6 @@ function HudView:showMessage(title, message)
 	end)
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

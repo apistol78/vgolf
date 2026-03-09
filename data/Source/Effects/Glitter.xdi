@@ -8,7 +8,7 @@
 			<name>Glitter</name>
 			<time>0</time>
 			<duration>0</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
+			<emitter type="traktor.spray.EmitterData" version="9">
 				<source type="traktor.spray.PointSourceData">
 					<constantRate>40</constantRate>
 					<velocityRate>0</velocityRate>
@@ -64,6 +64,8 @@
 				<sort>false</sort>
 				<worldSpace>true</worldSpace>
 				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+				<gpu>true</gpu>
+				<capacity>1000</capacity>
 			</emitter>
 			<trail/>
 			<sequence type="traktor.spray.SequenceData">

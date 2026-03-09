@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 import(traktor)
 
 Hammer = Hammer or class("Hammer", traktor.world.ScriptComponent)
@@ -38,6 +38,6 @@ function Hammer:update(totalTime, deltaTime)
 	)
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 OutOfBounds = OutOfBounds or class("OutOfBounds", traktor.world.ScriptComponent)
 
 function OutOfBounds:new()
@@ -21,7 +21,7 @@ function OutOfBounds:update(contextObject, totalTime, deltaTime)
 
 	-- Lazy get ball entity.
 	if self._ballEntity == nil then
-		self._ballEntity = contextObject.world:getEntity("Ball")
+		self._ballEntity = contextObject.world.world:getEntity("Ball")
 		assert(self._ballEntity ~= nil)
 	end
 
@@ -33,6 +33,6 @@ function OutOfBounds:update(contextObject, totalTime, deltaTime)
 	end
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

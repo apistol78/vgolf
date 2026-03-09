@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.ShaderGraph">
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.PixelOutput" version="9,traktor.render.Node:1">
+		<item type="traktor.render.PixelOutput" version="10,traktor.render.Node:1">
 			<id>{45438AF9-A222-9940-8828-993919F04E72}</id>
 			<comment/>
 			<position>
@@ -46,7 +46,6 @@
 			<stencilFunction>CfAlways</stencilFunction>
 			<stencilReference>0</stencilReference>
 			<stencilMask>2147483648</stencilMask>
-			<registerCount>0</registerCount>
 			<precisionHint>Low</precisionHint>
 		</item>
 		<item type="traktor.render.Add" version="traktor.render.Node:1">
@@ -81,36 +80,37 @@
 				<second>343</second>
 			</position>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{96A7DFFF-618F-F847-A0F8-C6D673961D08}</id>
 			<comment/>
 			<position>
 				<first>582</first>
 				<second>278</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{808149EC-308F-7845-BD29-23DD46C4FA94}</id>
 			<comment/>
 			<position>
 				<first>383</first>
 				<second>242</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Input1</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{A5C2320D-32B5-1646-AC7A-11C5F9258202}</id>
 			<comment/>
 			<position>
@@ -129,62 +129,63 @@
 					<name>TexCoord</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{B2938C03-513B-E441-80FC-9AEFEBC0BC34}</id>
 			<comment/>
 			<position>
 				<first>582</first>
 				<second>405</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{AFF3EA03-FCA1-844F-ADC2-DEA8C898CE2E}</id>
 			<comment/>
 			<position>
 				<first>383</first>
 				<second>369</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Input2</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{58E59879-33F4-CD40-B550-D02AE1844F1A}</id>
 			<comment/>
 			<position>
 				<first>577</first>
 				<second>533</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{6B548434-A817-2940-A543-82A0C3CF53A4}</id>
 			<comment/>
 			<position>
 				<first>378</first>
 				<second>497</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Input3</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
@@ -198,36 +199,37 @@
 			</position>
 			<value>3</value>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{2D642AFB-4FB1-AD4A-9412-AD1FC3712B7D}</id>
 			<comment/>
 			<position>
 				<first>573</first>
 				<second>739</second>
 			</position>
-			<minFilter>FtPoint</minFilter>
-			<mipFilter>FtPoint</mipFilter>
-			<magFilter>FtPoint</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Point</minFilter>
+			<mipFilter>Point</mipFilter>
+			<magFilter>Point</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{8E8BC46F-687C-AA49-9B7D-B3E78B77C081}</id>
 			<comment/>
 			<position>
 				<first>374</first>
 				<second>711</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Base</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{32F40807-B838-6F4B-A189-CE9EC94075DB}</id>
 			<comment/>
 			<position>
@@ -235,9 +237,8 @@
 				<second>1308</second>
 			</position>
 			<name>L_Pivot</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{35D93281-A27C-E04D-B57A-16D717577E15}</id>
 			<comment/>
 			<position>
@@ -245,7 +246,6 @@
 				<second>1510</second>
 			</position>
 			<name>L_Pivot</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Sub" version="traktor.render.Node:1">
 			<id>{8C4F7250-6879-3843-9F60-4D65094F1EF0}</id>
@@ -255,18 +255,19 @@
 				<second>1048</second>
 			</position>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{8CAC9004-7757-B149-9FB8-7B9514345E34}</id>
 			<comment/>
 			<position>
 				<first>281</first>
 				<second>1049</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>BallPosition</parameterName>
 			<type>Vector</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{571AF7FA-7F1B-344F-A2E6-A63FD32AD853}</id>
 			<comment/>
 			<position>
@@ -274,7 +275,6 @@
 				<second>1130</second>
 			</position>
 			<name>L_Pivot</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{8C7D19AA-5B3F-1C4C-9BC1-A5421BBBA45F}</id>
@@ -312,13 +312,14 @@
 			</position>
 			<value>0.05</value>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{C6B1AA73-1B41-9745-BCDE-BE2ED717B5A1}</id>
 			<comment/>
 			<position>
 				<first>-657</first>
 				<second>1725</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Time</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -349,13 +350,14 @@
 			</position>
 			<value>0.1</value>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{09FB4B15-2210-7C42-9541-3595E82860F2}</id>
 			<comment/>
 			<position>
 				<first>-987</first>
 				<second>1608</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Time</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -445,20 +447,20 @@
 			<external>{037ED142-8928-FB44-91EA-FE7472FAC3E8}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{F0733C5D-E6D1-8D43-9EF2-E1549C90FB49}</id>
 			<comment/>
 			<position>
 				<first>127</first>
 				<second>1573</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -558,13 +560,14 @@
 			</position>
 			<value>0.5</value>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{033FE3E2-86B5-0C4F-B3DE-B57DA974FE4E}</id>
 			<comment/>
 			<position>
 				<first>2376</first>
 				<second>1253</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Slowmotion</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -579,7 +582,7 @@
 			<branch>BrAuto</branch>
 			<operator>CoGreater</operator>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{5B87E0C4-AE32-AF45-9BCD-46E132B4950E}</id>
 			<comment/>
 			<position>
@@ -587,9 +590,8 @@
 				<second>735</second>
 			</position>
 			<name>L_Merged</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{4128F7D1-71AF-FF40-9933-8E3263440807}</id>
 			<comment/>
 			<position>
@@ -597,15 +599,15 @@
 				<second>1390</second>
 			</position>
 			<name>L_Merged</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{1176115F-1D3D-D343-9473-E17499D67F48}</id>
 			<comment/>
 			<position>
 				<first>1972</first>
 				<second>671</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Bluriness</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -618,7 +620,7 @@
 				<second>572</second>
 			</position>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{BF8DB533-AA32-4E3C-ABE0-98D066447F8C}</id>
 			<comment/>
 			<position>
@@ -626,7 +628,6 @@
 				<second>2215</second>
 			</position>
 			<name>L_Position</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Abs" version="traktor.render.Node:1">
 			<id>{7453CD24-6BA7-4B52-A3B4-0BD08E073E46}</id>
@@ -660,7 +661,7 @@
 				<second>2100</second>
 			</position>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{8B461968-FDBC-418D-9E26-78C5AE723637}</id>
 			<comment/>
 			<position>
@@ -668,7 +669,6 @@
 				<second>2003</second>
 			</position>
 			<name>L_Merged</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{746E1712-D14B-4E89-9484-F5F14B3732E0}</id>
@@ -678,7 +678,7 @@
 				<second>2104</second>
 			</position>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{60163EDF-6333-4063-A829-8A70F8E2F545}</id>
 			<comment/>
 			<position>
@@ -686,9 +686,8 @@
 				<second>355</second>
 			</position>
 			<name>L_Position</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{BACA0112-0056-42E1-B0E6-FF72DCDA6222}</id>
 			<comment/>
 			<position>
@@ -696,9 +695,8 @@
 				<second>2100</second>
 			</position>
 			<name>L_MergedVignette</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{BE03A368-ED53-4100-BA2F-5D1216B42A9D}</id>
 			<comment/>
 			<position>
@@ -706,7 +704,6 @@
 				<second>1372</second>
 			</position>
 			<name>L_MergedVignette</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Vector" version="traktor.render.Node:1">
 			<id>{8A6F9846-5178-49CD-AA21-9BA5A4E8430A}</id>
@@ -1430,4 +1427,5 @@
 			</destination>
 		</item>
 	</edges>
+	<groups/>
 </object>

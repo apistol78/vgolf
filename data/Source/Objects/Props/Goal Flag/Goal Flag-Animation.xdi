@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.animation.AnimationAsset" version="6">
+<object type="traktor.animation.AnimationAsset" version="8">
 	<fileName>Props/Goal Flag.blend</fileName>
-	<skeleton>{00000000-0000-0000-0000-000000000000}</skeleton>
+	<targetSkeleton>{00000000-0000-0000-0000-000000000000}</targetSkeleton>
 	<take>ArmatureAction</take>
-	<scale>1</scale>
+	<scale>1, 1, 1, 1</scale>
 	<translate>0, 0, 0, 0</translate>
 	<removeLocomotion>true</removeLocomotion>
 </object>

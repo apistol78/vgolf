@@ -1,89 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.scene.SceneAsset" version="9">
-	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="37">
+<object type="traktor.scene.SceneAsset" version="10">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>EmFixed</exposureMode>
-		<exposure>-1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
-				<projection>SpUniform</projection>
 				<farZ>20</farZ>
 				<resolution>4096</resolution>
 				<bias>0.45</bias>
-				<biasCoeff>1.2</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0.2</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</disabled>
 			<low>
-				<projection>SpUniform</projection>
 				<farZ>10</farZ>
 				<resolution>512</resolution>
 				<bias>0.45</bias>
-				<biasCoeff>1.2</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0.2</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</low>
 			<medium>
-				<projection>SpUniform</projection>
 				<farZ>10</farZ>
 				<resolution>512</resolution>
 				<bias>0.45</bias>
-				<biasCoeff>1.2</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0.2</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</medium>
 			<high>
-				<projection>SpUniform</projection>
 				<farZ>10</farZ>
 				<resolution>512</resolution>
 				<bias>0.45</bias>
-				<biasCoeff>1.2</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0.2</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</high>
 			<ultra>
-				<projection>SpUniform</projection>
 				<farZ>25</farZ>
 				<resolution>512</resolution>
 				<bias>0.002</bias>
-				<biasCoeff>0.002</biasCoeff>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1</cascadingLambda>
 				<quantizeProjection>true</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>8</fogDistance>
-		<fogDensity>0</fogDensity>
-		<fogColor>0.482353, 0.698039, 0.721569, 1</fogColor>
-		<irradianceGrid>{8F500C87-6146-A44F-B102-01BFDE65F9B9}</irradianceGrid>
 		<imageProcess>
-			<disabled/>
-			<low/>
-			<medium/>
-			<high/>
-			<ultra/>
+			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<medium>{00000000-0000-0000-0000-000000000000}</medium>
+			<high>{00000000-0000-0000-0000-000000000000}</high>
+			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
+	<worldComponents/>
 	<layers>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{2619B193-C64F-2742-9B6B-69424BC3C807}</id>
 			<name>Environment</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -91,9 +73,14 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{0236F45C-B166-2F4C-8393-3A3F7F1746A6}</id>
 							<name>Environment-1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -105,9 +92,14 @@
 				</item>
 			</components>
 		</item>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{AFDD05B4-2C20-9344-8314-C6EEC0F3A27A}</id>
 			<name>Level</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -115,9 +107,14 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{BEA93961-8A0C-8342-9288-0327218D20F4}</id>
 							<name>Tiles</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -125,9 +122,14 @@
 							<components>
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{1BE444BF-DBD8-C84B-AFDA-7080711A795E}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1, 0, 2, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -135,9 +137,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{E05DA7F7-9677-464D-9093-5C92D35B0D4E}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1, 0, 0, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -145,9 +152,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{D3492A18-79DF-6F4D-A674-3E9BCF95B219}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, 10, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -155,9 +167,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{55EEB90F-B9DB-AD4D-96F3-F039130BCD46}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3, -0.029758, -1.991896, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -165,9 +182,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{F87A0F4E-D259-2549-94EA-B51FDFAA7529}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3, 0, 0, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -175,9 +197,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{36CC5BA4-1D03-FF4E-A0D7-37265E7920C2}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3, 0, 2, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -185,9 +212,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{673E403A-6DB5-A645-A470-A1514AEA1580}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3, 0, 4, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -195,9 +227,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{859C97F2-5C31-C644-9E7B-B958F9140116}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1, 0, -2, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -205,9 +242,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{A80438C4-387E-744C-A11F-3645427C0A68}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1, 0, -4, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -215,9 +257,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{87E14301-07D3-E84D-95A2-5001CB5DB83F}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, -4, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -225,9 +272,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{8F260F4F-DF5F-8147-997B-7BFBF502945B}</id>
 											<name>Concrete Tiles-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3, -0.029758, -3.991896, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -235,9 +287,14 @@
 											<components/>
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{195EC7B6-13EC-414C-A941-E43604BB669B}</id>
 											<name>Concrete Tiles Broken-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, 12, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -245,9 +302,14 @@
 											<components/>
 											<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{96428808-1700-3648-B0B9-BC9D124814AE}</id>
 											<name>Concrete Tiles Broken-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1, 0, 4, 0</translation>
 												<rotation>0, -0.707107, 0, 0.707107</rotation>
@@ -259,9 +321,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{8064CD5B-E409-C945-B99B-5479060CD7B5}</id>
 							<name>Court</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -269,9 +336,14 @@
 							<components>
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{C5A03EA5-E88C-7448-8AC1-B0E8D7E3FFDC}</id>
 											<name>Court-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, 4, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -279,9 +351,14 @@
 											<components/>
 											<entityData>{54263867-1738-C049-91AA-D5F7E811A407}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{17DED3C4-0E6B-5F45-B443-0DD73469F721}</id>
 											<name>Court-3-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, 2, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -289,9 +366,14 @@
 											<components/>
 											<entityData>{18EA5F86-E435-C041-A37B-970FDDCB46D9}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{0E02D099-9606-5943-B811-F49F32BC2D20}</id>
 											<name>Court-3-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, 0, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -299,9 +381,14 @@
 											<components/>
 											<entityData>{18EA5F86-E435-C041-A37B-970FDDCB46D9}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{45B73479-F6EA-A742-8701-47B8506F1F47}</id>
 											<name>Court-6-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1, 0, -2, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -313,9 +400,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{C9315F59-753A-124C-963C-69EE0A5ACC15}</id>
 							<name>Misc</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -323,9 +415,14 @@
 							<components>
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{2CBA85F8-D784-CC46-A19E-00D0A56A8204}</id>
 											<name>Box-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1.865627, -0.017002, 14.541657, 0</translation>
 												<rotation>0, -0.819191, 0, 0.57352</rotation>
@@ -333,9 +430,14 @@
 											<components/>
 											<entityData>{09421476-C5FE-454B-AC28-428FA8D7B494}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{BB26BCC9-3124-D641-A03D-A4ABC80AE4AB}</id>
 											<name>Bottle-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>2.128942, 0.030165, 13.819325, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -343,9 +445,14 @@
 											<components/>
 											<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{CEB46E0C-8537-4746-A7C9-70047F4CD8E5}</id>
 											<name>Wood Plank-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-1.711259, -0.025266, 6.051638, 0</translation>
 												<rotation>0, -0.237703, 0, 0.971338</rotation>
@@ -353,9 +460,14 @@
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{CD56895E-E8C6-9D4B-8CB3-95DE08440E23}</id>
 											<name>Wood Plank-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>-2.689239, -0.025266, 5.954393, 0</translation>
 												<rotation>0, -0.109778, 0, 0.993956</rotation>
@@ -363,9 +475,14 @@
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{D4BD51CE-29DC-F140-8913-A2A5DB4ABDB5}</id>
 											<name>Wood Plank-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3.039034, -0.025266, 9.989501, 0</translation>
 												<rotation>0, -0.37092, 0, 0.928665</rotation>
@@ -373,9 +490,14 @@
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{623EDD58-5A7B-7449-A817-F77511AF9D16}</id>
 											<name>Wood Plank-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>3.986529, -0.025266, 10.886863, 0</translation>
 												<rotation>0, -0.266731, 0, 0.963771</rotation>
@@ -383,9 +505,14 @@
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{5F2B90EF-2048-B84B-A2E4-C48108C574C3}</id>
 											<name>Pillars-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1.162314, -0.338637, 14.065573, 0</translation>
 												<rotation>0, -0.613117, 0, 0.789992</rotation>
@@ -393,9 +520,14 @@
 											<components/>
 											<entityData>{76991D94-2A64-D443-8C5F-52DA7D07389E}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{BDF04D86-1BD5-4CE2-9CF3-4B97A05221BC}</id>
 											<name>Bottle-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>1.642164, 0.030165, 13.660455, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
@@ -403,9 +535,14 @@
 											<components/>
 											<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
 										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{0E0DF52A-8047-4BA3-AFE5-18CA6FB4CBCA}</id>
 											<name>Bottle-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
 											<transform>
 												<translation>0.064396, 0.030165, 13.971088, 0</translation>
 												<rotation>0.112492, 0.175503, 0.527777, 0.823405</rotation>
@@ -417,9 +554,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{85BC90DE-F14B-5E4C-AC22-E1170C6849EF}</id>
 							<name>Goal</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1.01193, 0.14, 7.026777, 0</translation>
 								<rotation>0, 0.651834, 0, 0.758362</rotation>
@@ -427,9 +569,14 @@
 							<components/>
 							<entityData>{640C6E67-E139-F346-AECA-B179EA38877C}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{08092C7A-D018-EC49-A9ED-52A7F15FB69E}</id>
 							<name>Grass-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>5.484394, 0.03682, 2.05574, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -437,9 +584,14 @@
 							<components/>
 							<entityData>{FAED89C4-2A55-124E-B4F8-9AF094B57AD8}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{CA051218-7E2E-BD4B-816A-9089934D964F}</id>
 							<name>Grass-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>5.854798, 0.03682, -2.523084, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -447,9 +599,14 @@
 							<components/>
 							<entityData>{FAED89C4-2A55-124E-B4F8-9AF094B57AD8}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{806EB599-8202-C240-A591-FFE1D43D5BC3}</id>
 							<name>Grass-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>5.570749, 0.03682, 1.647262, 0</translation>
 								<rotation>0, -0.696135, 0, 0.717911</rotation>
@@ -457,9 +614,14 @@
 							<components/>
 							<entityData>{FAED89C4-2A55-124E-B4F8-9AF094B57AD8}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{6123B376-F96C-BC41-B269-125540F1B3A4}</id>
 							<name>Grass-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>2.822066, 0.03682, 5.193372, 0</translation>
 								<rotation>0, 0.80162, 0, 0.597834</rotation>
@@ -467,16 +629,21 @@
 							<components/>
 							<entityData>{FAED89C4-2A55-124E-B4F8-9AF094B57AD8}</entityData>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{7B753D33-DF0A-FA4F-9E4B-98B6D85E7AE4}</id>
 							<name>Irradiance</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1, 2, 4.530764, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>6, 4, 20</size>
+									<size>6, 4, 20, 0</size>
 								</item>
 							</components>
 						</item>
@@ -484,9 +651,14 @@
 				</item>
 			</components>
 		</item>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{1DF3483E-402D-8649-88D2-E90C105A375A}</id>
 			<name>Dynamic</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -494,9 +666,14 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{DEA33AD6-1BE3-6146-9CE8-23B68B3F74DD}</id>
 							<name>Logic</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -524,9 +701,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{64A7ADCA-3407-554E-9A7C-954B6BCB08F8}</id>
 							<name>Camera</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1, 2.5, -4, 0</translation>
 								<rotation>0.258819, 0, 0, 0.965926</rotation>
@@ -540,9 +722,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{2A6DB2D1-E669-2741-B2A9-A22EA2AD365A}</id>
 							<name>Coin</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1, 0.688264, 3.886563, 0</translation>
 								<rotation>0, 0.904412, 0, 0.42666</rotation>
@@ -550,9 +737,14 @@
 							<components/>
 							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{1CF72F9C-57CB-8E48-89E1-2E81D708A1B0}</id>
 							<name>Coin</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1, 0.674474, 0.744512, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -560,9 +752,14 @@
 							<components/>
 							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{C6F9C150-0313-204C-B2D5-253098FE5B6F}</id>
 							<name>Light-1-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.508092, 0.3, 0.983378, 0</translation>
 								<rotation>0, 0.707107, 0, 0.707107</rotation>
@@ -570,9 +767,14 @@
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{08B1D904-A6F8-EC4C-9240-2AD7C9182E5F}</id>
 							<name>Light-1-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>2.509575, 0.3, 3.495872, 0</translation>
 								<rotation>0, -0.707107, 0, 0.707107</rotation>
@@ -580,19 +782,29 @@
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{FA1D0F63-9F08-444B-B622-79A898E7F3A4}</id>
 							<name>Light-1-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1.000168, 0.3, 9.501686, 0</translation>
-								<rotation>0, -1, 0, 0</rotation>
+								<rotation>0, 1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{41E2B9B7-C769-CE43-B475-6094944293D7}</id>
 							<name>Light-1-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>2.519852, 0.3, -1.992102, 0</translation>
 								<rotation>0, -0.707107, 0, 0.707107</rotation>
@@ -600,9 +812,14 @@
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{AB6B2252-D86B-2F48-89A7-39548252CAC6}</id>
 							<name>Spawn</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>1, 0.357718, -1.967252, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -613,9 +830,14 @@
 				</item>
 			</components>
 		</item>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{DEC76753-55B3-3E43-8CE9-14294A0C50D2}</id>
 			<name>Surrounding</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>-1.258031, -0.026882, -3.733738, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -623,9 +845,14 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{B6D86E92-71BF-674F-9BCE-0B3DA0185F39}</id>
 							<name>Surrounding - 1</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-1.258031, 0, -3.733738, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>

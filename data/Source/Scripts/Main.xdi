@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
@@ -65,14 +65,14 @@ function Main:new(params, environment)
 	mv:setCoins(fromCoins, toCoins)
 	mv._buttonPlay:setOnClick(function()
 		fp:showPage("LEVEL")
-		self.world.scene.controller:play("LEVEL")
+		-- self.world.scene.controller:play("LEVEL")
 	end)
 	mv._buttonGameCenter:setOnClick(function()
 		environment.online.sessionManager:navigateUrl("gamecenter://default/")
 	end)
 	mv._buttonConfig:setOnClick(function()
 		fp:showPage("CONFIG")
-		self.world.scene.controller:play("CONFIG")
+		-- self.world.scene.controller:play("CONFIG")
 	end)
 
 	-- Configuration view.
@@ -90,11 +90,11 @@ function Main:new(params, environment)
 			settings:setProperty("CameraAim", config.cameraAim)
 			environment:reconfigure()
 			fp:showPage("MAIN")
-			self.world.scene.controller:play("START")
+			-- self.world.scene.controller:play("START")
 		end)
 		:setOnCancel(function()
 			fp:showPage("MAIN")
-			self.world.scene.controller:play("START")
+			-- self.world.scene.controller:play("START")
 		end)
 
 	-- Level selector view.
@@ -104,13 +104,13 @@ function Main:new(params, environment)
 	end)
 	lv._buttonMenu:setOnClick(function()
 		fp:showPage("MAIN")
-		self.world.scene.controller:play("START")
+		-- self.world.scene.controller:play("START")
 	end)
 
 	fp:showPage("MAIN")
 
 	-- Start initial camera animation.
-	self.world.scene.controller:play("START")
+	-- self.world.scene.controller:play("START")
 
 	-- Ensure layout is updated.
 	self._frame:update()
@@ -142,6 +142,6 @@ end
 
 -- private
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

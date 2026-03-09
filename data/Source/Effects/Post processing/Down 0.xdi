@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.ShaderGraph">
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.PixelOutput" version="9,traktor.render.Node:1">
+		<item type="traktor.render.PixelOutput" version="10,traktor.render.Node:1">
 			<id>{4933EEF7-1C87-2744-8844-AE1EB60F0F13}</id>
 			<comment/>
 			<position>
@@ -46,7 +46,6 @@
 			<stencilFunction>CfAlways</stencilFunction>
 			<stencilReference>0</stencilReference>
 			<stencilMask>2147483648</stencilMask>
-			<registerCount>0</registerCount>
 			<precisionHint>Low</precisionHint>
 		</item>
 		<item type="traktor.render.Max" version="traktor.render.Node:1">
@@ -57,36 +56,37 @@
 				<second>470</second>
 			</position>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{B56F92FA-FDA8-C84B-A50A-407B9F54DBA1}</id>
 			<comment/>
 			<position>
 				<first>508</first>
 				<second>373</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{CDDFEC79-B4F3-EF41-A9FA-4BB185C95103}</id>
 			<comment/>
 			<position>
 				<first>306</first>
 				<second>337</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Source</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{E5D50064-BCA8-A548-9716-EEDED92221A3}</id>
 			<comment/>
 			<position>
@@ -105,7 +105,6 @@
 					<name>TexCoord</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.MixIn" version="traktor.render.Node:1">
 			<id>{5C74C127-6C16-DE4E-B4D2-5528B2D9A09E}</id>
@@ -187,7 +186,7 @@
 			<fromY>0</fromY>
 			<toY>1</toY>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{0A97975A-3DF1-D94D-B49F-B1FFF975EA21}</id>
 			<comment/>
 			<position>
@@ -195,9 +194,8 @@
 				<second>519</second>
 			</position>
 			<name>XY</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{932EA17B-90E4-9849-8D83-1E45C3878857}</id>
 			<comment/>
 			<position>
@@ -205,15 +203,15 @@
 				<second>399</second>
 			</position>
 			<name>XY</name>
-			<global>false</global>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{83F0A94C-46BC-C34A-869F-B3937AB0CC5A}</id>
 			<comment/>
 			<position>
 				<first>-461</first>
 				<second>494</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Source</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
@@ -236,13 +234,14 @@
 				<second>423</second>
 			</position>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{E87CD6C4-60CF-804E-8729-D93774E5261F}</id>
 			<comment/>
 			<position>
 				<first>880</first>
 				<second>179</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Bluriness</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -488,4 +487,5 @@
 			</destination>
 		</item>
 	</edges>
+	<groups/>
 </object>

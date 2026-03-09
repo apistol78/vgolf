@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 CameraHint = CameraHint or class("CameraHint", traktor.world.ScriptComponent)
 
 function CameraHint:new()
@@ -33,6 +33,6 @@ function CameraHint:update(contextObject, totalTime, deltaTime)
 	end
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

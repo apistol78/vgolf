@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.ShaderGraph">
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
 		<item type="traktor.render.PixelState" version="9,traktor.render.Node:1">
 			<id>{EFDC17AE-C98B-0144-842C-71E390A9295D}</id>
@@ -47,7 +47,7 @@
 			<stencilMask>2147483648</stencilMask>
 			<precisionHint>Undefined</precisionHint>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{CA4665DA-DC00-CC40-A846-BE184BD37E0A}</id>
 			<comment/>
 			<position>
@@ -68,9 +68,8 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{8B7F482E-78DC-C64D-A6F2-F7384DFEE1F3}</id>
 			<comment/>
 			<position>
@@ -121,20 +120,6 @@
 					<name>WorldPosition</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>ScaleDisplacement</first>
-					<second>1</second>
-				</item>
-				<item>
-					<first>ViewDisplacement</first>
-					<second>0</second>
-				</item>
-				<item>
-					<first>WorldDisplacement</first>
-					<second>0</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
 			<id>{65334045-3F21-1C45-962A-BFF1DA09BCD0}</id>
@@ -155,20 +140,20 @@
 			<external>{7F46422D-C36A-D948-9DBD-9EF45ED3CFBD}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{6563F599-E243-3040-B824-D6CFBB711C73}</id>
 			<comment/>
 			<position>
 				<first>1025</first>
 				<second>423</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -273,4 +258,5 @@
 			</destination>
 		</item>
 	</edges>
+	<groups/>
 </object>

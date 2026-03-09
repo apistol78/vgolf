@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{BCBF72AE-F34E-4144-8A59-8B3C36F8FDA4}</id>
 	<name>Sand Castle</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{0EFFAA68-30F3-C04E-A704-F6D3CF1D6609}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
 	</components>
 </object>

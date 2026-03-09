@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{6FD21F2F-35B3-AE4B-AAB1-B01B8DCFD6E6}
@@ -110,7 +110,7 @@ function Game:new(params, environment)
 	)
 
 	-- Spawn ball entity.
-	local spawnEntity = self.world:getEntity("Spawn")
+	local spawnEntity = self.world.world:getEntity("Spawn")
 	assert(spawnEntity ~= nil)
 
 	-- Place ball onto court surface.
@@ -130,10 +130,7 @@ function Game:new(params, environment)
 		Guid("\{2B323FA4-F45F-5647-9927-AF45441E4FF7}")
 	}
 
-	local ballEntityData = environment.resource.resourceManager:bind(world.EntityData, balls[math.random(1, #balls)])
-	assert(ballEntityData ~= nil)
-
-	local ballEntity = environment.world.entityBuilder:create(ballEntityData:get())
+	local ballEntity = self.world:createEntity(balls[math.random(1, #balls)])
 	assert(ballEntity ~= nil)
 
 	if r ~= nil then
@@ -141,7 +138,7 @@ function Game:new(params, environment)
 	else
 		ballEntity.transform = spawnEntity.transform
 	end
-	self.world:addEntity(ballEntity)
+	-- self.world.world:addEntity(ballEntity)
 
 	-- Ball is initially inactive so it doesn't drift from start.
 	ballEntity:getComponent(physics.RigidBodyComponent).body.active = false
@@ -158,13 +155,13 @@ function Game:new(params, environment)
 	self._time = 0
 	self._finished = false
 
-	self._coinEntities = self.world:getEntities("Coin")
-	self._goalEntities = self.world:getEntities("Goal")
-	self._pileEntities = self.world:getEntities("CubePile")
-	self._logicEntities = self.world:getEntities("Logic")
+	self._coinEntities = self.world.world:getEntities("Coin")
+	self._goalEntities = self.world.world:getEntities("Goal")
+	self._pileEntities = self.world.world:getEntities("CubePile")
+	self._logicEntities = self.world.world:getEntities("Logic")
 
 	self._camera = Camera(
-		self.world:getEntity("Camera"),
+		self.world.world:getEntity("Camera"),
 		self._ballEntity,
 		self._goalEntities
 	)
@@ -415,11 +412,11 @@ function Game:setup(info)
 end
 
 function Game:reconfigured()
-	self._cameraEntity = self.world:getEntity("Camera")
-	self._coinEntities = self.world:getEntities("Coin")
-	self._goalEntities = self.world:getEntities("Goal")
-	self._pileEntities = self.world:getEntities("CubePile")
-	self._logicEntities = self.world:getEntities("Logic")
+	self._cameraEntity = self.world.world:getEntity("Camera")
+	self._coinEntities = self.world.world:getEntities("Coin")
+	self._goalEntities = self.world.world:getEntities("Goal")
+	self._pileEntities = self.world.world:getEntities("CubePile")
+	self._logicEntities = self.world.world:getEntities("Logic")
 end
 
 function Game:suspend()
@@ -550,6 +547,6 @@ function Game:_inSlowMotion()
 	return environment.control.timeScale < 1
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

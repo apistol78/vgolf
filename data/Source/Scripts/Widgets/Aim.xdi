@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 
 Aim = Aim or class("Aim", Widget)
@@ -94,6 +94,6 @@ function Aim:_initialize(parent, mc)
 
 	self.__layout = ILayout.FLOAT
 end
-	]]>
-	</text>
+	
+	]]></text>
 </object>

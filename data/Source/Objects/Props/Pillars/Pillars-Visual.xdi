@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="20">
+<object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Props/Pillars.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialTemplates/>
 	<materialShaders/>
 	<materialTextures>
 		<item>
@@ -19,13 +18,12 @@
 			<second>{12C429B3-8492-984A-8F8E-8651D6F0D900}</second>
 		</item>
 	</materialTextures>
-	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
-	<scaleFactor>1</scaleFactor>
+	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
+	<grounded>false</grounded>
+	<decalResponse>true</decalResponse>
+	<reduce>1</reduce>
 	<previewAngle>0</previewAngle>
 </object>

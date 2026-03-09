@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{5148862B-2C0F-0146-8147-A67134DB1CC0}
@@ -62,6 +62,6 @@ function Loading:update(info)
 	end
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

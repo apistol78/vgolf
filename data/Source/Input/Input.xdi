@@ -193,9 +193,9 @@
 		<sourceData>
 			<item>
 				<first>ID_MOUSE_LBUTTON</first>
-				<second type="traktor.input.GenericInputSourceData" version="3">
-					<category>CtMouse</category>
-					<controlType>DtButton1</controlType>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Mouse</category>
+					<controlType>Button1</controlType>
 					<analogue>false</analogue>
 					<normalize>false</normalize>
 					<index>-1</index>
@@ -203,9 +203,9 @@
 			</item>
 			<item>
 				<first>ID_MOUSE_X</first>
-				<second type="traktor.input.GenericInputSourceData" version="3">
-					<category>CtMouse</category>
-					<controlType>DtPositionX</controlType>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Mouse</category>
+					<controlType>PositionX</controlType>
 					<analogue>true</analogue>
 					<normalize>true</normalize>
 					<index>-1</index>
@@ -213,9 +213,9 @@
 			</item>
 			<item>
 				<first>ID_MOUSE_Y</first>
-				<second type="traktor.input.GenericInputSourceData" version="3">
-					<category>CtMouse</category>
-					<controlType>DtPositionY</controlType>
+				<second type="traktor.input.GenericInputSourceData" version="4">
+					<category>Mouse</category>
+					<controlType>PositionY</controlType>
 					<analogue>true</analogue>
 					<normalize>true</normalize>
 					<index>-1</index>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 import(traktor)
 
 Bumper = Bumper or class("Bumper", traktor.world.ScriptComponent)
@@ -56,6 +56,6 @@ function Bumper:_collide(body1, body2, contacts)
 	end
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

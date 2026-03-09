@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{FBF32B28-188E-3344-9CF6-29D9F6EC3D2D}</id>
 	<name>Barrel-1</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{75A1F9E9-9D14-D341-A9F6-AAE981498B48}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
 	</components>
 </object>

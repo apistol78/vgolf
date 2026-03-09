@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.ShaderGraph">
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.PixelOutput" version="9,traktor.render.Node:1">
+		<item type="traktor.render.PixelOutput" version="10,traktor.render.Node:1">
 			<id>{86CEF969-0B7D-8D4C-B895-D6C61C9E5DC3}</id>
 			<comment/>
 			<position>
@@ -46,23 +46,22 @@
 			<stencilFunction>CfAlways</stencilFunction>
 			<stencilReference>0</stencilReference>
 			<stencilMask>2147483648</stencilMask>
-			<registerCount>0</registerCount>
 			<precisionHint>Medium</precisionHint>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{0104D392-AEAE-1C4A-AFDD-0BDEDBC61174}</id>
 			<comment/>
 			<position>
 				<first>266</first>
 				<second>242</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -85,7 +84,7 @@
 				<second>310</second>
 			</position>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{7B648680-7F27-254F-9A0B-A64A87EF0E97}</id>
 			<comment/>
 			<position>
@@ -104,7 +103,6 @@
 					<name>TexCoord</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{29B8C573-CD45-164E-9755-0FE1CD54984A}</id>
@@ -165,13 +163,14 @@
 				<second>555</second>
 			</position>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{B9CA26C7-8AF9-3A4B-B799-7AED509BD2C0}</id>
 			<comment/>
 			<position>
 				<first>-1500</first>
 				<second>646</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Time</parameterName>
 			<type>Scalar</type>
 			<frequency>Frame</frequency>
@@ -321,7 +320,7 @@
 				<second>932</second>
 			</position>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{98310138-4DD4-7541-9CFA-40DB1BDD0A7F}</id>
 			<comment/>
 			<position>
@@ -340,7 +339,6 @@
 					<name>TexCoord</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{F13D9003-9B4B-F148-B333-0B5CEF6DCDCF}</id>
@@ -360,20 +358,20 @@
 			<external>{092F2908-3C8C-2141-AFA0-97AED06A8968}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{51D4DCF7-32F0-CD4F-9F8C-040CA3CE737F}</id>
 			<comment/>
 			<position>
 				<first>344</first>
 				<second>824</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -522,7 +520,7 @@
 				<second>-107</second>
 			</position>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{5A9D40BB-1D7B-4377-BFB4-C0EDB584C6A8}</id>
 			<comment/>
 			<position>
@@ -530,7 +528,6 @@
 				<second>-122</second>
 			</position>
 			<name>L_Position</name>
-			<global>false</global>
 		</item>
 		<item type="traktor.render.Lerp" version="traktor.render.Node:1">
 			<id>{FC5FB249-26FA-4618-9073-93EC117ACA82}</id>
@@ -540,7 +537,7 @@
 				<second>-237</second>
 			</position>
 		</item>
-		<item type="traktor.render.Variable" version="1,traktor.render.Node:1">
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{2B9F94F5-0BA4-4009-B609-9E3F91A31F99}</id>
 			<comment/>
 			<position>
@@ -548,7 +545,6 @@
 				<second>216</second>
 			</position>
 			<name>L_Position</name>
-			<global>false</global>
 		</item>
 	</nodes>
 	<edges>
@@ -1123,4 +1119,5 @@
 			</destination>
 		</item>
 	</edges>
+	<groups/>
 </object>

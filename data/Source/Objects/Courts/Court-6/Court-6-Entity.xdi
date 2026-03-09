@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{2785B08D-4345-6541-8459-DAFD109FB091}</id>
 	<name>Court-6</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{461DF99B-323B-FB45-896B-48B9DD9C9FB6}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
-		<item type="traktor.physics.RigidBodyComponentData">
+		<item type="traktor.physics.RigidBodyComponentData" version="1">
 			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
-				<shape type="traktor.physics.MeshShapeDesc" version="6">
+				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
 					<localTransform>
 						<translation>0, 0, 0, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
@@ -33,29 +37,25 @@
 				<kinematic>false</kinematic>
 			</bodyDesc>
 			<eventCollide/>
+			<transformFilter>0</transformFilter>
 		</item>
 		<item type="traktor.world.GroupComponentData">
 			<entityData>
-				<item type="traktor.world.EntityData" version="1">
+				<item type="traktor.world.EntityData" version="2">
 					<id>{84F3207A-8C9D-40ED-883E-2BD59C46DED3}</id>
 					<name>Camera hint</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
 					<transform>
 						<translation>0, 0, 0, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
 						<item type="traktor.world.VolumeComponentData">
-							<volumes>
-								<item>
-									<mn>-1, -1, -1, 1</mn>
-									<mx>1, 1, 1, 1</mx>
-								</item>
-							</volumes>
-						</item>
-						<item type="traktor.world.ScriptComponentData" version="2">
-							<class>{359FF1A7-A414-444D-AFB6-3C1BFA6970D5}</class>
-							<properties/>
-							<editorSupport>false</editorSupport>
+							<size>0, 0, 0, 1</size>
 						</item>
 					</components>
 				</item>

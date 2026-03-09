@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="20">
+<object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Ball/Ball Striped.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialTemplates/>
 	<materialShaders/>
 	<materialTextures>
 		<item>
@@ -11,13 +10,12 @@
 			<second>{EB1CD1E6-59BD-074B-84A0-434D6BFC769F}</second>
 		</item>
 	</materialTextures>
-	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
-	<scaleFactor>1</scaleFactor>
+	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
+	<grounded>false</grounded>
+	<decalResponse>true</decalResponse>
+	<reduce>1</reduce>
 	<previewAngle>0</previewAngle>
 </object>

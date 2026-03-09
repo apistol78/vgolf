@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 Handle = Handle or {}
 
 Handle_meta = {}
@@ -12,6 +12,6 @@ Handle_meta.__index = function(table, key)
 end
 
 setmetatable(Handle, Handle_meta)
-	]]>
-	</text>
+	
+	]]></text>
 </object>

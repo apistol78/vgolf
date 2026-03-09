@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 #using \{7947759C-88DB-794E-8D09-7F30A40B6669}
 
 LevelView = LevelView or class("LevelView", Container)
@@ -78,6 +78,6 @@ function LevelView:setOnLevelSelect(selectFn)
 	self._selectFn = selectFn
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

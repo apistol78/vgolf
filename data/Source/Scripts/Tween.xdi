@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 Tween = Tween or class("Tween")
 
 function Tween:new()
 end
-	]]>
-	</text>
+	
+	]]></text>
 </object>

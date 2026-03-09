@@ -1,89 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.scene.SceneAsset" version="9">
-	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="36">
+<object type="traktor.scene.SceneAsset" version="10">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>10</viewFarZ>
-		<exposureMode>EmFixed</exposureMode>
-		<exposure>0.75</exposure>
+		<exposureMode>Fixed</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
-				<projection>SpUniform</projection>
 				<farZ>0</farZ>
 				<resolution>1024</resolution>
 				<bias>0</bias>
-				<biasCoeff>1</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</disabled>
 			<low>
-				<projection>SpUniform</projection>
 				<farZ>0</farZ>
 				<resolution>1024</resolution>
 				<bias>0</bias>
-				<biasCoeff>1</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</low>
 			<medium>
-				<projection>SpUniform</projection>
 				<farZ>0</farZ>
 				<resolution>1024</resolution>
 				<bias>0</bias>
-				<biasCoeff>1</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</medium>
 			<high>
-				<projection>SpUniform</projection>
 				<farZ>0</farZ>
 				<resolution>1024</resolution>
 				<bias>0</bias>
-				<biasCoeff>1</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</high>
 			<ultra>
-				<projection>SpUniform</projection>
 				<farZ>0</farZ>
 				<resolution>1024</resolution>
 				<bias>0</bias>
-				<biasCoeff>1</biasCoeff>
 				<cascadingSlices>1</cascadingSlices>
 				<cascadingLambda>0</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
-				<maskDenominator>1</maskDenominator>
-				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>90</fogDistance>
-		<fogDensity>0</fogDensity>
-		<fogColor>1, 1, 1, 1</fogColor>
-		<irradianceGrid>{00000000-0000-0000-0000-000000000000}</irradianceGrid>
 		<imageProcess>
-			<disabled/>
-			<low/>
-			<medium/>
-			<high/>
-			<ultra/>
+			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
+			<low>{00000000-0000-0000-0000-000000000000}</low>
+			<medium>{00000000-0000-0000-0000-000000000000}</medium>
+			<high>{00000000-0000-0000-0000-000000000000}</high>
+			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
 		</imageProcess>
-
+		<colorGrading>{00000000-0000-0000-0000-000000000000}</colorGrading>
 	</worldRenderSettings>
+	<worldComponents/>
 	<layers>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{3EC08974-DD20-8043-9BBE-C9B4EAB1E7B0}</id>
 			<name>Root</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -91,9 +73,14 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{E7E410A8-57B8-D54F-9DA0-73E3C945B04B}</id>
 							<name>Camera</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, -2.26965, 0</translation>
 								<rotation>0.42594, 0, 0, 0.904751</rotation>
@@ -107,20 +94,26 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{74971137-61C3-1942-9974-2E8FBACCE6C2}</id>
 							<name>Light</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.458224, 0.918118, -1.023674, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.world.LightComponentData" version="11">
+								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Point</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>10.4</intensity>
+									<intensity>4</intensity>
 									<castShadow>false</castShadow>
-									<range>12.5</range>
+									<nearRange>0</nearRange>
+									<farRange>12.5</farRange>
 									<radius>1.570796</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
@@ -128,20 +121,26 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{3CD1E3B9-F872-1347-8A58-8276E41A27A2}</id>
 							<name>Light</name>
+							<state>
+								<visible>false</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0.026498, -0.895201, -0.526679, 0</translation>
 								<rotation>0.912508, 0.086723, -0.262396, 0.301589</rotation>
 							</transform>
 							<components>
-								<item type="traktor.world.LightComponentData" version="11">
+								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>2.2</intensity>
+									<intensity>1</intensity>
 									<castShadow>true</castShadow>
-									<range>10</range>
+									<nearRange>0</nearRange>
+									<farRange>10</farRange>
 									<radius>1.570796</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
@@ -149,9 +148,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{5FF5617A-4309-AA4B-BFC2-8DE0AF4DBA7B}</id>
 							<name>Probe</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -168,9 +172,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{EF3AC05F-28CA-C540-A0DF-8C9FA4DA1364}</id>
 							<name>Ball-Static-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0, -0.468339, 0.773577, 0</translation>
 								<rotation>0, 0.071364, 0, 0.99745</rotation>

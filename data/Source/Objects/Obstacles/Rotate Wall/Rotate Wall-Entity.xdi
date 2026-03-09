@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{D7DDD6E3-27B9-4801-8373-3E5C0FE01F52}</id>
 	<name>Rotate Wall</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
-		<item type="traktor.mesh.MeshComponentData">
+		<item type="traktor.mesh.MeshComponentData" version="1">
 			<mesh>{F4BA3BC9-9407-4196-914F-B20D5507AF14}</mesh>
-			<screenSpaceCulling>false</screenSpaceCulling>
 		</item>
-		<item type="traktor.physics.RigidBodyComponentData">
+		<item type="traktor.physics.RigidBodyComponentData" version="1">
 			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
-				<shape type="traktor.physics.MeshShapeDesc" version="6">
+				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
 					<localTransform>
 						<translation>0, 0, 0, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
@@ -33,6 +37,7 @@
 				<kinematic>true</kinematic>
 			</bodyDesc>
 			<eventCollide/>
+			<transformFilter>0</transformFilter>
 		</item>
 		<item type="traktor.animation.RotatorComponentData">
 			<axis>Y</axis>

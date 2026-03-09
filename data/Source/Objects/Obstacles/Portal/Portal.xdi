@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 import(traktor)
 
 Portal = Portal or class("Portal", traktor.world.ScriptComponent)
@@ -71,6 +71,6 @@ function Portal:update(contextObject, totalTime, deltaTime)
 	exitPortal:getComponent(traktor.world.ScriptComponent)._inside = true
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

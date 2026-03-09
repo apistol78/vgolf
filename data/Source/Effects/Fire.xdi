@@ -8,7 +8,7 @@
 			<name>Ember</name>
 			<time>0</time>
 			<duration>1</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
+			<emitter type="traktor.spray.EmitterData" version="9">
 				<source type="traktor.spray.QuadSourceData">
 					<constantRate>8</constantRate>
 					<velocityRate>0</velocityRate>
@@ -64,6 +64,8 @@
 				<sort>false</sort>
 				<worldSpace>true</worldSpace>
 				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+				<gpu>true</gpu>
+				<capacity>1000</capacity>
 			</emitter>
 			<trail/>
 			<sequence/>
@@ -74,7 +76,7 @@
 			<name>Fire</name>
 			<time>0</time>
 			<duration>1</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
+			<emitter type="traktor.spray.EmitterData" version="9">
 				<source type="traktor.spray.QuadSourceData">
 					<constantRate>30</constantRate>
 					<velocityRate>0</velocityRate>
@@ -129,6 +131,8 @@
 				<sort>true</sort>
 				<worldSpace>true</worldSpace>
 				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+				<gpu>true</gpu>
+				<capacity>1000</capacity>
 			</emitter>
 			<trail/>
 			<sequence/>
@@ -139,7 +143,7 @@
 			<name>Smoke</name>
 			<time>0</time>
 			<duration>1</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
+			<emitter type="traktor.spray.EmitterData" version="9">
 				<source type="traktor.spray.QuadSourceData">
 					<constantRate>10</constantRate>
 					<velocityRate>0</velocityRate>
@@ -198,6 +202,8 @@
 				<sort>true</sort>
 				<worldSpace>true</worldSpace>
 				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
+				<gpu>true</gpu>
+				<capacity>1000</capacity>
 			</emitter>
 			<trail/>
 			<sequence/>
