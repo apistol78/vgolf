@@ -2,9 +2,9 @@
 <object type="traktor.scene.SceneAsset" version="10">
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
-		<viewFarZ>10</viewFarZ>
+		<viewFarZ>8</viewFarZ>
 		<exposureMode>Fixed</exposureMode>
-		<exposure>1</exposure>
+		<exposure>4</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>0</farZ>
@@ -89,7 +89,7 @@
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Point</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>5</intensity>
+									<intensity>10</intensity>
 									<castShadow>false</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>10</farRange>

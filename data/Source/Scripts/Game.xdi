@@ -166,6 +166,8 @@ function Game:new(params, environment)
 		self._goalEntities
 	)
 	self._cameraHintDirection = nil
+
+	self.world.camera = self.world.world:getEntity("Camera")
 end
 
 function Game:finalize()
@@ -317,6 +319,7 @@ function Game:update(info)
 			if self._aimOrigin ~= nil and self._aimDirection ~= nil then
 			
 				local impulseVelocity < const > = self._aimDirection:neg() * 20
+				print("Impulse " .. impulseVelocity:toString())
 	
 				-- Apply impulse on ball.
 				rb.body.active = true

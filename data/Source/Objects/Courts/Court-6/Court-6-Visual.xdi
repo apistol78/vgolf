@@ -4,12 +4,7 @@
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialShaders/>
-	<materialTextures>
-		<item>
-			<first>Court_6_R</first>
-			<second>{03CE5061-C728-0544-86B2-1D98B775257C}</second>
-		</item>
-	</materialTextures>
+	<materialTextures/>
 	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>

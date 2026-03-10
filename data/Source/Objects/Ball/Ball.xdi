@@ -47,7 +47,7 @@ end
 function Ball:tracePrediction(linearVelocity, duration)
 	local pm = environment.physics.physicsManager
 	local rb = self.owner:getComponent(physics.RigidBodyComponent)
-	local state = rb.body:getState()
+	local state = rb.body.state
 	local active = rb.body.active
 	local prediction = {}
 
@@ -77,7 +77,7 @@ function Ball:tracePrediction(linearVelocity, duration)
 		end
 	end
 
-	rb.body:setState(state)
+	rb.body.state = state
 	rb.body.active = active
 
 	return prediction

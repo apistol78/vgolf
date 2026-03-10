@@ -23,8 +23,8 @@
 						<locked>false</locked>
 					</state>
 					<transform>
-						<translation>0, -1, 4, 0</translation>
-						<rotation>0, 0, 0, 1</rotation>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>-0.319372, 0.160054, 0.054822, 0.932405</rotation>
 					</transform>
 					<components>
 						<item type="traktor.weather.SkyComponentData" version="8">
@@ -33,10 +33,22 @@
 							<intensity>1</intensity>
 							<saturation>0</saturation>
 							<skyOverHorizon>0.2, 0.5, 0.85, 1</skyOverHorizon>
-							<skyUnderHorizon>0.1, 0.1, 0.12, 1</skyUnderHorizon>
+							<skyUnderHorizon>0.2, 0.5, 0.85, 1</skyUnderHorizon>
 							<clouds>true</clouds>
 							<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
 							<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
+						</item>
+						<item type="traktor.world.LightComponentData" version="12">
+							<lightType>Directional</lightType>
+							<color>1, 1, 1, 0</color>
+							<intensity>3</intensity>
+							<castShadow>true</castShadow>
+							<nearRange>0</nearRange>
+							<farRange>10</farRange>
+							<radius>1.570796</radius>
+							<flickerAmount>0</flickerAmount>
+							<flickerFilter>0</flickerFilter>
+							<bakeMode>LbmAll</bakeMode>
 						</item>
 					</components>
 				</item>
@@ -61,33 +73,6 @@
 								<mn>0, 0, 0, 1</mn>
 								<mx>0, 0, 0, 1</mx>
 							</volume>
-						</item>
-					</components>
-				</item>
-				<item type="traktor.world.EntityData" version="2">
-					<id>{DA2BB1EE-F2F2-6442-88D6-5535F89CB4B1}</id>
-					<name>Sun</name>
-					<state>
-						<visible>true</visible>
-						<dynamic>false</dynamic>
-						<locked>false</locked>
-					</state>
-					<transform>
-						<translation>0, 0, 0, 0</translation>
-						<rotation>-0.302866, 0.114006, 0.03652, 0.945485</rotation>
-					</transform>
-					<components>
-						<item type="traktor.world.LightComponentData" version="12">
-							<lightType>Directional</lightType>
-							<color>1, 1, 1, 0</color>
-							<intensity>4</intensity>
-							<castShadow>true</castShadow>
-							<nearRange>0</nearRange>
-							<farRange>10</farRange>
-							<radius>1.570796</radius>
-							<flickerAmount>0</flickerAmount>
-							<flickerFilter>0</flickerFilter>
-							<bakeMode>LbmAll</bakeMode>
 						</item>
 					</components>
 				</item>

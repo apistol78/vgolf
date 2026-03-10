@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
-		<exposure>-1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>20</farZ>
@@ -1433,7 +1433,7 @@
 							</state>
 							<transform>
 								<translation>1.084603, 1.683224, 1.932817, 0</translation>
-								<rotation>0, -0.423647, 0, 0.905828</rotation>
+								<rotation>0, -0.423647, 0, 0.905827</rotation>
 							</transform>
 							<components/>
 							<entityData>{E7E8FEEC-B627-4947-86AB-6160E784C5D4}</entityData>

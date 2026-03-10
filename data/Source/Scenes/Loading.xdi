@@ -98,7 +98,7 @@
 							<id>{74971137-61C3-1942-9974-2E8FBACCE6C2}</id>
 							<name>Light</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
@@ -110,7 +110,7 @@
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Point</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>4</intensity>
+									<intensity>3</intensity>
 									<castShadow>false</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>12.5</farRange>
@@ -125,7 +125,7 @@
 							<id>{3CD1E3B9-F872-1347-8A58-8276E41A27A2}</id>
 							<name>Light</name>
 							<state>
-								<visible>false</visible>
+								<visible>true</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
@@ -163,7 +163,7 @@
 							<components>
 								<item type="traktor.world.ProbeComponentData">
 									<texture>{D09F06B8-3433-C648-BE55-393A96374869}</texture>
-									<intensity>2</intensity>
+									<intensity>1</intensity>
 									<local>false</local>
 									<volume>
 										<mn>0, 0, 0, 1</mn>

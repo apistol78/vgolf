@@ -110,6 +110,7 @@ function Main:new(params, environment)
 	fp:showPage("MAIN")
 
 	-- Start initial camera animation.
+	self.world.camera = self.world.world:getEntity("Camera")
 	-- self.world.scene.controller:play("START")
 
 	-- Ensure layout is updated.

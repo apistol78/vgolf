@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
-		<exposure>-1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>20</farZ>
@@ -121,7 +121,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>20, 4, 20, 1</size>
+									<size>20, 4, 20, 0</size>
 								</item>
 							</components>
 						</item>
@@ -342,7 +342,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 3, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EBE07C49-A039-E747-B280-646C75B62A9E}</entityData>
@@ -387,7 +387,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 2, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{4B385E00-C49E-0742-A16D-FD3566442B4B}</entityData>
@@ -762,7 +762,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EBE07C49-A039-E747-B280-646C75B62A9E}</entityData>
@@ -777,7 +777,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 7, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EBE07C49-A039-E747-B280-646C75B62A9E}</entityData>
@@ -792,7 +792,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 9, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EBE07C49-A039-E747-B280-646C75B62A9E}</entityData>
@@ -807,7 +807,7 @@
 											</state>
 											<transform>
 												<translation>-2, 0, 11, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EBE07C49-A039-E747-B280-646C75B62A9E}</entityData>
