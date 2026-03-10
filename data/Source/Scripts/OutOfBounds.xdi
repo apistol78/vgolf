@@ -29,7 +29,7 @@ function OutOfBounds:update(contextObject, totalTime, deltaTime)
 	local vc = self.owner:getComponent(traktor.world.VolumeComponent)
 	local pt = self._ballEntity.transform.translation
 	if vc:inside(pt) then
-		contextObject:instantDeath()
+		-- contextObject:instantDeath()
 	end
 end
 

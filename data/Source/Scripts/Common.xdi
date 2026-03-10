@@ -23,10 +23,13 @@ function setupStyles()
 end
 
 function formatTime(time)
-	local tsec = math.floor(time)
-	local tmin = math.floor(tsec / 60)
-	local tmsc = math.floor((time - tsec) * 100)
-	return string.format("%d:%02d:%02d", tmin, tsec % 60, tmsc)
+	if time ~= nil then
+		local tsec = math.floor(time)
+		local tmin = math.floor(tsec / 60)
+		local tmsc = math.floor((time - tsec) * 100)
+		return string.format("%d:%02d:%02d", tmin, tsec % 60, tmsc)
+	end
+	return ""
 end
 
 function clamp(v, mn, mx)
