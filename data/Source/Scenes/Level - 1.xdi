@@ -40,7 +40,7 @@
 			</high>
 			<ultra>
 				<farZ>25</farZ>
-				<resolution>512</resolution>
+				<resolution>1024</resolution>
 				<bias>0.002</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1</cascadingLambda>
@@ -638,12 +638,12 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>1, 2, 4.530764, 0</translation>
+								<translation>1, 2.764199, 9.469218, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>6, 4, 20, 0</size>
+									<size>24, 8, 44, 0</size>
 								</item>
 							</components>
 						</item>
@@ -656,7 +656,7 @@
 			<name>Dynamic</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>false</dynamic>
+				<dynamic>true</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -671,7 +671,7 @@
 							<name>Logic</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -706,7 +706,7 @@
 							<name>Camera</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -727,7 +727,7 @@
 							<name>Coin</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -742,7 +742,7 @@
 							<name>Coin</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -757,7 +757,7 @@
 							<name>Light-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -772,7 +772,7 @@
 							<name>Light-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -787,12 +787,12 @@
 							<name>Light-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
 								<translation>1.000168, 0.3, 9.501686, 0</translation>
-								<rotation>0, 1, 0, 0</rotation>
+								<rotation>0, -1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
@@ -802,7 +802,7 @@
 							<name>Light-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -817,7 +817,7 @@
 							<name>Spawn</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -865,5 +865,9 @@
 			</components>
 		</item>
 	</layers>
-	<operationData/>
+	<operationData>
+		<item type="traktor.scene.ExternalOperationData">
+			<externalDataId>{DD0A2DE2-BE8C-0F40-80D2-8780D27796F3}</externalDataId>
+		</item>
+	</operationData>
 </object>

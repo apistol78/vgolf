@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.shape.BakeConfiguration" version="33">
-	<enableLightmaps>true</enableLightmaps>
+	<enableLightmaps>false</enableLightmaps>
 	<primarySampleCount>100</primarySampleCount>
 	<secondarySampleCount>30</secondarySampleCount>
 	<shadowSampleCount>12</shadowSampleCount>
 	<maxPathDistance>20</maxPathDistance>
 	<pointLightShadowRadius>0.01</pointLightShadowRadius>
 	<lumelDensity>15</lumelDensity>
-	<irradianceGridDensity>0.1, 0.1, 0.1, 0</irradianceGridDensity>
+	<irradianceGridDensity>0.5, 0.5, 0.5, 0</irradianceGridDensity>
 	<minimumLightMapSize>16</minimumLightMapSize>
 	<maximumLightMapSize>1024</maximumLightMapSize>
 	<enableDenoise>true</enableDenoise>
-	<analyticalLightAttenuation>1</analyticalLightAttenuation>
+	<analyticalLightAttenuation>0.1</analyticalLightAttenuation>
 	<ambientOcclusionFactor>0</ambientOcclusionFactor>
 </object>
