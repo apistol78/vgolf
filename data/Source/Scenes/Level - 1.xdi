@@ -41,7 +41,7 @@
 			<ultra>
 				<farZ>25</farZ>
 				<resolution>1024</resolution>
-				<bias>0.002</bias>
+				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1</cascadingLambda>
 				<quantizeProjection>true</quantizeProjection>
@@ -756,7 +756,7 @@
 							<id>{C6F9C150-0313-204C-B2D5-253098FE5B6F}</id>
 							<name>Light-1-Entity</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
@@ -771,7 +771,7 @@
 							<id>{08B1D904-A6F8-EC4C-9240-2AD7C9182E5F}</id>
 							<name>Light-1-Entity</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
@@ -786,13 +786,13 @@
 							<id>{FA1D0F63-9F08-444B-B622-79A898E7F3A4}</id>
 							<name>Light-1-Entity</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
 								<translation>1.000168, 0.3, 9.501686, 0</translation>
-								<rotation>0, -1, 0, 0</rotation>
+								<rotation>0, 1, 0, -0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>
@@ -801,7 +801,7 @@
 							<id>{41E2B9B7-C769-CE43-B475-6094944293D7}</id>
 							<name>Light-1-Entity</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>

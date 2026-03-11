@@ -30,7 +30,7 @@
 						<item type="traktor.weather.SkyComponentData" version="8">
 							<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 							<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
-							<intensity>1</intensity>
+							<intensity>0.8</intensity>
 							<saturation>0</saturation>
 							<skyOverHorizon>0.2, 0.5, 0.85, 1</skyOverHorizon>
 							<skyUnderHorizon>0.2, 0.5, 0.85, 1</skyUnderHorizon>
@@ -41,7 +41,7 @@
 						<item type="traktor.world.LightComponentData" version="12">
 							<lightType>Directional</lightType>
 							<color>1, 1, 1, 0</color>
-							<intensity>3</intensity>
+							<intensity>2</intensity>
 							<castShadow>true</castShadow>
 							<nearRange>0</nearRange>
 							<farRange>10</farRange>
@@ -67,7 +67,7 @@
 					<components>
 						<item type="traktor.world.ProbeComponentData">
 							<texture>{00000000-0000-0000-0000-000000000000}</texture>
-							<intensity>1</intensity>
+							<intensity>0.8</intensity>
 							<local>false</local>
 							<volume>
 								<mn>0, 0, 0, 1</mn>
