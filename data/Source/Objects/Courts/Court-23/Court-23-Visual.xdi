@@ -3,7 +3,12 @@
 	<fileName>Court/Court-23.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>m_grass</first>
+			<second>{6C575FF5-1DF4-0E40-ABB8-8C537BB8A26D}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
