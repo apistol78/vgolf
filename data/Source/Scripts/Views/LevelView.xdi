@@ -13,6 +13,7 @@ function LevelView:new(parent, save)
 
 	self:setVerticalAlign(Widget.ALIGN_CENTER)
 
+	self._selectFn = function(lvl) end
 	local carousel = Carousel(self, 16)
 	for i = 0, 4 do
 		local ct0 = Container(carousel, TableLayout({ 100 }, { 0 }, 16, 4, 4, 4))

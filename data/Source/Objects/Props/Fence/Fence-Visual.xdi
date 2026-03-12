@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Props/Fence.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures>
 		<item>
@@ -17,5 +17,5 @@
 	<grounded>false</grounded>
 	<decalResponse>true</decalResponse>
 	<reduce>1</reduce>
-	<previewAngle>0.816814</previewAngle>
+	<previewAngle>0.753982</previewAngle>
 </object>

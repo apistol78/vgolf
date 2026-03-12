@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Props/Barrel-1.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures>
 		<item>

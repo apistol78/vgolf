@@ -393,6 +393,51 @@
 											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
 										</item>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{14EF63DC-F4A4-EC4B-8881-9A5D345B0C7B}</id>
+											<name>Sand-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-5, 1, 3, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{0433C81A-0CB4-3A48-8787-DA6812061A76}</id>
+											<name>Sand-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-5, 1, 5, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{F7B04E16-4EB7-4E44-88F4-DFA3CEF81955}</id>
+											<name>Sand-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-5, 1, 1, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{38D873FD-A1D6-6542-BF4D-FDF6DBC929F8}</id>
 											<name>Sand-1-Entity</name>
 											<state>
@@ -567,6 +612,36 @@
 											</state>
 											<transform>
 												<translation>5, 1, 3, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{651DF55B-FD87-B749-8BF3-EC3E2C6C5723}</id>
+											<name>Sand-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>7, 1, 3, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{BDFD2831-939A-F242-A962-A222841EC175}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{44FDF311-BBE5-FD44-84EE-7CD829510755}</id>
+											<name>Sand-1-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>7, 1, 5, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -1066,7 +1141,7 @@
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
-								<locked>false</locked>
+								<locked>true</locked>
 							</state>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
@@ -1081,7 +1156,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>2.67167, 0.905788, -3.089907, 0</translation>
@@ -1096,7 +1171,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>-0.5706, 0.905788, -2.814372, 0</translation>
@@ -1111,7 +1186,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>-1.287834, 0.905788, 0.19099, 0</translation>
@@ -1126,7 +1201,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>-1.911304, 0.659084, 6.10033, 0</translation>
@@ -1141,7 +1216,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>4.196868, 0.905788, 5.706393, 0</translation>
@@ -1156,7 +1231,7 @@
 											<state>
 												<visible>true</visible>
 												<dynamic>false</dynamic>
-												<locked>false</locked>
+												<locked>true</locked>
 											</state>
 											<transform>
 												<translation>3.671875, 0.905788, 1.024297, 0</translation>
@@ -1300,6 +1375,21 @@
 							<transform>
 								<translation>-0.414677, 1.76733, 2.689094, 0</translation>
 								<rotation>-0.514944, -0.464965, -0.39965, 0.5991</rotation>
+							</transform>
+							<components/>
+							<entityData>{652E76CE-889D-A548-A3CC-2B8DCA024D40}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{376501D6-E4D3-D84C-8ABA-59B11B809896}</id>
+							<name>Tire-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-3.743379, 1.170921, 3.177566, 0</translation>
+								<rotation>0.015796, -0.612998, 0.012265, 0.789832</rotation>
 							</transform>
 							<components/>
 							<entityData>{652E76CE-889D-A548-A3CC-2B8DCA024D40}</entityData>

@@ -21,12 +21,12 @@ function OutOfBounds:update(contextObject, totalTime, deltaTime)
 
 	-- Lazy get ball entity.
 	if self._ballEntity == nil then
-		self._ballEntity = contextObject.world.world:getEntity("Ball")
+		self._ballEntity = self.world:getEntity("Ball")
 		assert(self._ballEntity ~= nil)
 	end
 
 	-- Check if ball is inside OOB volume.
-	local vc = self.owner:getComponent(traktor.world.VolumeComponent)
+	local vc = self.owner:getComponent(world.VolumeComponent)
 	local pt = self._ballEntity.transform.translation
 	if vc:inside(pt) then
 		-- contextObject:instantDeath()

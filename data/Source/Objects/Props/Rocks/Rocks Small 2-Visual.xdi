@@ -2,7 +2,7 @@
 <object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Props/Rocks Small 2.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures>
 		<item>
@@ -17,5 +17,5 @@
 	<grounded>false</grounded>
 	<decalResponse>true</decalResponse>
 	<reduce>1</reduce>
-	<previewAngle>1.570796</previewAngle>
+	<previewAngle>1.507965</previewAngle>
 </object>

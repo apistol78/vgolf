@@ -2,13 +2,9 @@
 <object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Props/Light-1.blend</fileName>
 	<importFilter/>
-	<meshType>MtStatic</meshType>
+	<meshType>MtInstance</meshType>
 	<materialShaders/>
 	<materialTextures>
-		<item>
-			<first>Gradient</first>
-			<second>{04A33EB0-6431-1640-8890-8AEDE91FE4FE}</second>
-		</item>
 		<item>
 			<first>Light_R</first>
 			<second>{2DA47B74-105B-8045-ABC8-DD3DC670A792}</second>

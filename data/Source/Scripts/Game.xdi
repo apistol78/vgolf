@@ -457,14 +457,14 @@ function Game:victory()
 		local bestTime = false
 
 		local lv = self._save:getProperty("LEVEL_" .. self._params.level)
-		if lv ~= nil then
-			bestScore = self._strikeCount < lv:getProperty("BEST_SCORE")
-			bestTime = self._time < lv:getProperty("BEST_TIME")
-		else
+--		if lv ~= nil then
+--			bestScore = self._strikeCount < lv:getProperty("BEST_SCORE")
+--			bestTime = self._time < lv:getProperty("BEST_TIME")
+--		else
 			lv = PropertyGroup()
 			lv:setProperty("BEST_SCORE", self._strikeCount)
 			lv:setProperty("BEST_TIME", self._time)
-		end
+--		end
 
 		local a = 0
 		if bestTime then a = a | FinishedView.ACH_BEST_TIME end

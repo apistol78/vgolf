@@ -58,7 +58,7 @@
 				<middleAge>0.2</middleAge>
 				<cullNearDistance>0.01</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
-				<fadeNearRange>0.1</fadeNearRange>
+				<fadeNearRange>0.001</fadeNearRange>
 				<viewOffset>0</viewOffset>
 				<warmUp>0.8</warmUp>
 				<sort>false</sort>
@@ -125,7 +125,7 @@
 				<middleAge>0.05</middleAge>
 				<cullNearDistance>1</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
-				<fadeNearRange>0.01</fadeNearRange>
+				<fadeNearRange>0.001</fadeNearRange>
 				<viewOffset>0</viewOffset>
 				<warmUp>0.8</warmUp>
 				<sort>true</sort>
@@ -196,7 +196,7 @@
 				<middleAge>0.05</middleAge>
 				<cullNearDistance>1</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
-				<fadeNearRange>0.01</fadeNearRange>
+				<fadeNearRange>0.001</fadeNearRange>
 				<viewOffset>0</viewOffset>
 				<warmUp>0.8</warmUp>
 				<sort>true</sort>
