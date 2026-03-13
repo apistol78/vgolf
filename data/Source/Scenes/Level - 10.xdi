@@ -1082,6 +1082,21 @@
 							<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{0A6420EC-F856-8843-A261-6D3E63D8A7D5}</id>
+							<name>Wood Plank-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>2.354014, -0.025266, 0.427918, 0</translation>
+								<rotation>0, -0.324042, 0, 0.946043</rotation>
+							</transform>
+							<components/>
+							<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{1F332C60-C47D-8B42-A9AE-37EBC62A13D1}</id>
 							<name>Wood Plank-Entity</name>
 							<state>
@@ -1463,6 +1478,21 @@
 							</transform>
 							<components/>
 							<entityData>{A2340923-9797-A143-8F2A-2A1F56EE02A4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{599E4EF1-6B01-434C-99AC-FFB1F76D8C69}</id>
+							<name>Fence-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>-2.131958, -0.187259, -0.473916, 0</translation>
+								<rotation>0, -0.285952, 0, 0.958244</rotation>
+							</transform>
+							<components/>
+							<entityData>{871671D8-0681-8146-AD94-EE703E17EF9E}</entityData>
 						</item>
 					</entityData>
 				</item>

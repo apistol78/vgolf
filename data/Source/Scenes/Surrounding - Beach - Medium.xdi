@@ -6793,8 +6793,8 @@
 														<locked>false</locked>
 													</state>
 													<transform>
-														<translation>-6.690584, -0.132427, -1.262904, 0</translation>
-														<rotation>-0.006253, 0.208366, -0.029337, 0.977591</rotation>
+														<translation>-7.62463, -0.132427, -1.612111, 0</translation>
+														<rotation>-0.017184, 0.572609, -0.024586, 0.819279</rotation>
 													</transform>
 													<components/>
 													<entityData>{9D2B7854-8C40-0346-B524-910796439CBB}</entityData>
@@ -7287,21 +7287,6 @@
 													<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
 												</item>
 												<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-													<id>{975B1DE6-79C9-4882-9821-5FC3500B2A14}</id>
-													<name>Fence-Entity</name>
-													<state>
-														<visible>true</visible>
-														<dynamic>false</dynamic>
-														<locked>false</locked>
-													</state>
-													<transform>
-														<translation>-2.131958, -0.187259, -0.473916, 0</translation>
-														<rotation>0, -0.285952, 0, 0.958244</rotation>
-													</transform>
-													<components/>
-													<entityData>{871671D8-0681-8146-AD94-EE703E17EF9E}</entityData>
-												</item>
-												<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 													<id>{0F1A489A-460A-420E-8D5F-FA37971746B0}</id>
 													<name>Umbrella-1-Entity</name>
 													<state>
@@ -7742,12 +7727,12 @@
 						<locked>false</locked>
 					</state>
 					<transform>
-						<translation>-0.435401, 0, 16.94442, 0</translation>
+						<translation>1, -9.8, 12, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
 						<item type="traktor.world.VolumeComponentData">
-							<size>60, 20, 60, 1</size>
+							<size>60, 20, 60, 0</size>
 						</item>
 						<item type="traktor.world.ScriptComponentData" version="2">
 							<class>{A71F857C-BF45-7942-A746-74598CF4DD13}</class>
