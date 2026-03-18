@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
-		<exposure>-1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>20</farZ>
@@ -73,8 +73,8 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{1668988E-A018-104F-92A4-40A59883CB21}</id>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{47D6BB2F-6C81-AA46-BD09-C521F68FDD66}</id>
 							<name>Environment-1</name>
 							<state>
 								<visible>true</visible>
@@ -82,92 +82,11 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>0.655047, 4.702889, -6.120516, 0</translation>
+								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
-							<components>
-								<item type="traktor.world.GroupComponentData">
-									<entityData>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{3D983263-C3BD-8F41-9796-5E9475DA0973}</id>
-											<name>Sky</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>0.655047, 3.702889, -2.120516, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</transform>
-											<components>
-												<item type="traktor.weather.SkyComponentData" version="8">
-													<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-													<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
-													<intensity>1</intensity>
-													<saturation>1</saturation>
-													<skyOverHorizon>0.2, 0.5, 0.85, 1</skyOverHorizon>
-													<skyUnderHorizon>0.1, 0.1, 0.12, 1</skyUnderHorizon>
-													<clouds>true</clouds>
-													<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
-													<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{47FFEE4D-09E9-B046-B279-0CAB14C8C607}</id>
-											<name>Reflections</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>0.655047, 2.251606, 1.596114, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.ProbeComponentData">
-													<texture>{00000000-0000-0000-0000-000000000000}</texture>
-													<intensity>1</intensity>
-													<local>false</local>
-													<volume>
-														<mn>0, 0, 0, 1</mn>
-														<mx>0, 0, 0, 1</mx>
-													</volume>
-												</item>
-											</components>
-										</item>
-										<item type="traktor.world.EntityData" version="2">
-											<id>{C44EFD62-EEC7-2744-A7AB-AA8ED6167BBC}</id>
-											<name>Sun</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>0.655047, 4.702889, -6.120516, 0</translation>
-												<rotation>-0.320918, 0.330917, 0.120795, 0.879156</rotation>
-											</transform>
-											<components>
-												<item type="traktor.world.LightComponentData" version="12">
-													<lightType>Directional</lightType>
-													<color>1, 0.921569, 0.839216, 0</color>
-													<intensity>1</intensity>
-													<castShadow>true</castShadow>
-													<nearRange>0</nearRange>
-													<farRange>10</farRange>
-													<radius>1.570796</radius>
-													<flickerAmount>0</flickerAmount>
-													<flickerFilter>0</flickerFilter>
-													<bakeMode>LbmAll</bakeMode>
-												</item>
-											</components>
-										</item>
-									</entityData>
-								</item>
-							</components>
+							<components/>
+							<entityData>{90B569A8-FC5E-6A42-B50A-0D78107A95AB}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -322,7 +241,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>10, 4, 50, 1</size>
+									<size>10, 4, 50, 0</size>
 								</item>
 							</components>
 						</item>
@@ -561,7 +480,7 @@
 											</state>
 											<transform>
 												<translation>0, 0, 14, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{7DC5F291-6634-4E45-B836-A71517294F45}</entityData>
@@ -1172,7 +1091,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>60, 10, 60, 1</size>
+									<size>60, 10, 60, 0</size>
 								</item>
 								<item type="traktor.world.ScriptComponentData" version="2">
 									<class>{A71F857C-BF45-7942-A746-74598CF4DD13}</class>

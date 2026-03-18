@@ -65,6 +65,11 @@
 					<optional>true</optional>
 				</item>
 				<item>
+					<id>{778D0A8C-73B5-0241-8911-91FC33A40DA0}</id>
+					<name>Opaque</name>
+					<optional>true</optional>
+				</item>
+				<item>
 					<id>{90D3E596-1415-4837-89CF-F3507AAAE050}</id>
 					<name>Roughness</name>
 					<optional>true</optional>
@@ -167,8 +172,8 @@
 			<id>{00000000-0000-0000-0000-000000000000}</id>
 			<comment/>
 			<position>
-				<first>659</first>
-				<second>336</second>
+				<first>783</first>
+				<second>388</second>
 			</position>
 			<parameterDeclaration>{D77238B3-3655-7A45-B645-CC7921C7A623}</parameterDeclaration>
 		</item>
@@ -176,8 +181,8 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>460</first>
-				<second>317</second>
+				<first>584</first>
+				<second>369</second>
 			</position>
 			<value>1</value>
 		</item>
@@ -185,8 +190,8 @@
 			<id>{00000000-0000-0000-0000-000000000000}</id>
 			<comment/>
 			<position>
-				<first>556</first>
-				<second>405</second>
+				<first>680</first>
+				<second>457</second>
 			</position>
 			<parameterDeclaration>{FC59BA4A-FE2D-5A4C-AE0A-7905745D1953}</parameterDeclaration>
 		</item>
@@ -194,8 +199,8 @@
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
 			<comment/>
 			<position>
-				<first>350</first>
-				<second>383</second>
+				<first>474</first>
+				<second>435</second>
 			</position>
 			<value>0</value>
 		</item>
@@ -340,6 +345,15 @@
 				<first>-141</first>
 				<second>144</second>
 			</position>
+		</item>
+		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
+			<id>{9F7325AF-E9ED-1546-B83C-12F62803F0DE}</id>
+			<comment/>
+			<position>
+				<first>1061</first>
+				<second>320</second>
+			</position>
+			<value>1</value>
 		</item>
 	</nodes>
 	<edges>
@@ -561,6 +575,16 @@
 			<destination>
 				<node ref="/object/nodes/item[21]"/>
 				<id>{BDB32F7B-599C-42C8-A2CE-2B1BD0738E8B}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[22]"/>
+				<id>{D33F8931-C90C-4EBA-8A04-A31D3E08FAB7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{778D0A8C-73B5-0241-8911-91FC33A40DA0}</id>
 			</destination>
 		</item>
 	</edges>

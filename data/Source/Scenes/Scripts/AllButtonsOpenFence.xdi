@@ -23,20 +23,20 @@ function AllButtonsOpenFence:update(contextObject, totalTime, deltaTime)
 
 	-- Lazy get entities.
 	if self._buttonEntities == nil then
-		self._buttonEntities = contextObject.world:getEntities("Button")
-		self._fenceEntity = contextObject.world:getEntity("Fence")
+		self._buttonEntities = self.world:getEntities("Button")
+		self._fenceEntity = self.world:getEntity("Fence")
 	end
 
 	-- Check if all buttons has been pressed.
 	local pressed = true
 	for _, buttonEntity in pairs(self._buttonEntities) do
-		local sc = buttonEntity:getComponent(traktor.world.ScriptComponent)
+		local sc < const > = buttonEntity:getComponent(traktor.world.ScriptComponent)
 		pressed = pressed and sc:isPressed()
 	end
 
 	-- Control fence if all buttons is pressed.
 	if pressed ~= self._pressed then
-		local pc = self._fenceEntity:getComponent(traktor.animation.PathComponent)
+		local pc < const > = self._fenceEntity:getComponent(traktor.animation.PathComponent)
 		if pressed then
 			pc:continueTo(1)
 		else
@@ -48,7 +48,7 @@ end
 
 function AllButtonsOpenFence:reset()
 	for _, buttonEntity in pairs(self._buttonEntities) do
-		local sc = buttonEntity:getComponent(traktor.world.ScriptComponent)
+		local sc < const > = buttonEntity:getComponent(traktor.world.ScriptComponent)
 		sc:reset()
 	end
 end

@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
-		<exposure>-1</exposure>
+		<exposureMode>Adaptive</exposureMode>
+		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>20</farZ>
@@ -489,7 +489,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>60, 20, 60, 1</size>
+									<size>60, 20, 60, 0</size>
 								</item>
 							</components>
 						</item>
@@ -687,7 +687,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>0.3, 0.4, 1.8, 1</size>
+									<size>0.3, 0.4, 1.8, 0</size>
 								</item>
 								<item type="traktor.world.ScriptComponentData" version="2">
 									<class>{9AA9FA67-0564-FE46-B41B-0BA48DDFD58B}</class>
@@ -713,7 +713,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<size>0.3, 0.8, 1.8, 1</size>
+									<size>0.3, 0.8, 1.8, 0</size>
 								</item>
 								<item type="traktor.world.ScriptComponentData" version="2">
 									<class>{9AA9FA67-0564-FE46-B41B-0BA48DDFD58B}</class>

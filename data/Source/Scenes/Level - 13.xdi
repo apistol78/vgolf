@@ -3,7 +3,7 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="42">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>150</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
+		<exposureMode>Adaptive</exposureMode>
 		<exposure>0</exposure>
 		<shadowSettings>
 			<disabled>
