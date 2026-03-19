@@ -4,7 +4,7 @@
 	<name>Coin-1</name>
 	<state>
 		<visible>true</visible>
-		<dynamic>false</dynamic>
+		<dynamic>true</dynamic>
 		<locked>false</locked>
 	</state>
 	<transform>
@@ -39,6 +39,42 @@
 			<class>{2153A16F-9CBC-C547-9D44-25EE64162FA2}</class>
 			<properties/>
 			<editorSupport>false</editorSupport>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{2C9A0207-C986-FF45-B7DA-6D91EF921DB1}</id>
+					<name>Default</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>true</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData" version="1">
+							<mesh>{614C057A-5A6E-49D7-BB62-05210B648A7F}</mesh>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{B95D5EE5-A01A-B54F-9F1F-023DED642AF4}</id>
+					<name>Hidden</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>true</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+				</item>
+			</entityData>
 		</item>
 	</components>
 </object>
