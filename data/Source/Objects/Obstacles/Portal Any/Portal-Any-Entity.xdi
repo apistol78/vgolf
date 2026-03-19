@@ -16,7 +16,12 @@
 			<mesh>{D2F16711-3935-944A-8D26-C66FB924725F}</mesh>
 		</item>
 		<item type="traktor.world.VolumeComponentData">
-			<size>0, 0, 0, 1</size>
+			<size>0, 0, 0, 0</size>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{549BBD7A-E55B-7A4D-9E38-F228B93ECDDC}</class>
+			<properties/>
+			<editorSupport>false</editorSupport>
 		</item>
 	</components>
 </object>

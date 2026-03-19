@@ -525,22 +525,22 @@ function Game:_restart()
 
 	-- Reset coints.
 	for _, coinEntity in pairs(self._coinEntities) do
-		coinEntity:getComponent(world.ScriptComponent):reset()
+		self:_resetEntity(coinEntity)
 	end
 
 	-- Reset piles.
 	for _, pileEntity in pairs(self._pileEntities) do
-		pileEntity:getComponent(world.ScriptComponent):reset()
+		self:_resetEntity(pileEntity)
 	end
 
 	-- Reset goals.
 	for _, goalEntity in pairs(self._goalEntities) do
-		goalEntity:getComponent(world.ScriptComponent):reset()
+		self:_resetEntity(goalEntity)
 	end
 
 	-- Reset logic.
 	for _, logicEntity in pairs(self._logicEntities) do
-		logicEntity:getComponent(world.ScriptComponent):reset()
+		self:_resetEntity(logicEntity)
 	end
 
 	self._flipBoard:showPage("HUD")
@@ -550,6 +550,10 @@ function Game:_inSlowMotion()
 	return environment.control.timeScale < 1
 end
 
-	
+function Game:_resetEntity(entity)
+	local sc < const > = entity:getComponent(world.ScriptComponent)
+	if sc ~= nil then sc:reset() end
+end
+
 	]]></text>
 </object>
