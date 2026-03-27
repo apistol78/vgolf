@@ -243,51 +243,6 @@
 											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
 										</item>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-											<id>{A80438C4-387E-744C-A11F-3645427C0A68}</id>
-											<name>Concrete Tiles-Entity</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>-1, 0, -4, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</transform>
-											<components/>
-											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-											<id>{87E14301-07D3-E84D-95A2-5001CB5DB83F}</id>
-											<name>Concrete Tiles-Entity</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>1, 0, -4, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</transform>
-											<components/>
-											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-											<id>{8F260F4F-DF5F-8147-997B-7BFBF502945B}</id>
-											<name>Concrete Tiles-Entity</name>
-											<state>
-												<visible>true</visible>
-												<dynamic>false</dynamic>
-												<locked>false</locked>
-											</state>
-											<transform>
-												<translation>3, -0.029758, -3.991896, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</transform>
-											<components/>
-											<entityData>{C61F00F6-48BF-424B-AF58-0B6237341F2C}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 											<id>{195EC7B6-13EC-414C-A941-E43604BB669B}</id>
 											<name>Concrete Tiles Broken-Entity</name>
 											<state>
@@ -792,7 +747,7 @@
 							</state>
 							<transform>
 								<translation>1.000168, 0.3, 9.501686, 0</translation>
-								<rotation>0, 1, 0, -0</rotation>
+								<rotation>0, 1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>

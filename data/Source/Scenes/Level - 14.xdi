@@ -507,7 +507,7 @@
 											</state>
 											<transform>
 												<translation>-11, 0, 9, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{50423CA6-3653-2D4B-854A-5FAC88EF83FD}</entityData>
@@ -522,7 +522,7 @@
 											</state>
 											<transform>
 												<translation>-7, 0, 13, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{50423CA6-3653-2D4B-854A-5FAC88EF83FD}</entityData>
@@ -571,6 +571,21 @@
 											</state>
 											<transform>
 												<translation>-0.5, 0, 12, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{C2C07CB4-9A2C-7C46-BEFC-C7C7421BD821}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{D39EF46B-F7BF-CA43-A3AF-605A45D9E06F}</id>
+											<name>Grass Tall-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-10.202385, 0, 11.44787, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -632,6 +647,21 @@
 											<transform>
 												<translation>-5.126877, -0.058509, 10.835731, 0</translation>
 												<rotation>0, -0.992148, 0, 0.12507</rotation>
+											</transform>
+											<components/>
+											<entityData>{9036888F-D2B4-2A45-A7C2-0711CC8EF35D}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{6963CCEE-7254-A241-BF87-B6FC280984EC}</id>
+											<name>Grass Small-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-4.87368, -0.058509, 15.032041, 0</translation>
+												<rotation>0, -0.761353, 0, 0.648337</rotation>
 											</transform>
 											<components/>
 											<entityData>{9036888F-D2B4-2A45-A7C2-0711CC8EF35D}</entityData>
@@ -770,7 +800,7 @@
 											</state>
 											<transform>
 												<translation>-3, 0, -1, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{FA81B878-7DF1-4760-B0C7-72B53DEC9F7E}</entityData>
@@ -1242,7 +1272,7 @@
 							</state>
 							<transform>
 								<translation>-1, 0, 9, 0</translation>
-								<rotation>0, 1, 0, -0</rotation>
+								<rotation>0, 1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{64355F08-9992-404A-85F7-F2B44E044C98}</entityData>

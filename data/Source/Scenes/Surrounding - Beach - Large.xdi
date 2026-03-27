@@ -7401,6 +7401,291 @@
 						</item>
 					</components>
 				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{72CC7757-BE29-0D4B-B7D0-D750A7D8A8C3}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-15.890978, -0.02115, 17.455408, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{A20A4946-1EE2-784A-B57A-36D62BB281DA}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>5.579325, -0.02115, 17.097082, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{CD055F0C-BDB2-2F4E-8577-319C0D38CB19}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>6.788861, -0.02115, 19.081984, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{A76E931C-F311-0445-A1C6-8A5DE5237A19}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>6.608351, -0.02115, 8.700347, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{17560424-3082-B447-8A3E-A175EE8C6250}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>4.465493, -0.02115, -0.467765, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{4B470F85-2F32-4444-B1C6-2B2D72A69EC4}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>2.151645, -0.02115, -0.69342, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{01E93EC7-9FDC-DB4C-99B7-CB4A9BCBC368}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0.170932, -0.02115, -0.90196, 0</translation>
+						<rotation>0, 0.461779, 0, 0.886995</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{281F030D-10BD-0947-998F-D025480B716D}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-16.138418, -0.02115, 13.620521, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{BD14CA46-EF39-634D-B5ED-45EC53A96047}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-16.82638, -0.02115, 11.2339, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{70547FD6-7FD9-A948-B063-FDBD13B9659C}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-15.307632, -0.02115, -1.478966, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{8F1B4058-0208-A048-9F52-ED0CEEB6DE34}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-21.052792, -0.02115, 5.042908, 0</translation>
+						<rotation>0, 0.069943, 0, 0.997551</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{9F84D932-EB07-4946-A7F3-AEF256A4BFA8}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-20.924006, -0.02115, 3.511518, 0</translation>
+						<rotation>0, -0.452886, 0, 0.891568</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{1C020781-D45A-7942-A13B-55B3853F7EDE}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-8.352296, -0.02115, -0.858674, 0</translation>
+						<rotation>0, -0.452886, 0, 0.891568</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{D9A58B13-CF49-F548-A978-017E294F4704}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-6.419807, -0.02115, -0.496497, 0</translation>
+						<rotation>0, -0.452886, 0, 0.891568</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{E337A3C1-9154-2541-B9B1-DEB25199EB5F}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-7.497452, -0.02115, 25.59512, 0</translation>
+						<rotation>0, -0.452886, 0, 0.891568</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{EA70AB18-C8C7-2E49-89BE-74E6A08C264B}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-10.87642, -0.02115, 24.608343, 0</translation>
+						<rotation>0, -0.452886, 0, 0.891568</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{BF735174-B613-F44C-803C-223FABCB6611}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-12.543067, -0.02115, 23.590229, 0</translation>
+						<rotation>0, -0.159318, 0, 0.987227</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{E6DB912A-9DDA-A54B-AC28-A0A624750756}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-14.694814, -0.02115, 22.868595, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+					<id>{DA2BD636-575E-8A45-B553-BC121DB4740F}</id>
+					<name>Rocks Rubble</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>-14.957102, -0.02115, 24.183239, 0</translation>
+						<rotation>0, -0.613117, 0, 0.789992</rotation>
+					</transform>
+					<components/>
+					<entityData>{74238552-56F0-B243-88F8-D0FF0B4060FB}</entityData>
+				</item>
 			</entityData>
 		</item>
 	</components>
