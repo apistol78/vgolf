@@ -23,7 +23,7 @@ function Portal:update(contextObject, totalTime, deltaTime)
 
 	-- Lazy get ball entity.
 	if self._ballEntity == nil then
-		self._ballEntity = contextObject.world:getEntity("Ball")
+		self._ballEntity = contextObject.world.world:getEntity("Ball")
 		assert(self._ballEntity ~= nil)
 	end
 
@@ -45,7 +45,7 @@ function Portal:update(contextObject, totalTime, deltaTime)
 
 	-- Teleport ball to any other portal, transform
 	-- velocity so ball moves as expected.
-	local portals = contextObject.world:getEntities("Portal")
+	local portals = contextObject.world.world:getEntities("Portal")
 	portals:remove(self.owner)
 	if portals.empty then
 		print("No portals to exit, ball not teleported.")

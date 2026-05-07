@@ -56,7 +56,20 @@
 		</imageProcess>
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
-	<worldComponents/>
+	<worldComponents>
+		<item type="traktor.world.FogComponentData" version="1">
+			<fogDistance>90</fogDistance>
+			<fogElevation>0.7</fogElevation>
+			<fogDensity>0.05</fogDensity>
+			<fogDensityMax>1</fogDensityMax>
+			<fogColor>1, 1, 1, 1</fogColor>
+			<volumetricFogEnable>true</volumetricFogEnable>
+			<maxDistance>100</maxDistance>
+			<maxScattering>10</maxScattering>
+			<mediumColor>1, 1, 1, 1</mediumColor>
+			<mediumDensity>0.2</mediumDensity>
+		</item>
+	</worldComponents>
 	<layers>
 		<item type="traktor.world.EntityData" version="2">
 			<id>{2619B193-C64F-2742-9B6B-69424BC3C807}</id>
@@ -409,8 +422,8 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>-1.711259, -0.025266, 6.051638, 0</translation>
-												<rotation>0, -0.237703, 0, 0.971338</rotation>
+												<translation>-1.947859, -0.025266, 5.670336, 0</translation>
+												<rotation>0, 0.029995, 0, 0.99955</rotation>
 											</transform>
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
@@ -424,8 +437,8 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>-2.689239, -0.025266, 5.954393, 0</translation>
-												<rotation>0, -0.109778, 0, 0.993956</rotation>
+												<translation>-2.713353, -0.025266, 5.828156, 0</translation>
+												<rotation>0, -0.049979, 0, 0.99875</rotation>
 											</transform>
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
@@ -439,8 +452,23 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>3.039034, -0.025266, 9.989501, 0</translation>
-												<rotation>0, -0.37092, 0, 0.928665</rotation>
+												<translation>4.005757, -0.025266, 10.790871, 0</translation>
+												<rotation>0, -0.208459, 0, 0.978031</rotation>
+											</transform>
+											<components/>
+											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+											<id>{D9F7AA33-1A9E-8C41-A83B-53D1B2D72D8B}</id>
+											<name>Wood Plank-Entity</name>
+											<state>
+												<visible>true</visible>
+												<dynamic>false</dynamic>
+												<locked>false</locked>
+											</state>
+											<transform>
+												<translation>-1.80704, -0.025266, 11.071266, 0</translation>
+												<rotation>0, -0.089878, 0, 0.995953</rotation>
 											</transform>
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
@@ -454,8 +482,8 @@
 												<locked>false</locked>
 											</state>
 											<transform>
-												<translation>3.986529, -0.025266, 10.886863, 0</translation>
-												<rotation>0, -0.266731, 0, 0.963771</rotation>
+												<translation>4.508973, -0.025266, 11.60322, 0</translation>
+												<rotation>0, -0.139543, 0, 0.990216</rotation>
 											</transform>
 											<components/>
 											<entityData>{CF6494B2-804F-1549-91F3-457A17BFEAD0}</entityData>
@@ -747,7 +775,7 @@
 							</state>
 							<transform>
 								<translation>1.000168, 0.3, 9.501686, 0</translation>
-								<rotation>0, 1, 0, 0</rotation>
+								<rotation>0, 1, 0, -0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0EC5D2FC-4A91-F347-99DD-A3B15BC75ABF}</entityData>

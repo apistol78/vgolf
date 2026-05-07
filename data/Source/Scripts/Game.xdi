@@ -552,7 +552,7 @@ end
 
 function Game:_resetEntity(entity)
 	local sc < const > = entity:getComponent(world.ScriptComponent)
-	if sc ~= nil then sc:reset() end
+	if sc ~= nil and sc.reset ~= nil then sc:reset() end
 end
 
 	]]></text>
