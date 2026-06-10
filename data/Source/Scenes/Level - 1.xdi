@@ -57,17 +57,15 @@
 		<colorGrading>{2FCE2D56-3358-4646-8E7E-F83F4A6281F2}</colorGrading>
 	</worldRenderSettings>
 	<worldComponents>
-		<item type="traktor.world.FogComponentData" version="1">
+		<item type="traktor.world.FogComponentData" version="2">
+			<mediumColor>0.32549, 0.290196, 0.239216, 1</mediumColor>
+			<mediumDensity>0.8</mediumDensity>
+			<distanceFogEnable>false</distanceFogEnable>
 			<fogDistance>90</fogDistance>
 			<fogElevation>0.7</fogElevation>
-			<fogDensity>0.05</fogDensity>
-			<fogDensityMax>1</fogDensityMax>
-			<fogColor>1, 1, 1, 1</fogColor>
 			<volumetricFogEnable>true</volumetricFogEnable>
-			<maxDistance>100</maxDistance>
-			<maxScattering>10</maxScattering>
-			<mediumColor>1, 1, 1, 1</mediumColor>
-			<mediumDensity>0.2</mediumDensity>
+			<maxDistance>40</maxDistance>
+			<maxScattering>90</maxScattering>
 		</item>
 	</worldComponents>
 	<layers>
