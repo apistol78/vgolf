@@ -23,7 +23,7 @@ function ToggleButton:update(contextObject, totalTime, deltaTime)
 
 	-- Lazy get entities.
 	if self._ballEntity == nil then
-		self._ballEntity = contextObject.world:getEntity("Ball")
+		self._ballEntity = contextObject.world.world:getEntity("Ball")
 		assert(self._ballEntity ~= nil)
 	end
 

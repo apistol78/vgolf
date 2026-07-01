@@ -16,7 +16,52 @@
 			<show>Up</show>
 		</item>
 		<item type="traktor.world.VolumeComponentData">
-			<size>0, 0, 0, 1</size>
+			<size>0.5, 1, 0.5, 0</size>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{F4876189-74EA-40A7-8EB7-4B969E812669}</id>
+					<name>Down</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData" version="1">
+							<mesh>{3F59E3F7-E8BF-BD45-B740-5C7A12A59FFB}</mesh>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.EntityData" version="2">
+					<id>{1286878E-1322-4857-B0E1-811BE408D3DF}</id>
+					<name>Up</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
+					<transform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components>
+						<item type="traktor.mesh.MeshComponentData" version="1">
+							<mesh>{9AA63716-308B-2E42-8F42-2762D1DAC875}</mesh>
+						</item>
+					</components>
+				</item>
+			</entityData>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{06C3DBC5-6BA7-8345-892E-9E8C57B5F7CA}</class>
+			<properties/>
+			<editorSupport>false</editorSupport>
 		</item>
 	</components>
 </object>

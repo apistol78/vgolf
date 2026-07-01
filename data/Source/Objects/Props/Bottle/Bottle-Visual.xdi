@@ -3,7 +3,12 @@
 	<fileName>Props/Bottle.blend</fileName>
 	<importFilter/>
 	<meshType>MtInstance</meshType>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>m_bottle</first>
+			<second>{47F97A17-EA82-4F47-A590-4CD193776BE5}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>

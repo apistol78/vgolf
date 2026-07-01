@@ -1219,7 +1219,7 @@
 												<locked>true</locked>
 											</state>
 											<transform>
-												<translation>4.196868, 0.905788, 5.706393, 0</translation>
+												<translation>4.196868, 0.905788, 5.695635, 0</translation>
 												<rotation>0, 0.25708, 0, 0.96639</rotation>
 											</transform>
 											<components/>
@@ -1313,7 +1313,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>2.727535, 1.526903, 4.929678, 0</translation>
+								<translation>2.686792, 1.526903, 5.48063, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -1373,8 +1373,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>-0.414677, 1.76733, 2.689094, 0</translation>
-								<rotation>-0.514944, -0.464965, -0.39965, 0.5991</rotation>
+								<translation>-0.576006, 1.76733, 2.534111, 0</translation>
+								<rotation>-0.607723, -0.274236, -0.235713, 0.707041</rotation>
 							</transform>
 							<components/>
 							<entityData>{652E76CE-889D-A548-A3CC-2B8DCA024D40}</entityData>
@@ -1410,6 +1410,51 @@
 							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{A8468181-DE09-40B0-95E8-C9121023572B}</id>
+							<name>Bottle-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0.374862, 1.327669, 9.125908, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{39D165AF-8713-4038-AC56-CAD532DE1796}</id>
+							<name>Bottle-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0.670857, 1.327669, 9.003959, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{00D0E8AA-FB6D-41B3-9045-1CE887E8C02C}</id>
+							<name>Bottle-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>0.504402, 1.327669, 8.858649, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{10E4BFCB-A988-4599-8305-CA5DB76A1A44}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{17ABAE10-9304-4C33-87CD-2D253D36BADC}</id>
 							<name>Bottle-Entity</name>
 							<state>
@@ -1433,7 +1478,7 @@
 			<name>Dynamic</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>false</dynamic>
+				<dynamic>true</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -1448,7 +1493,7 @@
 							<name>Camera</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1473,7 +1518,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1488,7 +1533,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1503,7 +1548,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1518,7 +1563,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1533,7 +1578,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1548,7 +1593,7 @@
 							<name>LookAt</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1562,7 +1607,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1577,7 +1622,7 @@
 							<name>Coin-1-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1592,7 +1637,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1607,7 +1652,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1622,7 +1667,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1637,7 +1682,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1652,7 +1697,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1667,7 +1712,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1682,7 +1727,7 @@
 							<name>Grass Tall-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1697,7 +1742,7 @@
 							<name>Debris</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1715,7 +1760,7 @@
 							<name>Goal Flag-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1730,7 +1775,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1745,7 +1790,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1760,7 +1805,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1775,7 +1820,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1790,7 +1835,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1805,7 +1850,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
@@ -1820,7 +1865,7 @@
 							<name>Grass Small-Entity</name>
 							<state>
 								<visible>true</visible>
-								<dynamic>false</dynamic>
+								<dynamic>true</dynamic>
 								<locked>false</locked>
 							</state>
 							<transform>
