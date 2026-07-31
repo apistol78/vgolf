@@ -80,8 +80,13 @@
 					<optional>true</optional>
 				</item>
 				<item>
+					<id>{ECADF42E-FB90-4F53-9B99-7129FF825B9A}</id>
+					<name>VertexAttributes</name>
+					<optional>true</optional>
+				</item>
+				<item>
 					<id>{E17C87D4-085A-409D-9642-1926DBAADBBC}</id>
-					<name>World position offse</name>
+					<name>World position offset</name>
 					<optional>true</optional>
 				</item>
 			</inputPins>
@@ -102,7 +107,7 @@
 			<value>1</value>
 		</item>
 		<item type="traktor.render.Parameter" version="traktor.render.Node:1">
-			<id>{00000000-0000-0000-0000-000000000000}</id>
+			<id>{04FD76DD-76CE-435A-BF2E-8AAF22CD6756}</id>
 			<comment/>
 			<position>
 				<first>634</first>
@@ -120,7 +125,7 @@
 			<value>0</value>
 		</item>
 		<item type="traktor.render.Parameter" version="traktor.render.Node:1">
-			<id>{00000000-0000-0000-0000-000000000000}</id>
+			<id>{B00FD4BF-562C-4E78-BE49-5B7519681B44}</id>
 			<comment/>
 			<position>
 				<first>779</first>
@@ -169,7 +174,7 @@
 			</names>
 		</item>
 		<item type="traktor.render.Parameter" version="traktor.render.Node:1">
-			<id>{00000000-0000-0000-0000-000000000000}</id>
+			<id>{FEC0566D-AC8B-4B21-968D-911F80CCDF42}</id>
 			<comment/>
 			<position>
 				<first>783</first>
@@ -187,7 +192,7 @@
 			<value>1</value>
 		</item>
 		<item type="traktor.render.Parameter" version="traktor.render.Node:1">
-			<id>{00000000-0000-0000-0000-000000000000}</id>
+			<id>{DA6F87AF-5BF7-4C2F-A4AE-D428348500FE}</id>
 			<comment/>
 			<position>
 				<first>680</first>
@@ -585,6 +590,16 @@
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{778D0A8C-73B5-0241-8911-91FC33A40DA0}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{ECADF42E-FB90-4F53-9B99-7129FF825B9A}</id>
 			</destination>
 		</item>
 	</edges>
