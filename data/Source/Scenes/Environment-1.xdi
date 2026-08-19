@@ -38,10 +38,10 @@
 							<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
 							<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
 						</item>
-						<item type="traktor.world.LightComponentData" version="12">
+						<item type="traktor.world.LightComponentData" version="13">
 							<lightType>Directional</lightType>
 							<color>1, 1, 1, 0</color>
-							<intensity>2</intensity>
+							<intensity>10</intensity>
 							<castShadow>true</castShadow>
 							<nearRange>0</nearRange>
 							<farRange>10</farRange>
@@ -65,14 +65,9 @@
 						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
-						<item type="traktor.world.ProbeComponentData">
+						<item type="traktor.world.ProbeComponentData" version="1">
 							<texture>{00000000-0000-0000-0000-000000000000}</texture>
 							<intensity>0.8</intensity>
-							<local>false</local>
-							<volume>
-								<mn>0, 0, 0, 1</mn>
-								<mx>0, 0, 0, 1</mx>
-							</volume>
 						</item>
 					</components>
 				</item>
